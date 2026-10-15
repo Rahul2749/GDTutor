@@ -1,0 +1,38 @@
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pfx
+*.p12
+*.key
+appsettings.*.local.json
+
+# Local tools and editor state
+.codex/
+.vs/
+.idea/
+*.user
+*.suo
+
+# Dependency, build and test outputs
+node_modules/
+.next/
+dist/
+bin/
+obj/
+coverage/
+TestResults/
+playwright-report/
+test-results/
+
+# Logs, temporary files and sensitive migration extracts
+*.log
+.planning-review/
+*.tmp
+migration-exports/
+backups/
+
+# Operating system files
+.DS_Store
+Thumbs.db
