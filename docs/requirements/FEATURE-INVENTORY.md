@@ -3,10 +3,10 @@
 [Documentation index](../README.md) · [Progress tracker](../delivery/PROGRESS.md) · [0.1 review record](../delivery/reviews/0.1-feature-inventory.md)
 
 **Prepared:** 15 October 2026  
-**Version:** 1.0 — proposed scope for owner review  
+**Version:** 1.0 — scope baseline accepted for progression on 15 October 2026; detailed open decisions remain unresolved  
 **Purpose:** Agree what GD Tutor must support and who uses it before deeper discovery and implementation.
 
-This inventory reuses the [65-screenshot evidence index](../reference/SCREENSHOT-INDEX.md) and the owner's requirements. It describes intended product capabilities. It does not verify the old application end to end, select packages, finalize grading rules, or approve database entities.
+This inventory reuses the [65-screenshot evidence index](../reference/SCREENSHOT-INDEX.md) and the owner's requirements. It describes intended product capabilities. It does not verify the old application end to end, select packages, finalize grading rules, or approve database entities. The owner's subsequent clarification requires a fully independent replacement; see the [0.2 standalone map](STANDALONE-REPLACEMENT-MAP.md).
 
 ## 1. Review summary
 
@@ -14,7 +14,7 @@ The proposed product has four experiences: public discovery, student learning, i
 
 The core launch journeys are: discover a course, register/sign in, enroll free or pay, study/resume, take/review assessments, attend agreed classes, and allow staff to publish and operate all of this. Migration must preserve existing access and relevant history.
 
-For this review, confirm the feature list and priorities. Detailed plugin identification belongs to **0.2**, business rules to **0.3**, data/capacity measurements to **0.4**, and the consolidated launch backlog/estimate to **0.5**. Existing database/table structures must be requested before persistent entity design at **2.4.1**.
+The feature list is the accepted starting scope. Standalone replacement/integration mapping belongs to **0.2**, business rules to **0.3**, data/capacity measurements to **0.4**, and the consolidated launch backlog/estimate to **0.5**. Legacy plugin details matter only where needed to interpret behavior or extract data, never as new-platform dependencies. Existing database/table structures must be requested before persistent entity design at **2.4.1**.
 
 ## 2. Evidence and priority labels
 
@@ -125,7 +125,7 @@ Visual formula authoring is mandatory. Automatic symbolic equivalence grading, h
 | CMP-01 | Course completion and gradebook aggregation to agreed rules | Visible progress E04; Empty E09 gradebook | L0 for completion; gradebook depth L1 | 5.4; 9.4 |
 | CMP-02 | Completion-eligible certificates and retained historical awards | Locked E09; issuance flow not demonstrated | L1; existing award retention L0 | 9.5 |
 
-"Class" may mean a school grade, a recorded course, a coaching batch, an online meeting or an offline session. Grade categories and recorded lessons are clearly visible; the delivery model for scheduled classes must be confirmed in 0.3. External live meeting integration is conditional on that decision.
+Grade categories, recorded lessons and scheduled coaching sessions are separate concepts. During 0.3 on 15 October 2026, the owner confirmed both live online classes and offline coaching batches. Provider, attendance and membership details remain for policy/integration review; see [business rules](BUSINESS-RULES.md).
 
 ### Staff operations, migration and cross-cutting requirements
 
@@ -268,7 +268,7 @@ The proposed L2 boundary avoids adding a new product line while replacing existi
 | ID | Detail still needed | Why it matters | Resolve in |
 |---|---|---|---|
 | OQ-01 | Which L1 tools are used today, and which may be deferred/retired? | Establish launch parity without silently removing empty-screen features | Scope feedback in 0.1; usage validation 0.2; final baseline 0.5 |
-| OQ-02 | Are scheduled classes online, offline, batch-based, or mixed? | Determines calendar, meeting, attendance and reminder depth | 0.3; provider inventory 0.2 |
+| OQ-02 | Online classes and offline coaching batches confirmed; eligibility, attendance and provider details remain | Determines calendar, meeting, attendance and reminder depth | 0.3 Q-06; provider review before 8.3 |
 | OQ-03 | Who can publish courses, edit prices, issue refunds or correct grades? | Sets instructor/admin responsibilities | 0.3; permission implementation 3.3 |
 | OQ-04 | Current plugins/custom code and old payment/video/meeting services | Reveals hidden dependencies and extraction options | 0.2 |
 | OQ-05 | Access duration, manual enrollments, commercial variations and refund effects | Avoids changing what existing purchases entitle students to use | 0.3 |
@@ -290,4 +290,4 @@ Unknown details are recorded, not guessed. This item can be reviewed without sup
 
 Useful feedback can be brief: identify a feature ID to add/change/defer, or a journey ID whose behavior should differ. Accepting 0.1 approves this scope baseline; it does not select the proposed palette/editor packages or finalize unknown grading/access rules.
 
-After review, the next proposed item is **0.2 — WordPress plugins, custom code and integrations**. It remains unstarted until authorized.
+The owner subsequently authorized **0.2 — standalone replacements and integrations**. See the [progress tracker](../delivery/PROGRESS.md) for the current review state. The original checklist above remains the scope-review reference; acceptance for progression does not resolve explicitly open rules or approve feature omissions.

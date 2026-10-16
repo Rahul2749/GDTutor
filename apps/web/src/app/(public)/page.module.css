@@ -1,0 +1,64 @@
+/* Temporary local preview styles. Shared reset/tokens/themes belong to 2.1.2. */
+.stage {
+  box-sizing: border-box;
+  min-height: calc(100svh - 16px);
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 4vw, 4rem);
+  background: #f8f7f3;
+  color: #172c27;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.card {
+  box-sizing: border-box;
+  width: min(100%, 48rem);
+  padding: clamp(1.25rem, 6vw, 4.5rem);
+  border: 1px solid #d9e1db;
+  border-radius: 1.5rem;
+  background: #fff;
+}
+
+.brand {
+  margin: 0 0 3rem;
+  font-size: 1.5rem;
+  font-weight: 750;
+  letter-spacing: -0.04em;
+}
+
+.dot {
+  color: #0f766e;
+}
+
+.label {
+  margin: 0 0 1rem;
+  color: #0f766e;
+  font-size: 0.875rem;
+  font-weight: 650;
+}
+
+.title {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.25rem, 6vw, 4.25rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.description {
+  max-width: 36rem;
+  margin: 1.5rem 0 0;
+  color: #4f625b;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.note {
+  margin: 2.5rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid #d9e1db;
+  color: #4f625b;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,1011 @@
+{
+  "version": "0.2-public-substitutes",
+  "prepared_on": "2026-10-16",
+  "state": "accepted_for_prototype_with_owner_authorized_public_substitutes",
+  "owner_scope": "Consider all source-app/platform families, subjects/languages and outbound Word reuse. Compatibility remains per tested configuration, not universal.",
+  "owner_editable_samples_received": 0,
+  "legacy_visual_references": [
+    {
+      "id": "LEG-01",
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 194926.png",
+      "sha256": "49368f453265869c99ad12ca7e4651c899e8edd5e7ca323d0d03b64038c54797",
+      "kind": "real_legacy_screenshot",
+      "visually_inspected_on": "2026-10-16",
+      "observed_features": [
+        "signed decimal values",
+        "voltage units",
+        "inequality option order"
+      ],
+      "editable_source_available": false,
+      "exact_latex_transcription": "not_attempted",
+      "answer_key": "not_recovered",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "LEG-02",
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 194936.png",
+      "sha256": "ecfc4ef0872b7a055b1bb49514353a1036b14e80ce11f2b6132fb2408bffaf66",
+      "kind": "real_legacy_screenshot",
+      "visually_inspected_on": "2026-10-16",
+      "observed_features": [
+        "reaction arrow",
+        "chemical sub/superscripts",
+        "charge positioning",
+        "mixed stem and equation"
+      ],
+      "editable_source_available": false,
+      "exact_latex_transcription": "not_attempted",
+      "answer_key": "not_recovered",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "LEG-03",
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 194946.png",
+      "sha256": "3cb6ca2744a774728f2edd0585b7a50ccc3e714c63a38a566dd55af7d9c90ca9",
+      "kind": "real_legacy_screenshot",
+      "visually_inspected_on": "2026-10-16",
+      "observed_features": [
+        "polyatomic ion charge/subscript layout",
+        "signed numeric options"
+      ],
+      "editable_source_available": false,
+      "exact_latex_transcription": "not_attempted",
+      "answer_key": "not_recovered",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "LEG-04",
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195237.png",
+      "sha256": "2a9870de7cf6385ace0a14cc03b2304871d5888526a5277f336724862691a3a8",
+      "kind": "real_legacy_screenshot",
+      "visually_inspected_on": "2026-10-16",
+      "observed_features": [
+        "nested integral/fraction/exponents",
+        "logarithms",
+        "formulas in options",
+        "long display equation"
+      ],
+      "editable_source_available": false,
+      "exact_latex_transcription": "not_attempted",
+      "answer_key": "not_recovered",
+      "compatibility_status": "not_run"
+    }
+  ],
+  "source_families": [
+    {
+      "id": "SRC-01",
+      "family": "Word desktop on Windows",
+      "needed": "Original DOCX with native equations; Word version/build and equation input mode",
+      "exact_version": null,
+      "availability": "not_confirmed",
+      "compatibility_status": "not_run",
+      "execution_evidence": {
+        "test_target_word_version": "16.0.20430.20146",
+        "os": "Windows 10.0.26200",
+        "native_format_capture": "captured",
+        "native_to_automated_chrome": "empty_payload_not_verified",
+        "outbound_brokered_mathml_replay": "native_structure_verified_for_one_synthetic_fixture",
+        "direct_browser_word_roundtrip": "not_verified",
+        "original_authoring_version": "unknown"
+      }
+    },
+    {
+      "id": "SRC-02",
+      "family": "Word desktop on macOS",
+      "needed": "Original DOCX plus Word/macOS versions and browser",
+      "exact_version": null,
+      "availability": "not_confirmed",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "SRC-03",
+      "family": "Word Online",
+      "needed": "Original document and actual browser/OS; actual clipboard trial later",
+      "exact_version": null,
+      "availability": "not_confirmed",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "SRC-04",
+      "family": "Google Docs",
+      "needed": "Original document or accessible local export; distinguish native equation from image",
+      "exact_version": null,
+      "availability": "not_confirmed",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "SRC-05",
+      "family": "LibreOffice Writer",
+      "needed": "Original ODT/DOCX and app version; format conversion is not assumed lossless",
+      "exact_version": null,
+      "availability": "not_confirmed",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "SRC-06",
+      "family": "Selectable PDF text",
+      "needed": "Original PDF and viewer/version; selected text is not automatically structured math",
+      "exact_version": null,
+      "availability": "not_confirmed",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "SRC-07",
+      "family": "Scanned PDF or equation image",
+      "needed": "Original PDF/image; preserve as image or explicitly recreate; OCR not baseline",
+      "exact_version": null,
+      "availability": "not_confirmed",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "SRC-08",
+      "family": "Website/HTML/MathML source",
+      "needed": "Original snippet and source URL reference if permitted; do not fetch during intake",
+      "exact_version": null,
+      "availability": "not_confirmed",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "SRC-09",
+      "family": "Plain LaTeX or UnicodeMath",
+      "needed": "Original source, delimiters/macros and source application",
+      "exact_version": null,
+      "availability": "not_confirmed",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "SRC-10",
+      "family": "Existing offline question export",
+      "needed": "Question/options/explanations and math source, if recoverable; no live WordPress dependency",
+      "exact_version": null,
+      "availability": "not_confirmed",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "SRC-11",
+      "family": "Other office/authoring apps including WPS",
+      "needed": "Original editable file and app/OS/version; do not assume equivalence to Word",
+      "exact_version": null,
+      "availability": "not_confirmed",
+      "compatibility_status": "not_run"
+    },
+    {
+      "id": "SRC-12",
+      "family": "Mobile source apps",
+      "needed": "Original document plus source app and Android/iOS/browser versions",
+      "exact_version": null,
+      "availability": "not_confirmed",
+      "compatibility_status": "not_run"
+    }
+  ],
+  "target_environment_proposals": [
+    {
+      "id": "ENV-01",
+      "os_family": "Windows",
+      "browser_family": "Chrome",
+      "exact_versions": null,
+      "availability": "not_confirmed",
+      "status": "not_run"
+    },
+    {
+      "id": "ENV-02",
+      "os_family": "Windows",
+      "browser_family": "Edge",
+      "exact_versions": null,
+      "availability": "not_confirmed",
+      "status": "not_run"
+    },
+    {
+      "id": "ENV-03",
+      "os_family": "Windows",
+      "browser_family": "Firefox",
+      "exact_versions": null,
+      "availability": "not_confirmed",
+      "status": "not_run"
+    },
+    {
+      "id": "ENV-04",
+      "os_family": "macOS",
+      "browser_family": "Safari",
+      "exact_versions": null,
+      "availability": "not_confirmed",
+      "status": "not_run"
+    },
+    {
+      "id": "ENV-05",
+      "os_family": "macOS",
+      "browser_family": "Chrome",
+      "exact_versions": null,
+      "availability": "not_confirmed",
+      "status": "not_run"
+    },
+    {
+      "id": "ENV-06",
+      "os_family": "Android",
+      "browser_family": "Chrome",
+      "exact_versions": null,
+      "availability": "not_confirmed",
+      "status": "not_run"
+    },
+    {
+      "id": "ENV-07",
+      "os_family": "iOS/iPadOS",
+      "browser_family": "Safari",
+      "exact_versions": null,
+      "availability": "not_confirmed",
+      "status": "not_run"
+    }
+  ],
+  "synthetic_cases": [
+    {
+      "id": "QC-001",
+      "title": "Mixed inline and display math",
+      "category": "text_math",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Compare \\(x+1\\) with \\[x^2+1\\].",
+      "expected": "Preserve text order and inline/display boundaries.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-002",
+      "title": "Nested fraction",
+      "category": "mathematics",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "\\frac{1+\\frac{a}{b}}{c-d}",
+      "expected": "Preserve nesting, signs and editable numerator/denominator.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-003",
+      "title": "Powers and subscripts",
+      "category": "mathematics",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "x_{n+1}^{2}+a_i",
+      "expected": "Keep subscript/superscript attachment and selection behavior.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-004",
+      "title": "Roots and brackets",
+      "category": "mathematics",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "\\sqrt[3]{x+1}+\\left(\\sqrt{x}\\right)^2",
+      "expected": "Keep root index, grouping and source.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-005",
+      "title": "Long bounded integral",
+      "category": "mathematics",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "\\int_{e^2}^{e^4}\\frac{1}{x}\\,f(\\log_e x)\\,dx",
+      "expected": "Keep limits, fractions and logarithms; bounded mobile overflow or deliberate wrapping.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-006",
+      "title": "Sums and products",
+      "category": "mathematics",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "\\sum_{i=1}^{n}i+\\prod_{j=1}^{m}a_j",
+      "expected": "Keep operator bounds and spacing.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-007",
+      "title": "Limits, piecewise and alignment",
+      "category": "mathematics",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "\\lim_{x\\to 0}\\frac{\\sin x}{x}; \\begin{cases}x&x\\ge0\\\\-x&x<0\\end{cases}",
+      "expected": "Probe aligned/cases support; visibly retain unsupported source.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-008",
+      "title": "Matrices and vectors",
+      "category": "mathematics",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}\\vec{v}",
+      "expected": "Keep row/column order and vector notation; no flattening.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-009",
+      "title": "Greek, logic, sets and inequalities",
+      "category": "mathematics",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "\\alpha+\\beta; p\\land q; A\\subseteq B; x\\le y",
+      "expected": "Preserve symbols and Unicode/source equivalents.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-010",
+      "title": "Signed values and units",
+      "category": "physics",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "-1.2\\,\\mathrm{V},\\quad +0.5\\,\\mathrm{V},\\quad X>Y>Z",
+      "expected": "Preserve minus/plus, decimals, unit spacing and comparison order.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-011",
+      "title": "Scientific notation and uncertainty",
+      "category": "science",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "(6.02\\pm0.01)\\times10^{23}\\,\\mathrm{mol}^{-1}",
+      "expected": "Keep powers, uncertainty and unit exponents.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-012",
+      "title": "Chemical subscripts and charge placement",
+      "category": "chemistry",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "\\mathrm{PO}_{4}^{3-},\\quad\\mathrm{SO}_{4}^{2-},\\quad\\mathrm{Cr}_{2}\\mathrm{O}_{7}^{2-}",
+      "expected": "Compare ion sub/superscript placement with the original; do not silently correct the source.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-013",
+      "title": "Chemical reaction and extension probe",
+      "category": "chemistry",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "2H_2+O_2\\rightarrow2H_2O; \\ce{2H2 + O2 -> 2H2O}",
+      "expected": "Probe ordinary and extension notation; unsupported macros must remain visible for repair.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-014",
+      "title": "Structural formula or biological diagram",
+      "category": "science",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Original diagram with labels and caption",
+      "expected": "Preserve original image/alt text; no claim of editable chemical structures or semantic OCR.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-015",
+      "title": "Tables, lists and math in cells",
+      "category": "rich_text",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Numbered stem; two-column data table; formula in a cell",
+      "expected": "Preserve intended cell order, numbering and equations without source-app styling pollution.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-016",
+      "title": "Math in stem, every option and explanation",
+      "category": "question_structure",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Stem: x^2; A: \\frac12; B: \\sqrt2; C: e^2; D: \\log_e2; explanation: x_1+x_2",
+      "expected": "Use the same editable equation workflow in all question regions; retain option ordering/correct-key association.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-017",
+      "title": "Image with text wrap and caption",
+      "category": "rich_text",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Diagram + caption + alternative text + source note",
+      "expected": "Keep the diagram with its question and captions; no broken temporary file references.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-018",
+      "title": "Image-only equation fallback",
+      "category": "unsupported_input",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Screenshot of a fraction without structured math",
+      "expected": "Clearly label non-editable image and offer recreation; do not claim editable math conversion.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-019",
+      "title": "Word native equation",
+      "category": "source_transfer",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Original DOCX native equation; no synthetic replacement accepted as real evidence",
+      "expected": "Inspect actual input later; retain original and report missing clipboard structure.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-020",
+      "title": "Word linear representations",
+      "category": "source_transfer",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "\\frac{a}{b} and a documented UnicodeMath representation",
+      "expected": "Test each representation separately using actual source app/version; do not infer universal interchange.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-021",
+      "title": "Word paragraphs, formatting and lists",
+      "category": "source_transfer",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Original DOCX: paragraphs, emphasis, numbered list and table",
+      "expected": "Preserve useful structure while normalizing unsafe/source-specific markup.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-022",
+      "title": "Google Docs equation transfer",
+      "category": "source_transfer",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Original Google Docs equation and actual clipboard trial",
+      "expected": "Record actual text/HTML/math/image payload and required repair; no invented success.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-023",
+      "title": "Selectable PDF transfer",
+      "category": "source_transfer",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Original PDF containing selectable text and mathematical notation",
+      "expected": "Compare copied order and symbol attachment; visibly flag lost structure.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-024",
+      "title": "Scanned PDF transfer",
+      "category": "unsupported_input",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Scanned page with image-only mathematics",
+      "expected": "Keep source image and explicit manual recreation path; OCR remains unapproved.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-025",
+      "title": "MathML and web rich content",
+      "category": "source_transfer",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Owner-supplied MathML/HTML excerpt",
+      "expected": "Normalize only supported structures, retain provenance and reject executable/remote content.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-026",
+      "title": "LaTeX delimiters and legacy macros",
+      "category": "legacy_transfer",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "\\(x+1\\), \\[x^2\\], $$x^3$$, [latex]x_1[/latex]",
+      "expected": "Classify supported delimiters/macros; preserve originals and report unresolved cases without runtime WordPress.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-027",
+      "title": "Malformed and unknown TeX",
+      "category": "repair",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "\\frac{1}{ ; \\unknowncommand{x}",
+      "expected": "Keep original source, report actionable location/problem and block publication until resolved.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-028",
+      "title": "Untrusted markup/resource command",
+      "category": "security",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Non-executing fixtures: script-like HTML, unsafe links, external-resource math commands",
+      "expected": "Never execute or fetch; record reject/repair outcome. Payload construction/execution belongs to later isolated tests.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-029",
+      "title": "Large/nested expression boundary",
+      "category": "resilience",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "A generated bounded fixture at and above agreed limits; limits not selected yet",
+      "expected": "Record formula/document size/nesting limits and predictable rejection; no unbounded render hang.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-030",
+      "title": "English plus Devanagari",
+      "category": "language_script",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Question 1: प्रश्न १; प्रश्न १: x + 1",
+      "expected": "Preserve text/script, numerals and inline math; representative Hindi/Marathi cases require owner review.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-031",
+      "title": "Other Indic script families",
+      "category": "language_script",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "প্রশ্ন; கேள்வி; ప్రశ్న; mathematics x + 1",
+      "expected": "Preserve supplied glyphs/combining marks; languages named here are representative probes, not confirmed exhaustive coverage.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-032",
+      "title": "Right-to-left text with math",
+      "category": "language_script",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "سؤال / שאלה with x + 1 and options A–D",
+      "expected": "Preserve reading order and isolate mathematical direction; do not reverse option/key associations.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-033",
+      "title": "CJK and diacritics",
+      "category": "language_script",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "問題; café; naïve; x + 1",
+      "expected": "Preserve Unicode, input composition, fallback fonts and search/save values.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-034",
+      "title": "Humanities and other text subjects",
+      "category": "subject_container",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Passage, quotations, numbered parts, accents and a small table",
+      "expected": "Support non-math authoring without requiring formulas or changing source language.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-035",
+      "title": "CS, economics, statistics, geography and other visual subjects",
+      "category": "subject_container",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Code-like text, statistical notation, chart/map/music/image examples as applicable",
+      "expected": "Preserve text/data/images and captions; no automatic semantic diagram or subject-specific grading engine implied.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-036",
+      "title": "Copy equation back to Word as LaTeX",
+      "category": "outbound_word",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "\\frac{a}{b}",
+      "expected": "Test outbound editable-source workflow in each actual Word target; compare mathematical structure and re-editability.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-037",
+      "title": "Copy back to Word via structured representation",
+      "category": "outbound_word",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Candidate MathML/structured clipboard workflow, if verified",
+      "expected": "Record actual target acceptance; provide honest source/manual fallback if the target does not accept it.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-038",
+      "title": "Save, reopen and re-edit",
+      "category": "round_trip",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Mixed text, image, math nodes and unknown-source diagnostics",
+      "expected": "Retain editable source/structure and original material; do not rely on generated HTML alone.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-039",
+      "title": "Theme, mobile and text zoom",
+      "category": "presentation",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Representative long math/diagrams/text at 320–1440px, both themes, zoom",
+      "expected": "Check readable content, controls, local overflow and equation editing; preserve image colors where needed.",
+      "regions": [
+        "representative_question"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    },
+    {
+      "id": "QC-040",
+      "title": "Undo/redo and independent formula edits",
+      "category": "editing",
+      "origin": "synthetic_proposal_not_owner_source",
+      "sample_source": "Three equations in different regions; edit one, undo/redo and reopen",
+      "expected": "Keep unrelated equations/options unchanged; preserve caret/selection and correct-answer association.",
+      "regions": [
+        "prompt",
+        "options",
+        "explanation"
+      ],
+      "execution_phases": [
+        "1.5.2",
+        "1.5.3"
+      ],
+      "result": "not_run",
+      "owner_review": "pending",
+      "actual_source_ref": null
+    }
+  ],
+  "owner_corpus_acceptance": "proceed_authorized_with_public_substitute_sources",
+  "editor_package_selected": null,
+  "notes": [
+    "Owner authorized public originals instead of waiting for private files. Synthetic probes supplement the downloaded upstream DOCX fixtures; actual owner examples remain a future validation gap.",
+    "No candidate renderer, clipboard or Word round-trip test has run in 1.5.1.",
+    "No native app, subscription, paid converter, OCR or symbolic grading is added by this matrix.",
+    "Selected 1.5.2 synthetic editing/rendering checks have separate prototype evidence. Case results here remain Not run for complete source-app transfer and Word round-trip scenarios.",
+    "1.5.3 records selected controlled browser transfers and native Word payload-replay structure checks separately. No entire case family or native clipboard boundary becomes verified from those partial results."
+  ],
+  "public_sources_manifest": "docs/reference/PUBLIC-QUESTION-SOURCES.json",
+  "owner_authorization": {
+    "date": "2026-10-16",
+    "instruction": "I do not have original files right now; bring from internet or other platforms, then go further.",
+    "effect": "Public upstream fixtures replace the owner-original intake dependency for the prototype; actual teacher clipboard compatibility remains unverified."
+  },
+  "prototype_evidence": "docs/design/QUESTION-EDITOR-CHECKS.json",
+  "paste_roundtrip_evidence": "docs/design/PASTE-ROUNDTRIP-CHECKS.json",
+  "native_word_evidence": [
+    "docs/reference/WORD-CLIPBOARD-PROBE.json",
+    "docs/reference/WORD-TO-BROWSER-PROBE.json",
+    "docs/reference/WORD-OUTBOUND-PROBE.json"
+  ]
+}

@@ -1,0 +1,35 @@
+﻿{
+    "routes":  [
+                   {
+                       "visual_fidelity":  "not_verified",
+                       "temporary_document":  "in memory only, closed without saving",
+                       "roots":  1,
+                       "denominator_is_3":  true,
+                       "result":  "native_structure_verified_for_replayed_fixture",
+                       "radicand_is_5":  true,
+                       "native_equations":  1,
+                       "fractions":  1,
+                       "route":  "browser_html_and_plain_payload_replay",
+                       "numerator_is_2":  true
+                   },
+                   {
+                       "visual_fidelity":  "not_verified",
+                       "temporary_document":  "in memory only, closed without saving",
+                       "roots":  1,
+                       "denominator_is_3":  true,
+                       "result":  "native_structure_verified_for_replayed_fixture",
+                       "radicand_is_5":  true,
+                       "native_equations":  1,
+                       "fractions":  1,
+                       "route":  "plain_mathml_replay",
+                       "numerator_is_2":  true
+                   }
+               ],
+    "source":  "Known synthetic 2/3 + sqrt(5), produced by the actual browser Copy MathML action",
+    "method":  "Controlled Windows clipboard payload replay into native Word; distinct from direct browser clipboard interoperability",
+    "source_sha256":  "c333e800496df20d44398d7b481ce5b1b085242a4f4f6036a09f82be029aa2ea",
+    "paid_dependency_added":  false,
+    "native_browser_to_word_clipboard_verified":  false,
+    "date":  "2026-10-16",
+    "word_file_version":  "16.0.20430.20146"
+}

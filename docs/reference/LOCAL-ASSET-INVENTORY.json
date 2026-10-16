@@ -1,0 +1,547 @@
+{
+  "measured_on": "2026-10-15",
+  "source_directory": "Project Files",
+  "scope": "Local screenshot reference material only; not the production media library or an application data export.",
+  "file_count": 65,
+  "total_bytes": 16684524,
+  "groups": {
+    "Admin Panel": {
+      "files": 10,
+      "bytes": 1816174
+    },
+    "Common": {
+      "files": 8,
+      "bytes": 2349555
+    },
+    "Public website and login": {
+      "files": 17,
+      "bytes": 7538873
+    },
+    "Student Panel": {
+      "files": 30,
+      "bytes": 4979922
+    }
+  },
+  "files": [
+    {
+      "path": "Project Files/Admin Panel/Screenshot 2026-10-14 194225.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 131011,
+      "width": 1917,
+      "height": 961,
+      "sha256": "c8ddf63c6e638a261ca3ae57d20cfe7c3fede25821ec75092e158bb763830690"
+    },
+    {
+      "path": "Project Files/Admin Panel/Screenshot 2026-10-14 194238.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 129598,
+      "width": 1912,
+      "height": 969,
+      "sha256": "18384ba5d2c3268ba1954cd0695b76ce93fdd151c3de52685894fdc116363a24"
+    },
+    {
+      "path": "Project Files/Admin Panel/Screenshot 2026-10-14 194254.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 597944,
+      "width": 1914,
+      "height": 963,
+      "sha256": "704925292a4fa6be199322ce891b05b0e568e20906bfbec03443d7d7a61cc45d"
+    },
+    {
+      "path": "Project Files/Admin Panel/Screenshot 2026-10-14 194313.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 168449,
+      "width": 1900,
+      "height": 960,
+      "sha256": "d8844daa81175c56acf81841824bf62cc26c4a27eafc2220843aac5c569ad86f"
+    },
+    {
+      "path": "Project Files/Admin Panel/Screenshot 2026-10-14 194323.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 154026,
+      "width": 1918,
+      "height": 968,
+      "sha256": "65afd1437f68ddfa6befedc8eb5f96d37e844b67069e09181f240e49ecdceb9e"
+    },
+    {
+      "path": "Project Files/Admin Panel/Screenshot 2026-10-14 194335.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 157440,
+      "width": 1910,
+      "height": 946,
+      "sha256": "f7e0706b26dc903f246a43a6e3b9ae7c91a7a4acae55f496bc6652111795ddc9"
+    },
+    {
+      "path": "Project Files/Admin Panel/Screenshot 2026-10-14 194352.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 98534,
+      "width": 1915,
+      "height": 957,
+      "sha256": "19b1f82ecf65d8e2b91d30a3b5712fee6215696abd5a8517d58fc6b157fac374"
+    },
+    {
+      "path": "Project Files/Admin Panel/Screenshot 2026-10-14 194404.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 208881,
+      "width": 1910,
+      "height": 956,
+      "sha256": "65ad44d856810885cb00cb602b8a9bd01a7099f7881c808f5a15ed28cf89ffef"
+    },
+    {
+      "path": "Project Files/Admin Panel/Screenshot 2026-10-14 194413.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 97319,
+      "width": 1919,
+      "height": 966,
+      "sha256": "b0a0af7cf1fd92ca6d1d6d62ac9577f3e611fe95ba2fd7d39a92efab26eabf29"
+    },
+    {
+      "path": "Project Files/Admin Panel/Screenshot 2026-10-14 194425.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 72972,
+      "width": 1908,
+      "height": 971,
+      "sha256": "812aa63d979a20f9eab076c63a4151a3e13bc2f11a11b43c62c81191f6f5c092"
+    },
+    {
+      "path": "Project Files/Common/Screenshot 2026-10-14 195625.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 248872,
+      "width": 1919,
+      "height": 970,
+      "sha256": "417d7c0d646afcd52c2145400d1e1284a46206c3859607612c92e04276dd983a"
+    },
+    {
+      "path": "Project Files/Common/Screenshot 2026-10-14 195635.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 149685,
+      "width": 1918,
+      "height": 973,
+      "sha256": "8b2076957ff9e7429d371279e4dce275ef2342d452996c0292277b66a9586fd8"
+    },
+    {
+      "path": "Project Files/Common/Screenshot 2026-10-14 195723.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 437087,
+      "width": 1919,
+      "height": 959,
+      "sha256": "18d954b6a9832574eb4bf0a6c41ebdf4f70be3def28df5dc97e0e2801ed43975"
+    },
+    {
+      "path": "Project Files/Common/Screenshot 2026-10-14 195732.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 471164,
+      "width": 1919,
+      "height": 951,
+      "sha256": "b4bbae32ac473ab37903f3be9ed0634fcfd287c7e4cdda010ee5a6010a291dfc"
+    },
+    {
+      "path": "Project Files/Common/Screenshot 2026-10-14 195742.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 146883,
+      "width": 1916,
+      "height": 969,
+      "sha256": "3b5e3964cb9da788679d8239f3460ed215cb83a24479ad68c7277c13d1817750"
+    },
+    {
+      "path": "Project Files/Common/Screenshot 2026-10-14 195750.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 145961,
+      "width": 1903,
+      "height": 968,
+      "sha256": "b61f29e05942d7f5138624f63c52cc4340f3508ac53286a3e903a87853fb9e76"
+    },
+    {
+      "path": "Project Files/Common/Screenshot 2026-10-14 195842.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 635927,
+      "width": 1914,
+      "height": 919,
+      "sha256": "9688e3d9268af91ba50c041458a7bf350b656bbbfc094de384067eafe6e4d7a2"
+    },
+    {
+      "path": "Project Files/Common/Screenshot 2026-10-14 195854.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 113976,
+      "width": 1918,
+      "height": 977,
+      "sha256": "b4d42dd963e7ffc4d9f38d77c3137af28dad4993e894e50b3b89798a74237880"
+    },
+    {
+      "path": "Project Files/HomePage_1.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 559901,
+      "width": 1911,
+      "height": 965,
+      "sha256": "481e22eeecc2f0bcf708adc9a18dc7e33f96abaeed846207babf5609d76b2211"
+    },
+    {
+      "path": "Project Files/HomePage_10.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 112620,
+      "width": 1915,
+      "height": 963,
+      "sha256": "25bb438b859f42d7d4d33f19bd6a0c18eac739265a0afd6b4e2b41377068ffec"
+    },
+    {
+      "path": "Project Files/HomePage_11.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 134407,
+      "width": 1915,
+      "height": 959,
+      "sha256": "3f1366efa229745fcbf122b1024b4d2ed731c17b74cdaa52a0bdf80b3f2a3b11"
+    },
+    {
+      "path": "Project Files/HomePage_2.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 661598,
+      "width": 1917,
+      "height": 960,
+      "sha256": "c138249c49c62cb32bce13ab4265470be4de31e1ec5b6b733d5e754b7b9ab91b"
+    },
+    {
+      "path": "Project Files/HomePage_3.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 596720,
+      "width": 1919,
+      "height": 966,
+      "sha256": "6f1131cffe9e656668f76d46adfa6a9f531090bb03fd4d15c61278988a24819f"
+    },
+    {
+      "path": "Project Files/HomePage_4.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 245449,
+      "width": 1919,
+      "height": 957,
+      "sha256": "04dce2a5f5bb7ff27ad4720c7c5238a49d8adf819797e6164aa3b7b8fb6a9186"
+    },
+    {
+      "path": "Project Files/HomePage_5.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 524202,
+      "width": 1919,
+      "height": 966,
+      "sha256": "2732b88fbfab6dea6f5d8b84c0a2dd7b4a37340bb61df55f033cbd2b2a86b7b2"
+    },
+    {
+      "path": "Project Files/HomePage_6.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 517190,
+      "width": 1911,
+      "height": 976,
+      "sha256": "966a8fd3363f0b0d4d818058e9c7fad3cd3a4c84b21175e40d67e18a69964d5a"
+    },
+    {
+      "path": "Project Files/HomePage_7.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 180524,
+      "width": 1913,
+      "height": 965,
+      "sha256": "af7c9edef6e3cacdb899c28e696d3ed4f3679774f4f77ea9ae4c2ef39c39dd8b"
+    },
+    {
+      "path": "Project Files/HomePage_8.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 942374,
+      "width": 1914,
+      "height": 966,
+      "sha256": "1f11d64ac1f805d42f6110c669b6cf0c3928dfea95df3d23d667593b329575a0"
+    },
+    {
+      "path": "Project Files/HomePage_9.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 156213,
+      "width": 1915,
+      "height": 954,
+      "sha256": "ecb32ae6b5d627a2d4dc513092ebc58cfbddb694d44c52069abf9d034d8f925b"
+    },
+    {
+      "path": "Project Files/login.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 83233,
+      "width": 1909,
+      "height": 967,
+      "sha256": "88e14619246053ac2ea9f9c563b6187f235ce552b10b9139323d06a9d0814a4f"
+    },
+    {
+      "path": "Project Files/Screenshot 2026-10-14 194554.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 577247,
+      "width": 1915,
+      "height": 1003,
+      "sha256": "a3933eb76ed88f8abc27196bdbd648e3eb747d50f01eb0340a512f1d6d6926d5"
+    },
+    {
+      "path": "Project Files/Screenshot 2026-10-14 194643.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 567846,
+      "width": 1915,
+      "height": 969,
+      "sha256": "36e376f55ed3e6802beea0b86883f12b9ed2e8bb7e9f64809f24f23d15941252"
+    },
+    {
+      "path": "Project Files/Screenshot 2026-10-14 194654.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 699517,
+      "width": 1919,
+      "height": 985,
+      "sha256": "86eb887ed4e3150038f8a7abd56a61a58af11093a29cbc087d2f31996423793e"
+    },
+    {
+      "path": "Project Files/Screenshot 2026-10-14 194707.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 837844,
+      "width": 1919,
+      "height": 967,
+      "sha256": "11360493fa81013f2bd963f4773a8a4313a036258b30719cf7113e847e1a9645"
+    },
+    {
+      "path": "Project Files/Screenshot 2026-10-14 194718.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 141988,
+      "width": 1914,
+      "height": 952,
+      "sha256": "d6d320282fd1d52ad4b7b0be06edd485e0baa027e43d813033b4b757b9dc9b5d"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 194825.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 231674,
+      "width": 1919,
+      "height": 955,
+      "sha256": "b47f17aba37c9e4feb9d67be2a52d9a41f74fa97df3f6db2294870ebd537aedb"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 194833.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 216740,
+      "width": 1867,
+      "height": 912,
+      "sha256": "cc0603c3451f73a4840d95ff0c0922b2331ff78b5c8254453cec6d58343066c0"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 194846.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 139129,
+      "width": 1919,
+      "height": 955,
+      "sha256": "18e8b840ab13d07d5960e5ee1050360ff9abcc00946d2e1b3295c25c02e40597"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 194900.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 166571,
+      "width": 1918,
+      "height": 965,
+      "sha256": "bd44c02df30839def94c612d70d7fe67cb0bbebc714f5445c4cda7be87f41022"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 194908.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 160543,
+      "width": 1906,
+      "height": 955,
+      "sha256": "a977c98ff7eae0ac0fb3db01e2e30a421b2d7c497efbd1acf939451d2a8e545f"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 194926.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 94969,
+      "width": 1919,
+      "height": 976,
+      "sha256": "49368f453265869c99ad12ca7e4651c899e8edd5e7ca323d0d03b64038c54797"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 194936.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 89922,
+      "width": 1919,
+      "height": 972,
+      "sha256": "ecfc4ef0872b7a055b1bb49514353a1036b14e80ce11f2b6132fb2408bffaf66"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 194946.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 88364,
+      "width": 1919,
+      "height": 967,
+      "sha256": "3cb6ca2744a774728f2edd0585b7a50ccc3e714c63a38a566dd55af7d9c90ca9"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195006.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 174555,
+      "width": 1919,
+      "height": 976,
+      "sha256": "065a033e254a453ac2ae9f69fae49f061a1dc7bc575cba92ab7850b252560d6b"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195023.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 210851,
+      "width": 1914,
+      "height": 959,
+      "sha256": "24989b1aeb35a56fe719db2cec628adc511493be7672274f7453dae950f5983a"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195030.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 100839,
+      "width": 1910,
+      "height": 963,
+      "sha256": "bf8a3b286c2a9ffeaf4945eec304170d2f0facb13859d4a7cfda064ea7a299bb"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195038.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 69859,
+      "width": 1919,
+      "height": 965,
+      "sha256": "1d842fd24143314c9aab0de0a85fcf231eb5dc35329a1bceb0d3c5c47cc3d994"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195050.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 103154,
+      "width": 1919,
+      "height": 968,
+      "sha256": "4c9c205b53aff880c522dcd5ed1b0e5b4f9de22201215e09f6fe7227021d510f"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195059.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 132947,
+      "width": 1919,
+      "height": 963,
+      "sha256": "05473a57527f7979c265b6d070e9bc770ba0c1733b0fe15503216cb62c5899da"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195112.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 215421,
+      "width": 1919,
+      "height": 974,
+      "sha256": "bda73b40d5c34904a95a6a5bafa135d4722efdda7b9fa255b36de5d09bf76fed"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195122.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 72030,
+      "width": 1910,
+      "height": 951,
+      "sha256": "151b34855a769d072c59eac797a37b9389fc78f6dbeab0784b024a62a629da0f"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195132.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 65366,
+      "width": 1915,
+      "height": 955,
+      "sha256": "ce282312c39af94ab9b2396239b5eac2504b075d2460493944b40d9bfb5c3455"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195144.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 105256,
+      "width": 1919,
+      "height": 971,
+      "sha256": "d5b375121b2e98dd26296322a7a1630479b90fe7341420197fe087432be94f47"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195225.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 71700,
+      "width": 1918,
+      "height": 964,
+      "sha256": "196650faa45298386f91aed882cc73c41c33e63e0e32925142a9cd58725d5dc1"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195237.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 72399,
+      "width": 1919,
+      "height": 958,
+      "sha256": "2a9870de7cf6385ace0a14cc03b2304871d5888526a5277f336724862691a3a8"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195255.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 105364,
+      "width": 1919,
+      "height": 961,
+      "sha256": "801eac20e80d02911da3de359e5af106165f6f97fd4cda8629d2e146b443f0e9"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195319.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 219688,
+      "width": 1915,
+      "height": 1035,
+      "sha256": "a76ac4bf8fb571da6c6e407296ca72f32ab4696d9fb96735bbef060e52683abb"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195352.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 97380,
+      "width": 1908,
+      "height": 959,
+      "sha256": "dbe520891e5ab7d728546158fe3536a04b27689e91abf5358037e29fda94a247"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195403.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 117040,
+      "width": 1904,
+      "height": 985,
+      "sha256": "7e3548ce8fc5a11d7b7bf7421ec81733d9dc9746bb4a24aef27cb215341dbbfe"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195414.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 115327,
+      "width": 1919,
+      "height": 987,
+      "sha256": "5e27d8bc6536b24612b31fedefdfa41941665f085bc9764ce0d8ff280d4f0c75"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195423.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 124990,
+      "width": 1919,
+      "height": 977,
+      "sha256": "37c7338f56c6c1c6c0c7dce5cbcd5501c6701d75a1b371be48219ab47f3f94ad"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195431.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 121072,
+      "width": 1919,
+      "height": 982,
+      "sha256": "ff6e8c231930c51d4b79b737f2cf9369f687205d51a682df82bf36494b7087d2"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195438.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 206960,
+      "width": 1909,
+      "height": 968,
+      "sha256": "cabbaa63905d72198bac6bb01846f2f23dc7f4dbe4689d271892e8a5eecaaefe"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195449.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 889571,
+      "width": 1918,
+      "height": 956,
+      "sha256": "9ee4d488dc79c5a12f55ceea8564847f41c14a122b27147f9b6958c4e64b151d"
+    },
+    {
+      "path": "Project Files/Student Panel/Screenshot 2026-10-14 195459.png",
+      "kind": "screenshot_reference_only",
+      "bytes": 400241,
+      "width": 1919,
+      "height": 960,
+      "sha256": "7ec55f81597d13f529558a39b24983ec44bf4fb0b59eb072c4530f6de2824691"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "checked_on": "2026-10-16",
+  "scope": "1.5.4 re-audit of the unchanged isolated editor lockfile; not a production installation or security certification",
+  "command": "npm audit --json",
+  "exit_code": 0,
+  "lockfile_sha256": "cbce5643fe7bfa5df54d3ecd8988d51e94da36cf7a0a3bdfd5ce19a9c3df9b2e",
+  "result": {
+    "auditReportVersion": 2,
+    "vulnerabilities": {},
+    "metadata": {
+      "vulnerabilities": {"info": 0, "low": 0, "moderate": 0, "high": 0, "critical": 0, "total": 0},
+      "dependencies": {"prod": 56, "dev": 41, "optional": 32, "peer": 0, "peerOptional": 0, "total": 101}
+    }
+  },
+  "limitations": [
+    "Time-bound npm advisory lookup; no guarantee of absence of vulnerabilities.",
+    "No dependencies added or upgraded. Recheck advisories, licenses and supported versions at production installation.",
+    "Package SPDX totals do not replace bundled-code/font notice inspection; mhchem carries additional Apache-2.0 upstream notices."
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "version": "1.0-proposal",
+  "prepared_on": "2026-10-15",
+  "selected_direction": "Focus Workspace",
+  "default_preview": "Focus Workspace",
+  "directions": {
+    "Learning Studio": {
+      "palette": {
+        "canvas": {
+          "light": "#F8FAFC",
+          "dark": "#0B1220"
+        },
+        "surface": {
+          "light": "#FFFFFF",
+          "dark": "#111C2E"
+        },
+        "raised": {
+          "light": "#F1F5F9",
+          "dark": "#18263B"
+        },
+        "ink": {
+          "light": "#0F172A",
+          "dark": "#E5EDF8"
+        },
+        "muted": {
+          "light": "#475569",
+          "dark": "#A7B4C8"
+        },
+        "line": {
+          "light": "#DCE2EC",
+          "dark": "#334155"
+        },
+        "control": {
+          "light": "#64748B",
+          "dark": "#8191A9"
+        },
+        "primary": {
+          "light": "#4F46E5",
+          "dark": "#A5B4FC"
+        },
+        "on-primary": {
+          "light": "#FFFFFF",
+          "dark": "#10162B"
+        },
+        "soft-primary": {
+          "light": "#EEEDFF",
+          "dark": "#202B50"
+        },
+        "teal": {
+          "light": "#0F766E",
+          "dark": "#5EEAD4"
+        },
+        "soft-teal": {
+          "light": "#E7F4F0",
+          "dark": "#123B38"
+        },
+        "amber": {
+          "light": "#92400E",
+          "dark": "#FBBF24"
+        },
+        "soft-amber": {
+          "light": "#FFF4DA",
+          "dark": "#3B2D16"
+        },
+        "shadow": {
+          "light": "#2332540A",
+          "dark": "#00000020"
+        }
+      },
+      "typography": {
+        "body": [
+          "Segoe UI Variable",
+          "Segoe UI",
+          "system-ui",
+          "sans-serif"
+        ],
+        "display": [
+          "Segoe UI Variable",
+          "Segoe UI",
+          "system-ui",
+          "sans-serif"
+        ],
+        "display_weight": 500
+      },
+      "composition": "Sidebar workspace, featured learning panel and paired course/practice cards"
+    },
+    "Focus Workspace": {
+      "palette": {
+        "canvas": {
+          "light": "#F8F7F3",
+          "dark": "#0D1918"
+        },
+        "surface": {
+          "light": "#FFFFFF",
+          "dark": "#152624"
+        },
+        "raised": {
+          "light": "#EFEEE8",
+          "dark": "#21332F"
+        },
+        "ink": {
+          "light": "#172C27",
+          "dark": "#EBF3EE"
+        },
+        "muted": {
+          "light": "#4F625B",
+          "dark": "#A9BDB5"
+        },
+        "line": {
+          "light": "#D9E1DB",
+          "dark": "#3C5149"
+        },
+        "control": {
+          "light": "#667B71",
+          "dark": "#8BA296"
+        },
+        "primary": {
+          "light": "#0F766E",
+          "dark": "#5EEAD4"
+        },
+        "on-primary": {
+          "light": "#FFFFFF",
+          "dark": "#0D2420"
+        },
+        "soft-primary": {
+          "light": "#E4F2EB",
+          "dark": "#193F38"
+        },
+        "teal": {
+          "light": "#5B4AB4",
+          "dark": "#C4B5FD"
+        },
+        "soft-teal": {
+          "light": "#F0EDFB",
+          "dark": "#302841"
+        },
+        "amber": {
+          "light": "#92400E",
+          "dark": "#FBBF24"
+        },
+        "soft-amber": {
+          "light": "#FFF4DA",
+          "dark": "#3B2D16"
+        },
+        "shadow": {
+          "light": "#2332540A",
+          "dark": "#00000020"
+        }
+      },
+      "typography": {
+        "body": [
+          "Segoe UI Variable",
+          "Segoe UI",
+          "system-ui",
+          "sans-serif"
+        ],
+        "display": [
+          "Georgia",
+          "Times New Roman",
+          "serif"
+        ],
+        "display_weight": 400
+      },
+      "composition": "Top navigation, editorial heading and focused learning/practice split"
+    }
+  },
+  "appearance_modes": [
+    "system",
+    "light",
+    "dark"
+  ],
+  "spacing_px": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "default_content_gap_px": 24,
+  "default_card_radius_px": 20,
+  "button_radius_px": 10,
+  "body_size_px": 14,
+  "input_mobile_size_px": 16,
+  "minimum_visible_annotation_px": 11,
+  "touch_target_px": 44,
+  "geometry_controls": "Preview-only optional radius/spacing exploration, not new product settings",
+  "scope": "Proposed visual tokens only; not installed application CSS or final component API.",
+  "selection_basis": "Selected preview variant followed by owner go next on 2026-10-15; carried forward as working visual baseline."
+}

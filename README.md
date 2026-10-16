@@ -8,7 +8,7 @@ Migration of the existing WordPress learning platform to React/TypeScript, .NET 
 
 ## Project status
 
-The repository currently contains planning documents and the original reference screenshots. Application implementation has not started; there are no application build or run commands yet. Follow the progress tracker for the current item and review status.
+The [frontend scaffold](apps/web/README.md) now starts the production application's structure in `apps/web`, with a [local foundation preview](http://127.0.0.1:3000/). It is separate from the [question-editor experiment](experiments/question-editor/README.md). Planning/design documents, original screenshots and review evidence remain under their existing folders. Follow the progress tracker for review status; themes, application features and backend have their own later leaves.
 
 Work proceeds one agreed subphase at a time: implement the item, verify it, present it for review, then wait for direction before starting the next item.
 
@@ -17,8 +17,11 @@ Work proceeds one agreed subphase at a time: implement the item, verify it, pres
 ```text
 AGENTS.md          Persistent project instructions
 README.md          Project entry point
+apps/web/          Next.js/React/TypeScript frontend foundation
 docs/              Plans, requirements, evidence and delivery tracking
-Project Files/     Original WordPress screenshots; preserve unchanged
+Project Files/     Original screenshots and ignored source-intake files
+experiments/       Separately reviewed investigations; not production app foundations
+tools/             Reproducible source-intake helpers
 ```
 
-Planned application folders are documented in the [migration plan](docs/planning/MIGRATION-PLAN.md); they will be created in their approved foundation subphases.
+Remaining application folders are documented in the [migration plan](docs/planning/MIGRATION-PLAN.md); create them only in their approved subphases. See [frontend instructions](apps/web/README.md) for install/check/run commands. PostgreSQL entities and migrations remain gated by owner-provided prior table/database structure at 2.4.1.

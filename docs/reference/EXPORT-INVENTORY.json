@@ -1,0 +1,186 @@
+{
+  "audited_on": "2026-10-15",
+  "source": {
+    "path": "Project Files/gdtutor.WordPress.2026-10-14.xml",
+    "bytes": 43302495,
+    "sha256": "60d0cec9e0ce6c649d00edeb8c60caf616424f3a1a2c19ad47763c1659b23ef1",
+    "format": "WXR",
+    "wxr_version": "1.2",
+    "source_handling": "Local only, excluded from Git. Aggregate report omits names, emails, usernames, raw URLs, passwords and record payloads."
+  },
+  "records": {
+    "items": 16039,
+    "unique_item_ids": 16039,
+    "post_type_counts": {
+      "attachment": 15066,
+      "courses": 44,
+      "elementor_library": 1,
+      "frm_form_actions": 2,
+      "frm_styles": 1,
+      "elementor-hf": 3,
+      "lesson": 61,
+      "custom_css": 1,
+      "nav_menu_item": 28,
+      "page": 31,
+      "post": 9,
+      "topics": 87,
+      "tutor_enrolled": 429,
+      "tutor_quiz": 271,
+      "wp_navigation": 1,
+      "wp_global_styles": 4
+    },
+    "status_by_type": {
+      "attachment": {
+        "inherit": 15066
+      },
+      "courses": {
+        "private": 2,
+        "publish": 9,
+        "draft": 3,
+        "trash": 30
+      },
+      "elementor_library": {
+        "publish": 1
+      },
+      "frm_form_actions": {
+        "publish": 2
+      },
+      "frm_styles": {
+        "publish": 1
+      },
+      "elementor-hf": {
+        "publish": 3
+      },
+      "lesson": {
+        "publish": 61
+      },
+      "custom_css": {
+        "publish": 1
+      },
+      "nav_menu_item": {
+        "publish": 28
+      },
+      "page": {
+        "publish": 31
+      },
+      "post": {
+        "publish": 8,
+        "draft": 1
+      },
+      "topics": {
+        "publish": 87
+      },
+      "tutor_enrolled": {
+        "cancel": 22,
+        "completed": 407
+      },
+      "tutor_quiz": {
+        "publish": 271
+      },
+      "wp_navigation": {
+        "publish": 1
+      },
+      "wp_global_styles": {
+        "publish": 4
+      }
+    },
+    "embedded_author_records": 3804,
+    "distinct_nonempty_author_logins": 3804,
+    "embedded_author_field_names": [
+      "author_display_name",
+      "author_email",
+      "author_first_name",
+      "author_id",
+      "author_last_name",
+      "author_login"
+    ],
+    "enrollment_creator_reference_count": 131,
+    "enrollment_creators_missing_author_profile": 0,
+    "comments_by_type": {
+      "course_completed": 61,
+      "tutor_course_rating": 4,
+      "comment": 1
+    }
+  },
+  "media": {
+    "attachment_reference_count": 15066,
+    "distinct_attachment_urls": 15024,
+    "attached_file_metadata_records": 15066,
+    "distinct_attached_file_metadata_paths": 15024,
+    "attachment_extensions": {
+      ".png": 7755,
+      ".jpg": 5371,
+      ".webp": 381,
+      ".pdf": 1,
+      ".jpeg": 1556,
+      ".zip": 1,
+      ".avif": 1
+    },
+    "attachment_hosts": {
+      "gdtutor.com": 15066
+    },
+    "video_metadata": [
+      {
+        "record_type": "courses",
+        "classification": "other_or_empty",
+        "count": 27
+      },
+      {
+        "record_type": "lesson",
+        "classification": "youtube_reference",
+        "count": 57
+      }
+    ],
+    "production_asset_bytes": null,
+    "media_binaries_in_export": false,
+    "owner_confirmed_video_host": "YouTube"
+  },
+  "relationships": {
+    "parent_type_counts": {
+      "courses": {
+        "no_parent": 44
+      },
+      "lesson": {
+        "topics": 61
+      },
+      "topics": {
+        "courses": 87
+      },
+      "tutor_enrolled": {
+        "courses": 429
+      },
+      "tutor_quiz": {
+        "topics": 224,
+        "no_parent": 47
+      }
+    },
+    "quiz_course_resolution_methods": {
+      "topic_parent_course": 224,
+      "explicit_course_metadata": 47
+    },
+    "quiz_owner_course_status": {
+      "trash": 23,
+      "draft": 6,
+      "private": 35,
+      "publish": 207
+    }
+  },
+  "coverage_limits": {
+    "verified_total_students": null,
+    "role_assignments_in_author_fields": false,
+    "account_password_hashes_in_author_fields": false,
+    "question_record_count": null,
+    "quiz_attempt_record_count": null,
+    "quiz_answer_history_count": null,
+    "payment_refund_order_record_count": null,
+    "question_attempt_answer_named_postmeta_keys": {},
+    "explicit_question_attempt_answer_collection_tags": {},
+    "note": "Not observed in parsed WXR item types/explicit collections. Null means unavailable/not determinable, not zero production records. post_password is a post protection field, not an account password hash."
+  },
+  "owner_exam_requirement": {
+    "maximum_duration_minutes": 180,
+    "question_volume": "200+; no exact upper limit supplied",
+    "proposed_representative_test_questions": 250,
+    "question_count_is_fixed_product_cap": false
+  }
+}

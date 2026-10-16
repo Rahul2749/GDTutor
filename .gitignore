@@ -18,6 +18,8 @@ appsettings.*.local.json
 # Dependency, build and test outputs
 node_modules/
 .next/
+out/
+*.tsbuildinfo
 dist/
 bin/
 obj/
@@ -32,6 +34,10 @@ test-results/
 *.tmp
 migration-exports/
 backups/
+# Owner-provided production content export; audit reports contain aggregates only
+/Project Files/gdtutor.WordPress.2026-10-14.xml
+# Original question documents and clipboard captures stay local; tracked corpus contains synthetic cases/metadata only
+/Project Files/Question Samples/
 
 # Operating system files
 .DS_Store

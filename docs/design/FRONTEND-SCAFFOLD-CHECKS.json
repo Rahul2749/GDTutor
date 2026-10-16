@@ -1,0 +1,78 @@
+{
+  "checked_at_utc": "2026-10-16T07:49:01.652Z",
+  "browser": "154.0.8037.98",
+  "mode": "Actual localhost production HTTP preview; desktop viewport emulation only",
+  "checks": [
+    {
+      "width": 320,
+      "status": 200,
+      "title": "GD Tutor | Frontend foundation",
+      "lang": "en",
+      "h1": 1,
+      "overflow": false,
+      "robots": "noindex, nofollow",
+      "preview": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "status": 200,
+      "title": "GD Tutor | Frontend foundation",
+      "lang": "en",
+      "h1": 1,
+      "overflow": false,
+      "robots": "noindex, nofollow",
+      "preview": true,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "status": 200,
+      "title": "GD Tutor | Frontend foundation",
+      "lang": "en",
+      "h1": 1,
+      "overflow": false,
+      "robots": "noindex, nofollow",
+      "preview": true,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "status": 200,
+      "title": "GD Tutor | Frontend foundation",
+      "lang": "en",
+      "h1": 1,
+      "overflow": false,
+      "robots": "noindex, nofollow",
+      "preview": true,
+      "passed": true
+    }
+  ],
+  "missing_route_status": 404,
+  "page_errors": [],
+  "unexpected_failed_responses": [],
+  "external_requests": [],
+  "captures": [
+    {
+      "path": "docs/design/previews/frontend-scaffold/390.png",
+      "sha256": "f938db566aab773a71393eb6bd060fff3565230e4ad293fef1641b420a5c1c94",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/frontend-scaffold/1440.png",
+      "sha256": "71e70a07260a68b55474f5db1742bff28c1f84d5217cf454fcba943931918560",
+      "visually_reviewed": true
+    }
+  ],
+  "source_sha256": {
+    "apps/web/package.json": "0fbef1b97182a65763f6374b269335cd9a363d6e41b2df74551d6ead613d301e",
+    "apps/web/package-lock.json": "82d434bf672e9655464aac5a10f3fe370e8bbbb7e0ec32c6c4da7d4e4b1939ac",
+    "apps/web/eslint.config.mjs": "a958c5273fb527be8a82af990b176f53b2569b763712aca001aa494e7e1fed05",
+    "apps/web/tsconfig.json": "2972c0f597ec5bb438e305156ef3011cf5e64cb0ee2a09e814cc4f45beffaa98",
+    "apps/web/next.config.ts": "95fa7d5d5f98a6b703caba1fdb07e65463b6482d8229043ae33c98958f2d6719",
+    "apps/web/src/app/layout.tsx": "fbe3471f0eae41768362b868bae67e6d6655b5a79c7bc380a8660e4ea92c4702",
+    "apps/web/src/app/(public)/page.tsx": "35a9b481633c361118120d74a7908901d96224ca84e8f5951e6ac4f0802676e4",
+    "apps/web/src/app/(public)/page.module.css": "2f25cf435824ad7f4a4e6d07f79de80e2d6c5a881a7e720082d2bff53e7cc2e1"
+  },
+  "passed": true
+}

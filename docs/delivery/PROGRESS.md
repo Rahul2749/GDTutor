@@ -1,10 +1,10 @@
 # Subphase progress tracker
 
-**Updated:** 15 October 2026  
-**Active item:** None — 0.1 submitted for review  
-**Awaiting owner review:** [0.1 — feature inventory and user journeys](reviews/0.1-feature-inventory.md)  
-**Next proposed item:** 0.2 — WordPress plugins, theme/custom code and integrations; not started  
-**Execution authorization:** Owner authorized 0.1 on 15 October 2026 with "ok go ahead" after the proposed scope was explained. Authorization covers this discovery item only.
+**Updated:** 16 October 2026  
+**Active item:** 2.1.1 accepted — Git checkpoint before 2.1.2  
+**Awaiting owner review:** None for 2.1.1; owner requested commit/push before theme work  
+**Next authorized item:** 2.1.2 — common CSS, theme tokens and Light/Dark/System; not started pending requested push  
+**Execution authorization:** Owner said “ok go ahead but before push changes” after the 2.1.1 preview on 16 October: accept 2.1.1, commit/push reviewed work first, then execute 2.1.2 only. No production deployment or other leaf is authorized.
 
 ## How to use this tracker
 
@@ -22,13 +22,13 @@ This is the single source of execution status. The [roadmap](../planning/SUBPHAS
 
 | State | Leaf items |
 |---|---:|
-| Not started | 88 |
+| Not started | 74 |
 | In progress | 0 |
-| Ready for review | 1 |
+| Ready for review | 0 |
 | Changes requested | 0 |
-| Accepted | 0 |
+| Accepted | 15 |
 
-The 0.1 inventory is prepared for owner review. Existing planning and screenshot inspection are reference inputs; none of the execution items below has been marked accepted.
+Phases 0 and 1 are accepted with their documented future admission/compatibility gates. Frontend scaffold 2.1.1 is accepted: Next.js/React/strict TypeScript, folder/import boundaries, pinned packages and passing local checks/preview. Themes, shared UI, responsive app shells, API client and all backend/schema/provider work remain in their separate leaves. No migration or capacity claim is made.
 
 **Required database input:** At **2.4.1**, request and review the previous database/table structure and PostgreSQL environment details before persistent entities, EF mappings or migrations.
 
@@ -38,31 +38,31 @@ The 0.1 inventory is prepared for owner review. Existing planning and screenshot
 
 | ID | Work | Status | Review record |
 |---|---|---|---|
-| 0.1 | Screenshot-based feature inventory and visitor/student/staff journeys | Ready for review | [0.1 review](reviews/0.1-feature-inventory.md) |
-| 0.2 | Current WordPress plugins, theme/custom code and integrations | Not started | — |
-| 0.3 | Access, enrollment, assessment, completion and class business rules | Not started | — |
-| 0.4 | Data/media inventory and 500-student workload definition | Not started | — |
-| 0.5 | Consolidated backlog, risks and revised estimate | Not started | — |
+| 0.1 | Screenshot-based feature inventory and visitor/student/staff journeys | Accepted | [0.1 review](reviews/0.1-feature-inventory.md) |
+| 0.2 | Legacy capabilities, standalone replacements and direct integrations | Accepted | [0.2 review](reviews/0.2-standalone-replacements.md) |
+| 0.3 | Access, enrollment, assessment, completion and class business rules | Accepted | [0.3 review](reviews/0.3-business-rules.md) |
+| 0.4 | Data/media inventory and 500-student workload definition | Accepted | [0.4 review](reviews/0.4-data-media-capacity.md) |
+| 0.5 | Consolidated backlog, risks and revised estimate | Accepted | [0.5 review](reviews/0.5-delivery-baseline.md) |
 
 ### Phase 1 — Design and architecture
 
 | ID | Work | Status | Review record |
 |---|---|---|---|
-| 1.1 | Brand direction, accent palette, typography and light/dark token proposal | Not started | — |
-| 1.2 | Mobile navigation and representative public/student wireframes | Not started | — |
-| 1.3 | Lesson player and quiz flow in mobile/desktop, light/dark | Not started | — |
-| 1.4 | Instructor/admin layout and authoring interaction design | Not started | — |
-| 1.5.1 | Gather real Word/LaTeX questions, source apps and required equation cases | Not started | — |
-| 1.5.2 | Isolated rich-text + visual formula prototype using candidate OSS packages | Not started | — |
-| 1.5.3 | Word/other-source paste and round-trip experiment | Not started | — |
-| 1.5.4 | Select editor/renderer approach and conversion scope | Not started | — |
-| 1.6 | Frontend/backend architecture, API conventions and deployment boundaries | Not started | — |
+| 1.1 | Brand direction, accent palette, typography and light/dark token proposal | Accepted | [1.1 review](reviews/1.1-visual-direction.md) |
+| 1.2 | Mobile navigation and representative public/student wireframes | Accepted | [1.2 review](reviews/1.2-navigation-wireframes.md) |
+| 1.3 | Lesson player and quiz flow in mobile/desktop, light/dark | Accepted | [1.3 review](reviews/1.3-learning-assessment.md) |
+| 1.4 | Instructor/admin layout and authoring interaction design | Accepted | [1.4 review](reviews/1.4-staff-authoring.md) |
+| 1.5.1 | Gather real Word/LaTeX questions, source apps and required equation cases | Accepted | [1.5.1 review](reviews/1.5.1-question-corpus.md) |
+| 1.5.2 | Isolated rich-text + visual formula prototype using candidate OSS packages | Accepted | [1.5.2 review](reviews/1.5.2-editor-prototype.md) |
+| 1.5.3 | Word/other-source paste and round-trip experiment | Accepted | [1.5.3 review](reviews/1.5.3-paste-roundtrip.md) |
+| 1.5.4 | Select editor/renderer approach and conversion scope | Accepted | [1.5.4 review](reviews/1.5.4-editor-selection.md) |
+| 1.6 | Frontend/backend architecture, API conventions and deployment boundaries | Accepted | [1.6 review](reviews/1.6-architecture.md) |
 
 ### Phase 2 — Engineering foundations
 
 | ID | Work | Status | Review record |
 |---|---|---|---|
-| 2.1.1 | React/TypeScript framework scaffold and folder structure | Not started | — |
+| 2.1.1 | React/TypeScript framework scaffold and folder structure | Accepted | [2.1.1 review](reviews/2.1.1-frontend-scaffold.md) |
 | 2.1.2 | Common CSS, theme tokens and Light/Dark/System switching | Not started | — |
 | 2.1.3 | Shared UI primitives and common interaction patterns | Not started | — |
 | 2.1.4 | Public/student/staff responsive layout shells | Not started | — |

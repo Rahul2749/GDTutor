@@ -1,0 +1,455 @@
+{
+  "date": "2026-10-16",
+  "browser": "154.0.8037.98",
+  "mode": "Headless Chrome, production build fulfilled locally, no network",
+  "observations": [
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 320,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 320,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 320,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 360,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 360,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 360,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 390,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 390,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 390,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 540,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 540,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 540,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 768,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 768,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 768,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 1024,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 1024,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 1024,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 1440,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 1440,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "light",
+      "width": 1440,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 320,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 320,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 320,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 360,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 360,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 360,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 390,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 390,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 390,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 540,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 540,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 540,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 768,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 768,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 768,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 1024,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 1024,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 1024,
+      "tab": "Explanation"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 1440,
+      "tab": "Prompt"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 1440,
+      "tab": "Answers"
+    },
+    {
+      "name": "No whole-page horizontal overflow",
+      "passed": true,
+      "theme": "dark",
+      "width": 1440,
+      "tab": "Explanation"
+    },
+    {
+      "name": "Physical typing in visual field synchronizes LaTeX source",
+      "passed": true
+    },
+    {
+      "name": "Visual template inserts editable matrix source",
+      "passed": true
+    },
+    {
+      "name": "Source editing synchronizes visual field and inserts an independent node",
+      "passed": true
+    },
+    {
+      "name": "Equation insertion supports editor undo and redo",
+      "passed": true
+    },
+    {
+      "name": "Unsupported source retained and apply disabled",
+      "passed": true
+    },
+    {
+      "name": "Editing existing equation updates its node without duplicating it",
+      "passed": true
+    },
+    {
+      "name": "Independent answer/explanation math, Unicode and correct option retained in structured local draft",
+      "passed": true
+    },
+    {
+      "name": "Reload and reopen preserve editable math, all regions, scripts and correct option",
+      "passed": true
+    },
+    {
+      "name": "Invalid saved draft is rejected without replacing the current content",
+      "passed": true
+    },
+    {
+      "name": "System appearance follows live color-scheme preference",
+      "passed": true
+    },
+    {
+      "name": "Equation dialog and candidate preview fit viewport",
+      "passed": true,
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "name": "Math keyboard works inside the modal without horizontal overflow",
+      "passed": true,
+      "width": 320
+    },
+    {
+      "name": "Equation dialog and candidate preview fit viewport",
+      "passed": true,
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "name": "Math keyboard works inside the modal without horizontal overflow",
+      "passed": true,
+      "width": 390
+    },
+    {
+      "name": "Equation dialog and candidate preview fit viewport",
+      "passed": true,
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "name": "Equation dialog and candidate preview fit viewport",
+      "passed": true,
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "Equation dialog and candidate preview fit viewport",
+      "passed": true,
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "Equation dialog and candidate preview fit viewport",
+      "passed": true,
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "Equation dialog and candidate preview fit viewport",
+      "passed": true,
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "Equation dialog and candidate preview fit viewport",
+      "passed": true,
+      "width": 1440,
+      "theme": "dark"
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "unexpected_external_requests": [],
+  "build_sha256": "0e03a27e514086fed38e1e402988a55f2d5ca8a242f14a3226e343e39bcca867",
+  "limitations": [
+    "No native Word clipboard trial",
+    "No real mobile device or screen reader trial",
+    "No backend or capacity verification",
+    "Unicode retention is not full language accessibility certification"
+  ],
+  "source_sha256": {
+    "experiments/question-editor/src/main.tsx": "66f8d95db342c83aa42a2151b55e67c670cf418a47c6b07b8f2140891a162cd1",
+    "experiments/question-editor/src/model.mjs": "3f06f932d275e1ca0b95b5f9c53beb25fead4940bd2d1f31931ff83b161dcbdf",
+    "experiments/question-editor/src/styles.css": "37f46f281c599e9d4e8bc056f7f4b24f961128d953b1f31ae5703ff375b07669",
+    "experiments/question-editor/package.json": "a6c9456548fc942006b084c00264e8b03afe48ba8ea0ecdd58137868ed887fa5",
+    "experiments/question-editor/package-lock.json": "cbce5643fe7bfa5df54d3ecd8988d51e94da36cf7a0a3bdfd5ce19a9c3df9b2e",
+    "experiments/question-editor/index.html": "0f9088d9454aeb0a6f9480f4109e1972489696c7da727ce341591fb07ef669e1"
+  },
+  "review_captures": [
+    {
+      "path": "docs/design/previews/question-editor/desktop-dark.png",
+      "sha256": "2795db36aa148acee00ee3eda43c774233e5157fe57c3d4ef780775071b9a1c9",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/question-editor/desktop-light.png",
+      "sha256": "6a417dba27290c00fd6f6a18643587752a9a89e4908cbddd4914fc0dce03795d",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/question-editor/mobile-equation-dark.png",
+      "sha256": "cfb40325c761f14eb1d086fefab15e041a4e2ce8465393e3a1b8af1ee6dec51b",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/question-editor/mobile-equation-light.png",
+      "sha256": "4e98a09df60281b3471183780d5183e5920a915c125e8128dc0674ed1f5d09fa",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/question-editor/mobile-keyboard-light.png",
+      "sha256": "12100b1b7ebbb1bdaef384c94656446499b8e14f28949726fdbad83603f59362",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/question-editor/mobile-light.png",
+      "sha256": "5a0e17c978fc1b899420bfa221795556a3df9fb251b4b38859af04ca35e271ef",
+      "visually_reviewed": true
+    }
+  ],
+  "build_result": "TypeScript check and Vite production build passed",
+  "model_tests": {
+    "run": "node --test tests/model.test.mjs",
+    "passed": 4,
+    "failed": 0
+  }
+}

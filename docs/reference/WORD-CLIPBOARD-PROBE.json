@@ -1,0 +1,54 @@
+﻿{
+    "os_version":  "Microsoft Windows NT 10.0.26200.0",
+    "clipboard_error":  null,
+    "source_id":  "PUB-01",
+    "macros_disabled":  true,
+    "ole_activated":  false,
+    "source_opened_read_only":  true,
+    "date":  "2026-10-16",
+    "clipboard_contents":  "Only the explicitly copied public upstream fixture was inspected; prior clipboard contents were not read.",
+    "formats":  [
+                    "MathML",
+                    "MathML Presentation",
+                    "Object Descriptor",
+                    "Rich Text Format",
+                    "HTML Format",
+                    "Text",
+                    "UnicodeText",
+                    "EnhancedMetafile",
+                    "MetaFilePict",
+                    "Embed Source",
+                    "Link Source",
+                    "Link Source Descriptor",
+                    "ObjectLink",
+                    "Hyperlink"
+                ],
+    "word_file_version":  "16.0.20430.20146",
+    "transfer":  "Native Word OMath.Range.Copy to Windows clipboard",
+    "word_version":  "16.0",
+    "links_update_disabled":  true,
+    "clipboard_status":  "captured",
+    "source_equations":  8,
+    "word_build":  "16.0.20430",
+    "word_generated_html":  "Project Files/Question Samples/clipboard-captures/word-pub01-export.html",
+    "payloads":  [
+                     {
+                         "format":  "HTML Format",
+                         "local_file":  "Project Files/Question Samples/clipboard-captures/word-pub01-equation-1.html",
+                         "characters":  55313,
+                         "sha256":  "733acf2c79ca34b80de698ec2bfa6c7fc1ec672b57aa69aac5148f511e4c08a3"
+                     },
+                     {
+                         "format":  "UnicodeText",
+                         "local_file":  "Project Files/Question Samples/clipboard-captures/word-pub01-equation-1.txt",
+                         "characters":  45,
+                         "sha256":  "b539300f5cfe71695589c2a8dd78f828fc967ee1952641b896afd90442e3dcc1"
+                     },
+                     {
+                         "format":  "Rich Text Format",
+                         "local_file":  "Project Files/Question Samples/clipboard-captures/word-pub01-equation-1.rtf",
+                         "characters":  74163,
+                         "sha256":  "033f49ad54965113ee04125bb31c8a50ac5bca4fa18e177b72c3aa1d6d52bf41"
+                     }
+                 ]
+}

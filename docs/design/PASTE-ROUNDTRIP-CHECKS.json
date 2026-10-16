@@ -1,0 +1,328 @@
+{
+  "date": "2026-10-16",
+  "browser": "154.0.8037.98",
+  "mode": "Production build locally fulfilled; controlled browser clipboard, no external network",
+  "checks": [
+    {
+      "name": "Reviewed paste keeps editable source and unrelated regions",
+      "passed": true,
+      "id": "TR-01",
+      "format": "text",
+      "region": "prompt"
+    },
+    {
+      "name": "Reviewed paste keeps editable source and unrelated regions",
+      "passed": true,
+      "id": "TR-02",
+      "format": "latex",
+      "region": "option-a"
+    },
+    {
+      "name": "Reviewed paste keeps editable source and unrelated regions",
+      "passed": true,
+      "id": "TR-03",
+      "format": "mathml",
+      "region": "option-b"
+    },
+    {
+      "name": "Reviewed paste keeps editable source and unrelated regions",
+      "passed": true,
+      "id": "TR-04",
+      "format": "mathml",
+      "region": "option-c"
+    },
+    {
+      "name": "Reviewed paste keeps editable source and unrelated regions",
+      "passed": true,
+      "id": "TR-05",
+      "format": "mathml",
+      "region": "option-d"
+    },
+    {
+      "name": "Reviewed paste keeps editable source and unrelated regions",
+      "passed": true,
+      "id": "TR-06",
+      "format": "html",
+      "region": "explanation"
+    },
+    {
+      "name": "All imported regions, lists, scripts and correct key survive reload/reopen",
+      "passed": true
+    },
+    {
+      "name": "Copy LaTeX writes the exact selected source to the controlled browser clipboard",
+      "passed": true
+    },
+    {
+      "name": "Copy MathML writes structured fraction/root data without a TeX annotation",
+      "passed": true
+    },
+    {
+      "name": "Controlled browser MathML copy/paste creates editable fraction/root nodes",
+      "passed": true,
+      "trusted": true,
+      "types": [
+        "text/plain",
+        "text/html"
+      ],
+      "scope": "Browser fixture only, not Word"
+    },
+    {
+      "name": "Unsupported input is retained and blocked without changing the draft",
+      "passed": true,
+      "id": "TR-07",
+      "format": "html"
+    },
+    {
+      "name": "Unsupported input is retained and blocked without changing the draft",
+      "passed": true,
+      "id": "TR-08",
+      "format": "mathml"
+    },
+    {
+      "name": "Unsupported input is retained and blocked without changing the draft",
+      "passed": true,
+      "id": "TR-09",
+      "format": "mathml"
+    },
+    {
+      "name": "Unsupported input is retained and blocked without changing the draft",
+      "passed": true,
+      "id": "TR-10",
+      "format": "mathml"
+    },
+    {
+      "name": "Unsupported input is retained and blocked without changing the draft",
+      "passed": true,
+      "id": "TR-11",
+      "format": "html"
+    },
+    {
+      "name": "Unsupported input is retained and blocked without changing the draft",
+      "passed": true,
+      "id": "TR-12",
+      "format": "text"
+    },
+    {
+      "name": "Unsupported input is retained and blocked without changing the draft",
+      "passed": true,
+      "id": "TR-13",
+      "format": "html"
+    },
+    {
+      "name": "Unsupported input is retained and blocked without changing the draft",
+      "passed": true,
+      "id": "TR-14",
+      "format": "html"
+    },
+    {
+      "name": "Unsupported input is retained and blocked without changing the draft",
+      "passed": true,
+      "id": "TR-15",
+      "format": "html"
+    },
+    {
+      "name": "Unsupported input is retained and blocked without changing the draft",
+      "passed": true,
+      "id": "TR-16",
+      "format": "mathml"
+    },
+    {
+      "name": "Native editor copy/paste keeps all custom equation nodes editable",
+      "passed": true
+    },
+    {
+      "name": "All nine public native reference conversions have explicit subset outcomes",
+      "passed": true,
+      "accepted": 1,
+      "repair_required": 8
+    },
+    {
+      "name": "Paste review fits viewport and closes with Escape",
+      "passed": true,
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "name": "Paste review fits viewport and closes with Escape",
+      "passed": true,
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "name": "Paste review fits viewport and closes with Escape",
+      "passed": true,
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "name": "Paste review fits viewport and closes with Escape",
+      "passed": true,
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "Paste review fits viewport and closes with Escape",
+      "passed": true,
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "Paste review fits viewport and closes with Escape",
+      "passed": true,
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "Paste review fits viewport and closes with Escape",
+      "passed": true,
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "Paste review fits viewport and closes with Escape",
+      "passed": true,
+      "width": 1440,
+      "theme": "dark"
+    }
+  ],
+  "public_reference_results": [
+    {
+      "id": "PUB-01-EQ-1",
+      "source_docx_sha256": "a0d7a34186e37e303ef10f6469834221d92ae74c886078d7f32f2dc1a7fd96a5",
+      "input_mathml_sha256": "e2df6f551c2c540f353f2f816ca7cc6465b8ba869274ca79849a030a160d3052",
+      "result": "repair_required",
+      "diagnostic": "MathML attributes outside the tested subset require review.",
+      "scope": "OMML-to-MathML reference generated with installed Office stylesheet; NOT clipboard or full-fidelity evidence"
+    },
+    {
+      "id": "PUB-01-EQ-2",
+      "source_docx_sha256": "a0d7a34186e37e303ef10f6469834221d92ae74c886078d7f32f2dc1a7fd96a5",
+      "input_mathml_sha256": "4b4c2f0f1d47b7e1027e3b1e4b7c0cd154a58f899abce36f17af09fc1189b968",
+      "result": "repair_required",
+      "diagnostic": "MathML attributes outside the tested subset require review.",
+      "scope": "OMML-to-MathML reference generated with installed Office stylesheet; NOT clipboard or full-fidelity evidence"
+    },
+    {
+      "id": "PUB-01-EQ-3",
+      "source_docx_sha256": "a0d7a34186e37e303ef10f6469834221d92ae74c886078d7f32f2dc1a7fd96a5",
+      "input_mathml_sha256": "37511cb823b608694d6545364d71dc284a09ebd01377a79d1e6104ce10918d4e",
+      "result": "repair_required",
+      "diagnostic": "MathML token outside the tested subset: ^",
+      "scope": "OMML-to-MathML reference generated with installed Office stylesheet; NOT clipboard or full-fidelity evidence"
+    },
+    {
+      "id": "PUB-01-EQ-4",
+      "source_docx_sha256": "a0d7a34186e37e303ef10f6469834221d92ae74c886078d7f32f2dc1a7fd96a5",
+      "input_mathml_sha256": "05cf7dd2f5271ff4278ed1fd2b5d21268582fb9ef850e95b5affc9a01eede715",
+      "result": "accepted_by_subset_needs_original_visual_review",
+      "diagnostic": null,
+      "scope": "OMML-to-MathML reference generated with installed Office stylesheet; NOT clipboard or full-fidelity evidence"
+    },
+    {
+      "id": "PUB-01-EQ-5",
+      "source_docx_sha256": "a0d7a34186e37e303ef10f6469834221d92ae74c886078d7f32f2dc1a7fd96a5",
+      "input_mathml_sha256": "136fab7476ee299a71817d3699679a5caea8722b086c58b3ce0470938d656931",
+      "result": "repair_required",
+      "diagnostic": "MathML attributes outside the tested subset require review.",
+      "scope": "OMML-to-MathML reference generated with installed Office stylesheet; NOT clipboard or full-fidelity evidence"
+    },
+    {
+      "id": "PUB-01-EQ-6",
+      "source_docx_sha256": "a0d7a34186e37e303ef10f6469834221d92ae74c886078d7f32f2dc1a7fd96a5",
+      "input_mathml_sha256": "07a8966d56878869853d290f14dd8a4db36f4356f72659e0dafd28cbc53c1822",
+      "result": "repair_required",
+      "diagnostic": "MathML token outside the tested subset: \u00e2\u02c6\u0192",
+      "scope": "OMML-to-MathML reference generated with installed Office stylesheet; NOT clipboard or full-fidelity evidence"
+    },
+    {
+      "id": "PUB-01-EQ-7",
+      "source_docx_sha256": "a0d7a34186e37e303ef10f6469834221d92ae74c886078d7f32f2dc1a7fd96a5",
+      "input_mathml_sha256": "ea21eecff15b1efa397e0dccc89f140addf93d889e28c031b2192688606fda81",
+      "result": "repair_required",
+      "diagnostic": "MathML token outside the tested subset: \u00e2\u0178\u00a8",
+      "scope": "OMML-to-MathML reference generated with installed Office stylesheet; NOT clipboard or full-fidelity evidence"
+    },
+    {
+      "id": "PUB-01-EQ-8",
+      "source_docx_sha256": "a0d7a34186e37e303ef10f6469834221d92ae74c886078d7f32f2dc1a7fd96a5",
+      "input_mathml_sha256": "b87026dc78ea5bd4d7f1d1f4563df90b3a6e46c5f83c893d2125e86bea5f430c",
+      "result": "repair_required",
+      "diagnostic": "MathML attributes outside the tested subset require review.",
+      "scope": "OMML-to-MathML reference generated with installed Office stylesheet; NOT clipboard or full-fidelity evidence"
+    },
+    {
+      "id": "PUB-03-EQ-1",
+      "source_docx_sha256": "407ef3a7e784427fb2ad375e894a17fe7c62b1ea5fafc76137925522e813306c",
+      "input_mathml_sha256": "2c1f3946ac2cab9992586b46d33e91332dff1dbd239ba7ba0e5d2cec28db4329",
+      "result": "repair_required",
+      "diagnostic": "Empty or oversized MathML equation.",
+      "scope": "OMML-to-MathML reference generated with installed Office stylesheet; NOT clipboard or full-fidelity evidence"
+    }
+  ],
+  "page_errors": [],
+  "external_requests": [],
+  "outbound_mathml_sha256": "c333e800496df20d44398d7b481ce5b1b085242a4f4f6036a09f82be029aa2ea",
+  "captured_word_html_sha256": "733acf2c79ca34b80de698ec2bfa6c7fc1ec672b57aa69aac5148f511e4c08a3",
+  "native_word_clipboard_result": "Separate native probe; no full Word-to-browser pass inferred",
+  "source_sha256": {
+    "experiments/question-editor/src/main.tsx": "8fb4927604e8843cc48163bb8fc9cb8c82ea92d6a76f3799368fdaf00f2e27be",
+    "experiments/question-editor/src/model.mjs": "3f06f932d275e1ca0b95b5f9c53beb25fead4940bd2d1f31931ff83b161dcbdf",
+    "experiments/question-editor/src/paste.mjs": "67f54e6024e375a92eb2021d6497716c24dda97bef339a1f32ca2f7590067bb7",
+    "experiments/question-editor/src/styles.css": "94c9bd744ce67051e78634032fab8d2a3c5a7ce7555fcddb01dd0e085e527329",
+    "experiments/question-editor/package-lock.json": "cbce5643fe7bfa5df54d3ecd8988d51e94da36cf7a0a3bdfd5ce19a9c3df9b2e"
+  },
+  "model_tests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "baseline_regression_report": "docs/design/PASTE-EDITOR-REGRESSION-CHECKS.json",
+  "build_result": "TypeScript and Vite production build passed; eager authoring-bundle/client-directive warnings retained",
+  "captures": [
+    {
+      "path": "docs/design/previews/paste-roundtrip/paste-review-mobile-dark.png",
+      "sha256": "71f4c900b14db26b065a18beea34da6778c3cfd745d19eaf520f6039456041c5",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/paste-roundtrip/paste-review-mobile-light.png",
+      "sha256": "ae21062134eff21fec134921ef34811466f632cd000fae2f34f69e3ec2b49a1a",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/paste-roundtrip/regression/desktop-dark.png",
+      "sha256": "acd4f73b28304bb98a0c3036a567540df0ee9a85818cf98f6cdbb853a42d0507",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/paste-roundtrip/regression/desktop-light.png",
+      "sha256": "b7562922833669bf1e8b7d16e543c46f53b86387d3b940a16f0d2c7c5f7b2306",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/paste-roundtrip/regression/mobile-equation-dark.png",
+      "sha256": "497ab82b554555cde2facddf11cf34f96e26be50bc6fba97de1f931f55d1398c",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/paste-roundtrip/regression/mobile-equation-light.png",
+      "sha256": "0fc5ef1322c6cfdb2c46a45f55eede6d434d9d0d05ef6188d266c817f7f8cbcd",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/paste-roundtrip/regression/mobile-keyboard-light.png",
+      "sha256": "82e531236c6720fa3c9e9510a698ba3a1b732ede85fb49d976ba97ff1a73ffa8",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/paste-roundtrip/regression/mobile-light.png",
+      "sha256": "5408e5ca5565442485e93b253b825d1ae502e9c73beb69a6c57b82e7ee7c1790",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/paste-roundtrip/word-paste-repair-desktop.png",
+      "sha256": "cac50c02e3a4967506eaf66cf1c84cb84bd1cdbf1d8b715819670813bcc0f71f",
+      "visually_reviewed": true
+    }
+  ]
+}

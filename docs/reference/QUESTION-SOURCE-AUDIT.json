@@ -1,0 +1,57 @@
+{
+  "audited_on": "2026-10-16",
+  "source": {
+    "path": "Project Files/gdtutor.WordPress.2026-10-14.xml",
+    "bytes": 43302495,
+    "sha256": "60d0cec9e0ce6c649d00edeb8c60caf616424f3a1a2c19ad47763c1659b23ef1"
+  },
+  "scan_scope": "Read-only content and metadata values after HTML entity decoding in courses, lesson, page, post and tutor_quiz. Does not inspect binary media, custom tables, live services or all possible formula encodings.",
+  "item_counts_scanned": {
+    "courses": 44,
+    "lesson": 61,
+    "page": 31,
+    "post": 9,
+    "tutor_quiz": 271
+  },
+  "metadata_values_scanned": 2404,
+  "content_character_counts": {
+    "courses": 2319,
+    "lesson": 1756,
+    "page": 66129,
+    "post": 7073,
+    "tutor_quiz": 433
+  },
+  "marker_categories": [
+    "latex/mathjax/katex/math-tex/mathquill terms",
+    "common TeX commands",
+    "MathML math tags",
+    "display/inline TeX delimiters",
+    "paired single-dollar candidate"
+  ],
+  "observations": {
+    "recognized_tex_command_records": 0,
+    "recognized_mathml_records": 0,
+    "recognized_delimiter_records": 0,
+    "page_records_with_latex_word": 1,
+    "latex_word_occurrences_on_that_page": 26,
+    "latex_word_is_editable_question_evidence": false
+  },
+  "initial_editable_question_file_inventory": {
+    "root": "Project Files",
+    "extensions": [
+      ".docx",
+      ".doc",
+      ".tex",
+      ".pdf",
+      ".txt",
+      ".html",
+      ".mml",
+      ".rtf"
+    ],
+    "matching_files": 0,
+    "measured_before_creating_local_intake_directory": true
+  },
+  "real_visual_reference_count": 4,
+  "conclusion": "Usable editable formula/question source was not recovered by this scan. Existing screenshots are visual references only; original source files are still needed.",
+  "sensitive_payloads_exported": false
+}

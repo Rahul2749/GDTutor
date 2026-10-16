@@ -3,14 +3,16 @@
 [Documentation index](../README.md) · [Progress tracker](../delivery/PROGRESS.md)
 
 **Version:** 1.0, 14 October 2026  
-**Status:** Planning specification for owner review; no implementation or package installation has started.  
+**Status:** Requirements baseline; accepted design/editor investigations exist. Frontend foundation 2.1.1 has started; execution/review state is in the progress tracker.  
 **Related:** [Master plan](../planning/MIGRATION-PLAN.md) · [Subphase roadmap](../planning/SUBPHASE-ROADMAP.md)
 
 ## 1. Confirmed choices and proposed choices
 
 Confirmed by the owner: a modern redesign, mobile-first responsiveness, switchable light/dark appearance, React, .NET, PostgreSQL, Razorpay, Cloudflare R2 for images, approximately 500 simultaneous students, open-source-first packages, dynamic equation authoring, and one reviewed subphase at a time.
 
-Still proposed: Next.js as the React framework, exact component/editor packages, the palette below, hosting specifications, video hosting, and the depth of automated Word/document conversion. Review those in their named subphases. No paid tool is required by this proposed software baseline.
+**Owner clarification, 15 October 2026:** The replacement has no WordPress plugins, themes, PHP runtime, headless CMS, live WordPress database or API dependency. Public content editing, courses, questions, accounts and commerce are implemented within the new stack. Legacy exports are inputs to a one-time migration; they are not a production service. This constraint does not prohibit ordinary reviewed React/.NET libraries or the selected direct Razorpay/R2 services. See the [standalone replacement map](STANDALONE-REPLACEMENT-MAP.md).
+
+The authoring approach in 1.5.4 is accepted with production compatibility/admission gates. The [1.6 architecture](../architecture/APPLICATION-ARCHITECTURE.md) records the accepted Next.js App Router, .NET 10 Clean Architecture and same-origin API/worker boundaries. Exact production package patches, hosting/provider specifications, video access integration and the converter binary remain separately gated. Focus Workspace is the accepted visual baseline. No paid tool is required by this software baseline.
 
 ## 2. Visual direction and theme system
 
@@ -18,20 +20,22 @@ Still proposed: Next.js as the React framework, exact component/editor packages,
 
 Create a polished learning product that feels approachable to school and entrance-exam students. Use clear typography, generous spacing, rounded cards, restrained shadows, strong course imagery, and prominent learning actions. Use color and progress to help students understand what to do next; keep the examination screen calm and distraction-free.
 
-Recommended direction: **indigo primary, teal secondary, warm amber highlights, and neutral slate surfaces**. Indigo distinguishes the new product from the old layout; teal can maintain a connection to the existing identity. Final branding remains subject to visual review.
+Selected working direction: **Focus Workspace — teal primary, violet secondary, warm neutral surfaces and editorial headings**. It follows the selected 1.1 preview and the owner's progression instruction. The provisional wordmark remains subject to branding refinement.
+
+**1.1 result, 15 October 2026:** [Visual direction](../design/VISUAL-DIRECTION.md) preserves both alternatives. The [theme tokens](../design/THEME-TOKENS.json) record Focus Workspace as selected and contain the complete semantic pairs. [1.2 wireframes](../design/NAVIGATION-AND-WIREFRAMES.md) apply that baseline; their page/navigation structure is separately reviewed.
 
 | Semantic token | Light proposal | Dark proposal | Intended use |
 |---|---|---|---|
-| Page background | `#F8FAFC` | `#0B1220` | Main canvas |
-| Surface | `#FFFFFF` | `#111C2E` | Cards, menus, panels |
-| Raised/muted surface | `#F1F5F9` | `#18263B` | Secondary areas and active containers |
-| Primary text | `#0F172A` | `#E5EDF8` | Headings and body |
-| Secondary text | `#475569` | `#A7B4C8` | Supporting labels |
-| Primary action/accent | `#4F46E5` | `#A5B4FC` | Main actions, selected state |
-| Text on primary | `#FFFFFF` | `#10162B` | Primary button label |
-| Secondary accent | `#0F766E` | `#5EEAD4` | Learning/progress accents |
-| Highlight | `#B45309` | `#FBBF24` | Small highlights and achievements |
-| Decorative border | `#CBD5E1` | `#334155` | Card separation; not automatically sufficient for control/focus contrast |
+| Page background | `#F8F7F3` | `#0D1918` | Main canvas |
+| Surface | `#FFFFFF` | `#152624` | Cards, menus, panels |
+| Raised/muted surface | `#EFEEE8` | `#21332F` | Secondary areas and active containers |
+| Primary text | `#172C27` | `#EBF3EE` | Headings and body |
+| Secondary text | `#4F625B` | `#A9BDB5` | Supporting labels |
+| Primary action/accent | `#0F766E` | `#5EEAD4` | Main actions, selected state |
+| Text on primary | `#FFFFFF` | `#0D2420` | Primary button label |
+| Secondary accent | `#5B4AB4` | `#C4B5FD` | Secondary learning highlights |
+| Highlight | `#92400E` | `#FBBF24` | Small highlights and achievements |
+| Decorative border | `#D9E1DB` | `#3C5149` | Card separation; essential control boundaries use separate tokens |
 
 These are starting tokens, not permission to use every combination. Define separate success, error, warning, focus, disabled and hover tokens. Test text and control contrast in context; never communicate correct/incorrect, save status or progress by color alone. The minimum design targets are 4.5:1 for normal text and 3:1 for large text and essential UI indicators.
 
@@ -62,6 +66,8 @@ Use a system font stack initially to avoid external font requests and paid font 
 
 ### Design review samples
 
+The accepted [1.3 learning/assessment sample](../design/LEARNING-AND-ASSESSMENT-FLOWS.md) covers lesson, instructions, runner and result states with a fixed sample clock/local save model. It does not establish backend timing, durability, answer-key protection, YouTube delivery or production math/editor compatibility. The separately reviewed [1.4 staff/authoring sample](../design/STAFF-AND-AUTHORING-FLOWS.md) covers roles, drafts/curriculum, approvals and a limited equation/paste-repair interaction; production editor/Word compatibility remains 1.5. The accepted public/student navigation remains in 1.2.
+
 Review the same six representative screens in both themes: public home, catalog/course detail, student dashboard, lesson player, quiz runner/result, and staff question editor. Include mobile views, empty/loading/error states, long titles and long formulas. Accept the design system before scaling it to the remaining screens.
 
 ## 3. Frontend and backend foundation
@@ -69,6 +75,8 @@ Review the same six representative screens in both themes: public home, catalog/
 ### Frontend
 
 The detailed directory proposal is in the master plan. Keep route composition separate from feature logic; colocate feature-specific components, hooks and types. Promote code to shared folders only after a clear reusable need appears.
+
+The [1.6 architecture](../architecture/APPLICATION-ARCHITECTURE.md) and [API conventions](../architecture/API-CONVENTIONS.md) specify framework/project boundaries, rendering, API-owned cookies/antiforgery, concurrency/retry and isolated content-worker contracts. These are not implemented endpoints or database schemas.
 
 Foundation subphases deliver:
 
@@ -82,7 +90,7 @@ Use built-in fetch and CSS capabilities where adequate. Evaluate a UI primitive 
 
 ### Backend
 
-Use ASP.NET Core on the proposed .NET 10 baseline with Clean Architecture boundaries:
+Use ASP.NET Core on the .NET 10 baseline accepted in 1.6, with Clean Architecture boundaries:
 
 - **Domain:** business rules and eventual entities; no web, EF or vendor dependencies.
 - **Application:** use cases, validation, DTOs and interfaces for persistence, payments, storage and time.
@@ -110,15 +118,17 @@ Provide:
 - Touch-friendly equation input and accessible keyboard navigation.
 - Save/reopen without losing mathematical structure or silently changing the expression.
 
-### Proposed open-source implementation
+### Accepted open-source authoring approach
 
-Evaluate **Tiptap's open-source editor** for surrounding rich text, **MathLive** for visual input, and **KaTeX or MathJax** for student rendering. MathLive supports editing through a math field and LaTeX values; its repository is MIT licensed. Tiptap's open-source editor is MIT licensed, while some commercial features are separate. See [MathLive source/license](https://github.com/arnog/mathlive), [MathLive field interaction](https://mathlive.io/mathfield/guides/interacting/), and [Tiptap overview](https://tiptap.dev/docs/editor/getting-started/overview).
+The accepted [1.5.4 selection](../design/QUESTION-AUTHORING-DECISION.md) chooses **Tiptap OSS**, **MathLive** and custom equation nodes with **KaTeX** as the standard renderer. Bundled `mhchem` is planned for chemistry/units, with visual editing and interoperability still gated. Exact versions, notice obligations, alternatives, supported workflows and remaining tests are in that decision. MathLive and Tiptap core are MIT; commercial Tiptap features are separate. See [MathLive source/license](https://github.com/arnog/mathlive), [MathLive field interaction](https://mathlive.io/mathfield/guides/interacting/), and [Tiptap overview](https://tiptap.dev/docs/editor/getting-started/overview).
 
 Tiptap's mathematics extension uses KaTeX. If testing selects MathJax for broader legacy compatibility, implement a compatible custom editor node/preview instead of assuming that extension automatically switches renderer. See [the mathematics extension](https://tiptap.dev/docs/editor/extensions/nodes/mathematics), [KaTeX supported functions](https://katex.org/docs/support_table), and [MathJax](https://github.com/MathJax/MathJax).
 
-Select one standard student renderer after testing the actual math/chemistry corpus. Do not ship multiple large renderers on every student route without evidence that both are needed. Visual editing is not a general algebra-grading engine; symbolic answer grading, if required, needs its own explicit scope and correctness tests.
+KaTeX is the accepted implementation baseline on the tested subset; complete the actual math/chemistry corpus and accessibility gates before production acceptance, reopening the renderer choice if required notation fails. Do not ship multiple large renderers on every student route without evidence that both are needed. Visual editing is not a general algebra-grading engine; symbolic answer grading, if required, needs its own explicit scope and correctness tests.
 
 ### Word and other-source copy/paste
+
+**Owner clarification, 16 October 2026:** “Consider all” source-app/platform families and subjects/languages, including outbound Word reuse. The [1.5.1 corpus](QUESTION-AUTHORING-CORPUS.md) records broad proposed coverage and missing environments. Validate concrete configurations; this scope is not a universal compatibility guarantee. Owner subsequently authorized public internet/platform originals and continuation, so private-file availability no longer blocks progression. The [1.5.4 decision](../design/QUESTION-AUTHORING-DECISION.md) records the accepted editor stack and conversion workflow; no production converter binary is admitted yet.
 
 Clipboard content varies by source application, document version and browser. The goal is a reliable supported workflow, not an unsupported claim that every platform's clipboard is identical.
 
@@ -138,6 +148,8 @@ Word supports linear equation formats including UnicodeMath and LaTeX, but suppo
 During subphase 1.5, request real Word samples and the other source platforms staff use. Establish a browser/platform compatibility matrix. Native Word equations use document structures that ordinary browser paste may not preserve. If direct paste cannot satisfy required cases, plan a **reviewable DOCX import fallback** with conversion diagnostics and question mapping. Inspect parser/converter licenses before choosing an implementation. Do not quietly buy a commercial conversion service or claim a generic document parser preserves equations.
 
 For outbound reuse, include Copy LaTeX and, where verified, compatible MathML. Validate the agreed Word re-entry workflow; full-fidelity Word document export is a separate decision. Images/OCR and proprietary equation formats must never silently become incorrect math. Automated OCR is not a default dependency.
+
+The accepted [1.5.3 investigation](../delivery/reviews/1.5.3-paste-roundtrip.md) has controlled browser transfer/save/reopen evidence, a limited MathML/HTML normalizer and explicit repair states. Native Word capture and brokered Word-native structure tests are separate from direct clipboard fidelity, which remains unverified. The [1.5.4 selection](../design/QUESTION-AUTHORING-DECISION.md) therefore requires DOCX import/repair in 6.1.3, with source reconciliation and an exact-converter admission gate. A tiny subset is not a complete DOCX converter.
 
 ### Content model and safety
 
@@ -161,8 +173,10 @@ Interpret the requirement as **500 active student sessions**, not merely open ta
 
 Initial acceptance scenarios, finalized in 0.4:
 
+Owner input during 0.4 confirms YouTube video sources and exams up to 180 minutes with 200+ questions. The [0.4 inventory/capacity contract](DATA-MEDIA-AND-CAPACITY.md) supplies measured export counts, source gaps and the proposed 250-question long-exam fixture. It is the detailed workload reference for the scenarios below; the 250-question fixture is not a product cap.
+
 1. **Mixed learning:** ramp to 500 active users over five minutes, then sustain for 30 minutes. Proposed mix: 40% learning/progress, 40% quizzes, 15% navigation/dashboard and 5% enrollment/checkout test-mode interactions. Validate this mix with the owner.
-2. **Exam:** 500 concurrent attempts, each navigating and saving answers for at least 60 minutes or the longest supported exam duration if longer. At one save per 15 seconds per user, the steady baseline is about 33 answer writes/second; include navigation and realistic save bursts separately.
+2. **Exam:** 500 concurrent attempts with the owner-confirmed 180-minute exam duration and representative 200/250-question fixtures. At one save per 15 seconds per user in the busy-save profile, the steady baseline is about 33 writes/second; include realistic answer pacing and separate save bursts. Test pacing does not mandate a frontend autosave delay.
 3. **Deadline burst:** 500 students submit within ten seconds, including collisions between user submission and server timeout. Expect one durable final result per attempt and no lost acknowledged answers.
 4. **Headroom:** explore 750 active users separately to find saturation and validate graceful degradation; this is diagnostic headroom, not a promised 750-user launch SLA.
 5. **Recovery:** test dependency timeouts, database connection pressure and worker restarts; measure backlog recovery and ensure accepted writes persist.
@@ -212,9 +226,10 @@ Prefer platform capabilities and established permissively licensed packages. Ope
 | React/TypeScript and optional Next.js | Frontend | Open-source baseline; exact version/license audit before installation | 2.1.1 |
 | ASP.NET Core/EF Core | API and persistence | Open-source baseline; compatible supported versions | 2.2.1 / 2.4.3 |
 | Npgsql EF Core provider | PostgreSQL integration | PostgreSQL License; no package license fee | 2.4.3 |
-| Tiptap OSS | Rich-text question editing | MIT core; use only reviewed free extensions | 1.5 / 6.1 |
-| MathLive | Visual equation entry | MIT | 1.5 / 6.1 |
-| KaTeX or MathJax | Formula rendering | MIT / Apache-2.0 respectively; choose after corpus tests | 1.5 / 6.1 |
+| Tiptap OSS | Rich-text question editing | MIT core; use only reviewed free extensions | 1.5.4 approach accepted / 6.1.1 integration |
+| MathLive | Visual equation entry | MIT | 1.5.4 approach accepted / 6.1.1 integration |
+| KaTeX with bundled mhchem planned | Formula rendering; MathJax remains a revision alternative | MIT core; mhchem also retains Apache-2.0 upstream notices | 1.5.4 approach accepted / 6.1.4 production acceptance |
+| Pandoc, uninstalled candidate | Preferred DOCX/OMML engine to prove | GPL; exact-release license/security/fixture admission before adoption, no license fee | 6.1.3 |
 | UI primitives, icons, forms, charts, image processor | Shared capabilities | Pick only when needed; verify exact package and asset licenses | Relevant foundation/feature item |
 | Browser/load test tools | Verification | Prefer local open-source execution; hosted paid testing is not assumed | 2.3 / 11.3 |
 

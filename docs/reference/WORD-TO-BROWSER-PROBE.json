@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-16",
+  "source": "PUB-01 equation 1, copied by native Word immediately before this browser process",
+  "browser": "154.0.8037.98",
+  "url": "http://127.0.0.1:4174/",
+  "method": "Real Control+V into editor, captured native trusted paste event; no injected DataTransfer",
+  "trusted": true,
+  "types": [],
+  "files": 0,
+  "payloads": [
+    {
+      "format": "text/html",
+      "characters": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_path": "Project Files/Question Samples/clipboard-captures/word-to-chrome.html"
+    },
+    {
+      "format": "text/plain",
+      "characters": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_path": "Project Files/Question Samples/clipboard-captures/word-to-chrome.txt"
+    }
+  ],
+  "app_result": "No payload reached the automated Chrome paste event. Direct Word-to-browser fidelity is NOT verified.",
+  "result": "environment_gap_no_usable_clipboard_payload"
+}

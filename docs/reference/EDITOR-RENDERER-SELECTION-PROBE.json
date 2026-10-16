@@ -1,0 +1,58 @@
+{
+  "checked_at_utc": "2026-10-16T06:56:30.917Z",
+  "scope": "Node render feasibility only; no browser, visual editing, paste, accessibility or native Word certification",
+  "node": "v24.19.0",
+  "katex": "0.19.0",
+  "settings": {
+    "throwOnError": true,
+    "trust": false,
+    "strict": "error",
+    "maxExpand": 500,
+    "maxSize": 20,
+    "output": "htmlAndMathml"
+  },
+  "lockfile_sha256": "cbce5643fe7bfa5df54d3ecd8988d51e94da36cf7a0a3bdfd5ce19a9c3df9b2e",
+  "mhchem_file_sha256": "b193073c57b9ba833ca09faa72013c8995eb56fd2d27d65a6814c2e75f2370ab",
+  "license_note": "KaTeX MIT; bundled mhchem adaptation also retains Apache-2.0 upstream notices. Retain both.",
+  "core_without_extension_rejects_ce": true,
+  "checks": [
+    {
+      "id": "reaction",
+      "latex": "\\ce{2H2 + O2 -> 2H2O}",
+      "passed": true,
+      "output_sha256": "34305443ad8e25fcc4566b838db5be55157b3d18c748f5c8e2c90ba381c6b434"
+    },
+    {
+      "id": "ion",
+      "latex": "\\ce{SO4^2-}",
+      "passed": true,
+      "output_sha256": "03628c6a9f3dff22a42bbf83ee73435c838ed7062cbf9e238521be7a63557ca3"
+    },
+    {
+      "id": "isotope",
+      "latex": "\\ce{^{14}_{6}C}",
+      "passed": true,
+      "output_sha256": "200e97dfd198dc03c47807056e0c9e26ee07e786d180044c86846305beb214f3"
+    },
+    {
+      "id": "units",
+      "latex": "\\pu{9.81 m/s2}",
+      "passed": true,
+      "output_sha256": "b99bb24039b21073a982abff3de83e4200b03cfa8eec7cf16b197b7b8dbdb06b"
+    },
+    {
+      "id": "ordinary-ion-QC-012",
+      "latex": "\\mathrm{PO}_{4}^{3-},\\quad\\mathrm{SO}_{4}^{2-}",
+      "passed": true,
+      "output_sha256": "f44f12ec19a8b0698e4bdc40bc7e373060f38ee65002fc239ccee05fd0084496"
+    },
+    {
+      "id": "fraction-root-regression",
+      "latex": "\\frac{2}{3}+\\sqrt{5}",
+      "passed": true,
+      "output_sha256": "159f51a56601b2f6612f9afed92d09726004e68c2bf3de48ac0ea84f9657ec96"
+    }
+  ],
+  "unknown_command_rejected": true,
+  "passed": true
+}

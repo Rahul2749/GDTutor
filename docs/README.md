@@ -6,7 +6,7 @@ Use this index to find the plan, requirements, evidence and current review item.
 ## Recommended reading order
 
 1. [Progress tracker](delivery/PROGRESS.md) — what is active, awaiting review or accepted.
-   Current review deliverable: [0.1 feature inventory and user journeys](requirements/FEATURE-INVENTORY.md).
+   Current review: [2.1.1 frontend scaffold](delivery/reviews/2.1.1-frontend-scaffold.md); [run instructions](../apps/web/README.md) and [local preview](http://127.0.0.1:3000/).
 2. [Master migration plan](planning/MIGRATION-PLAN.md) — overall scope, architecture, migration strategy and parent phases.
 3. [Subphase roadmap](planning/SUBPHASE-ROADMAP.md) — exact work boundaries and review gates.
 4. [Design and technical requirements](requirements/DESIGN-AND-TECHNICAL-REQUIREMENTS.md) — themes, responsiveness, formula authoring, capacity, packages and costs.
@@ -23,11 +23,52 @@ docs/
     MIGRATION-PLAN.md
     SUBPHASE-ROADMAP.md
     DECISIONS.md
+    DELIVERY-BASELINE.md
+    DELIVERY-BACKLOG.json
   requirements/
     FEATURE-INVENTORY.md
+    STANDALONE-REPLACEMENT-MAP.md
+    BUSINESS-RULES.md
+    DATA-MEDIA-AND-CAPACITY.md
     DESIGN-AND-TECHNICAL-REQUIREMENTS.md
+    QUESTION-AUTHORING-CORPUS.md
+  architecture/
+    APPLICATION-ARCHITECTURE.md
+    API-CONVENTIONS.md
+  design/
+    VISUAL-DIRECTION.md
+    THEME-TOKENS.json
+    CONTRAST-CHECKS.json
+    PREVIEW-CHECKS.json
+    NAVIGATION-AND-WIREFRAMES.md
+    NAVIGATION-CHECKS.json
+    LEARNING-AND-ASSESSMENT-FLOWS.md
+    LEARNING-ASSESSMENT-CHECKS.json
+    STAFF-AND-AUTHORING-FLOWS.md
+    STAFF-AUTHORING-CHECKS.json
+    QUESTION-EDITOR-CHECKS.json
+    PASTE-EDITOR-REGRESSION-CHECKS.json
+    PASTE-ROUNDTRIP-CHECKS.json
+    FRONTEND-SCAFFOLD-CHECKS.json
+    QUESTION-AUTHORING-DECISION.md
+    previews/
   reference/
     SCREENSHOT-INDEX.md
+    LOCAL-ASSET-INVENTORY.json
+    EXPORT-INVENTORY.json
+    QUESTION-CORPUS.json
+    QUESTION-SOURCE-AUDIT.json
+    PUBLIC-QUESTION-SOURCES.json
+    QUESTION-EDITOR-PACKAGES.json
+    QUESTION-EDITOR-NPM-AUDIT.json
+    EDITOR-SELECTION-NPM-AUDIT.json
+    EDITOR-RENDERER-SELECTION-PROBE.json
+    FRONTEND-PACKAGES.json
+    FRONTEND-NPM-AUDIT.json
+    FRONTEND-BOUNDARY-CHECKS.json
+    WORD-CLIPBOARD-PROBE.json
+    WORD-TO-BROWSER-PROBE.json
+    WORD-OUTBOUND-PROBE.json
   delivery/
     PROGRESS.md
     REVIEW-TEMPLATE.md
@@ -40,9 +81,23 @@ docs/
 | Document | Owns | Update when |
 |---|---|---|
 | [Master plan](planning/MIGRATION-PLAN.md) | Overall scope, parent-phase dependencies, migration and launch approach | Scope or strategy changes |
+| [Application architecture](architecture/APPLICATION-ARCHITECTURE.md) / [API conventions](architecture/API-CONVENTIONS.md) | Framework/project boundaries, rendering, deployment topology, HTTP/auth/concurrency contracts | Architecture review or an implementation finding changes the agreed boundary |
+| [Frontend scaffold](../apps/web/README.md) / [package register](reference/FRONTEND-PACKAGES.json) / [review](delivery/reviews/2.1.1-frontend-scaffold.md) | Running frontend structure, local commands, dependency admission and verification | Authorized frontend work or dependency changes |
 | [Roadmap](planning/SUBPHASE-ROADMAP.md) | Leaf subphase IDs, work boundaries and acceptance gates | An item is split, reordered or its scope changes |
+| [Delivery baseline](planning/DELIVERY-BASELINE.md) / [backlog](planning/DELIVERY-BACKLOG.json) | Scope coverage, sequential dependencies, six-week target timeboxes, risks and milestones | Scope/order/target assumptions change; regenerate backlog references when roadmap IDs change |
 | [Requirements](requirements/DESIGN-AND-TECHNICAL-REQUIREMENTS.md) | Detailed design and technical acceptance requirements | Product or technical requirements change |
+| [Visual direction](design/VISUAL-DIRECTION.md) / [tokens](design/THEME-TOKENS.json) | Concrete theme/style proposals, captures and verification limits | Owner reviews visual alternatives or changes branding/theme choices |
+| [Navigation and wireframes](design/NAVIGATION-AND-WIREFRAMES.md) | Public/student navigation, representative page hierarchy, state samples and responsive evidence | Owner reviews navigation or changes page structure |
+| [Learning and assessment flows](design/LEARNING-AND-ASSESSMENT-FLOWS.md) | Lesson/curriculum, quiz runner/submission/release proposals and simulation limits | Owner reviews learning/assessment interaction or changes those policies |
+| [Staff and authoring flows](design/STAFF-AND-AUTHORING-FLOWS.md) | Staff navigation/roles, authoring/review proposals and limited equation/paste-repair concept | Owner reviews staff workflows; editor compatibility remains a separate experiment |
+| [Question corpus](requirements/QUESTION-AUTHORING-CORPUS.md) / [cases](reference/QUESTION-CORPUS.json) / [source audit](reference/QUESTION-SOURCE-AUDIT.json) | Original-source intake, proposed compatibility coverage and evidence gaps | Source examples arrive or the corpus is reviewed; execution remains in the progress tracker |
+| [Editor experiment](../experiments/question-editor/README.md) / [paste evidence](delivery/reviews/1.5.3-paste-roundtrip.md) | Isolated editor behavior, run instructions and browser/native evidence | Prototype changes or source compatibility evidence arrives |
+| [Authoring selection](design/QUESTION-AUTHORING-DECISION.md) / [review](delivery/reviews/1.5.4-editor-selection.md) | Researched editor/renderer baseline, conversion scope, release gates and effort impact | Owner reviews selection or implementation evidence requires revision |
 | [Feature inventory](requirements/FEATURE-INVENTORY.md) | Evidence-based capabilities, proposed launch priorities and actor journeys | Scope feedback changes capabilities or priorities |
+| [Standalone map](requirements/STANDALONE-REPLACEMENT-MAP.md) | Independent replacements, direct integrations and assigned source unknowns | Integration boundaries or source evidence change |
+| [Business rules](requirements/BUSINESS-RULES.md) | Confirmed product policies, proposed rules and worked acceptance examples | The owner selects or changes a business policy |
+| [Data/media and capacity](requirements/DATA-MEDIA-AND-CAPACITY.md) | Measured source coverage, missing datasets and proposed workload contract | New source data arrives or test assumptions change |
+| [Aggregate export audit](reference/EXPORT-INVENTORY.json) / [screenshot manifest](reference/LOCAL-ASSET-INVENTORY.json) | Reproducible counts/checksums without profile values | The audited source snapshot changes |
 | [Decisions](planning/DECISIONS.md) | Decision status, rationale and the next decision point | A proposal is selected or a confirmed choice changes |
 | [Progress](delivery/PROGRESS.md) | Current item and execution/review status | Work starts, is submitted for review, receives feedback or is accepted |
 | [Review records](delivery/reviews/README.md) | Actual implementation evidence and owner feedback for an item | A named subphase is authorized and worked on |
@@ -54,6 +109,7 @@ Avoid multiple competing status lists. The roadmap defines the work; the tracker
 ## Working rules
 
 - Follow the [project working agreement](../AGENTS.md) and execute one agreed leaf subphase at a time.
+- Build an independent React/.NET platform; WordPress is only a migration source, never a required runtime, plugin, theme, CMS or API.
 - Before coding, read the selected roadmap item, its requirements and relevant decisions.
 - Finish that item, verify it, record the result, and stop for owner review. Do not infer acceptance from silence or elapsed time.
 - **At 2.4.1, request the previous database/table structure and PostgreSQL details before persistent entities, mappings or migrations.**
@@ -64,4 +120,4 @@ Avoid multiple competing status lists. The roadmap defines the work; the tracker
 
 ## Starting the next item
 
-Subphase **0.1 — feature inventory and user journeys** has an owner-authorized [review record](delivery/reviews/0.1-feature-inventory.md) and [scope deliverable](requirements/FEATURE-INVENTORY.md). Consult the tracker for its current state. The next proposed item is 0.2; acceptance and authorization to proceed must be recorded before it starts.
+Phases 0 and 1 are accepted with their future admission/compatibility gates. Review the [2.1.1 frontend scaffold](delivery/reviews/2.1.1-frontend-scaffold.md) and [local preview](http://127.0.0.1:3000/). Next proposed leaf is 2.1.2, common CSS/theme tokens and Light/Dark/System behavior. Shared components, responsive shells, API client and backend remain later leaves; schema work remains owner-gated at 2.4.1.

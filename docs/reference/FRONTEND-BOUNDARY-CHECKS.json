@@ -1,0 +1,62 @@
+{
+  "checked_at_utc": "2026-10-16T07:50:12.816Z",
+  "scope": "Five representative lint import guard probes through the real configuration, no production sample files added",
+  "checks": [
+    {
+      "id": "shared-feature-alias",
+      "shouldReject": true,
+      "rejected": true,
+      "passed": true,
+      "messages": [
+        {
+          "rule": "no-restricted-imports",
+          "severity": 2
+        }
+      ]
+    },
+    {
+      "id": "shared-feature-relative",
+      "shouldReject": true,
+      "rejected": true,
+      "passed": true,
+      "messages": [
+        {
+          "rule": "no-restricted-imports",
+          "severity": 2
+        }
+      ]
+    },
+    {
+      "id": "shared-route-relative",
+      "shouldReject": true,
+      "rejected": true,
+      "passed": true,
+      "messages": [
+        {
+          "rule": "no-restricted-imports",
+          "severity": 2
+        }
+      ]
+    },
+    {
+      "id": "feature-route-alias",
+      "shouldReject": true,
+      "rejected": true,
+      "passed": true,
+      "messages": [
+        {
+          "rule": "no-restricted-imports",
+          "severity": 2
+        }
+      ]
+    },
+    {
+      "id": "route-feature-allowed",
+      "shouldReject": false,
+      "rejected": false,
+      "passed": true,
+      "messages": []
+    }
+  ],
+  "passed": true
+}

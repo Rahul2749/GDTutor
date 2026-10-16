@@ -2,13 +2,15 @@
 
 [Documentation index](../README.md) · [Progress tracker](../delivery/PROGRESS.md)
 
-**Version:** 1.1 — revised for staged reviews, modern design, and confirmed technology choices  
+**Version:** 1.2 — independent replacement and standalone capability mapping  
 **Prepared:** 14 October 2026  
-**Status:** Planning only; application implementation has not started.  
+**Updated:** 16 October 2026  
+**Status:** Planning/design with isolated editor investigation; production application foundation has not started.  
 **Evidence:** All 65 PNG screenshots in `Project Files`: 17 public/login screenshots, 10 admin screenshots, 30 student screenshots, and 8 common screenshots. See [the screenshot index](../reference/SCREENSHOT-INDEX.md).
 
 ## Confirmed direction from the owner
 
+- The new platform must operate independently of WordPress. Do not use its plugins, themes, PHP runtime, headless CMS, live database or APIs in the replacement. Use the old system only as a one-time migration source; rebuild authoring, commerce, learning and administration in React/.NET.
 - Execute **one agreed subphase at a time**, including smaller nested subphases where helpful. Finish, demonstrate, report verification, and stop for owner review before advancing. Approval of this overall plan is not approval to execute every subphase.
 - Redesign the application with a modern, attractive student experience. Choose accents and a coherent design system; support **Light, Dark, and System** appearance throughout.
 - Make the complete application responsive and mobile-first, including quizzes, course playback, account screens, and staff authoring workflows.
@@ -18,11 +20,16 @@
 - Establish the frontend foundation and .NET Clean Architecture foundation as separately reviewed work before implementing business modules.
 - Prefer maintained, reputable, open-source packages without paid licenses. Check actual package/version licenses, maintenance, dependencies and security advisories. Document any unavoidable service/tool cost and its free alternative before adoption.
 - Provide a dynamic question editor: rich text, visual equation tools, editable LaTeX, formulas in questions/options/explanations, and validated copy/paste workflows from Word and agreed other sources.
+- Owner confirmed on 15 October 2026: lifetime/time-limited access configurable per course; scoring, negative marking, passing, retakes and answer release configurable per quiz; both live online classes and offline coaching batches. Detailed policies are in the separately reviewed business-rules document.
 
 Read alongside this plan:
 
 - [Subphase roadmap and review gates](SUBPHASE-ROADMAP.md) — the execution order and acceptance checkpoint for each small piece.
 - [Design, packages, formula editor, capacity and service costs](../requirements/DESIGN-AND-TECHNICAL-REQUIREMENTS.md) — the revised implementation requirements.
+- [Standalone replacement map](../requirements/STANDALONE-REPLACEMENT-MAP.md) — how legacy capabilities are rebuilt and which integration details remain unknown.
+- [Business rules and examples](../requirements/BUSINESS-RULES.md) — confirmed owner decisions and proposed behavior for access, payments, assessments, completion and classes.
+- [Data/media inventory and capacity contract](../requirements/DATA-MEDIA-AND-CAPACITY.md) — audited export records, migration coverage gaps and the 500-user/three-hour exam workload proposal.
+- [Delivery baseline and six-week target](DELIVERY-BASELINE.md) — scope coverage, sequential backlog, milestone gates, assumptions and risks for the owner working with Codex.
 
 No product code, packages, infrastructure or database changes are authorized by this documentation revision alone.
 
@@ -97,20 +104,22 @@ Empty or locked screens do not justify silently removing a feature. Each gets on
 
 Marketing copy or a plugin button advertising a feature does not make that feature a confirmed requirement. Existing subscriptions or payment plans, if discovered, become migration-critical rather than optional.
 
-## 4. Proposed technical architecture
+## 4. Accepted architecture baseline
+
+The [architecture decision](../architecture/APPLICATION-ARCHITECTURE.md) and [API conventions](../architecture/API-CONVENTIONS.md) define the accepted boundaries from 1.6. This overview does not authorize scaffolding, packages or persistent schema work.
 
 | Layer | Proposed choice | Reason and decision boundary |
 |---|---|---|
-| Frontend | React + TypeScript, preferably using Next.js for the public and authenticated application | Public course/blog pages benefit from server rendering; interactive learning screens remain React components. A Vite SPA is an alternative if hosting simplicity takes priority and public rendering/SEO has a separate solution |
-| Backend | ASP.NET Core on .NET 10 LTS | Proposed supported baseline; install the current supported patch when implementation starts |
+| Frontend | React + TypeScript with accepted Next.js App Router | Public server rendering and private interactive screens; exact supported compatible package graph admitted in 2.1.1 |
+| Backend | ASP.NET Core on .NET 10 LTS, accepted architecture baseline | Pin current supported SDK/runtime patches in 2.2.1; installed older patches are not readiness evidence |
 | API | Versioned HTTP APIs with OpenAPI contracts | Clear boundary between frontend and business logic; generated frontend types where useful |
 | Persistence | EF Core + Npgsql with PostgreSQL | Confirmed database choice; entities and migrations wait for owner-provided legacy structure and schema review at 2.4.1 |
-| Identity | ASP.NET Core Identity with secure server-managed sessions | Central account lifecycle; first-party browser sessions preferably use HttpOnly secure cookies |
+| Identity | ASP.NET Core Identity-owned secure HttpOnly cookies and antiforgery | .NET owns lifecycle/authorization; no parallel Next auth store or browser-localStorage bearer tokens |
 | Media | Cloudflare R2 for images; separately agreed resource/video delivery | R2 choice is confirmed for images. Do not assume it includes video transcoding/streaming or Cloudflare Images paid processing |
 | Payments | Razorpay | Use test mode first, server verification, idempotent webhook handling and reconciliation |
 | Design | Semantic CSS tokens, reusable components, Light/Dark/System themes | Modern student-focused visual direction; mobile-first layouts with reviewed color/contrast pairs |
-| Question authoring | Open-source rich-text editor + visual math input + LaTeX and a compatible renderer | Evaluate Tiptap OSS, MathLive and KaTeX/MathJax with real Word/legacy samples before final package selection |
-| Jobs | Persistent .NET background job processing | Email, imports, scheduled publishing, certificate generation, payment reconciliation, and retries |
+| Question authoring | Accepted Tiptap OSS + MathLive + custom equation nodes + KaTeX approach | [Selection](../design/QUESTION-AUTHORING-DECISION.md) defines required DOCX repair, planned chemistry extension, package and compatibility gates; worker tool boundary accepted in 1.6 |
+| Jobs | Separate durable .NET Worker with PostgreSQL coordination after schema approval | Email, imports, content validation, scheduled work, reconciliation and retries; no process-local queue as durable acceptance |
 | Observability | Structured logs, request correlation, health checks, metrics, error reporting | Diagnose checkout, quiz-save, import, and content-access failures |
 | Deployment | Automated builds, staging and production, managed database, backups | Repeatable releases and recoverability |
 
@@ -154,7 +163,7 @@ src/GDTutor.Domain/          Business rules and entities after the schema review
 src/GDTutor.Application/     Use cases, contracts, validation and service interfaces
 src/GDTutor.Infrastructure/  PostgreSQL, R2, Razorpay and other service adapters
 src/GDTutor.Api/             Endpoints, middleware, dependency injection and startup
-src/GDTutor.Worker/          Separate job host only if needed
+src/GDTutor.Worker/          Durable job host when introduced in its authorized leaf
 tools/migration/             Versioned import and reconciliation utilities
 tests/                       Domain, integration, browser and load verification
 infra/                       Environment and deployment configuration
@@ -170,13 +179,13 @@ Do not introduce microservices, a separate search cluster, or caching infrastruc
 | Roles | Does every teacher manage all courses? Who handles refunds and content publication? | Student, instructor, administrator; add narrower content/support/finance permissions as needed |
 | Course structure | Can one test or lesson appear in multiple courses? Can a course have multiple authors? | Explicit curriculum items and instructor assignments; version shared questions |
 | Free access | Does free mean public viewing or free enrollment? | Distinguish public preview from authenticated free enrollment |
-| Paid access | Lifetime, fixed dates, duration after purchase, or subscription? | Implement the discovered model; do not assume lifetime access |
+| Paid access | Lifetime/time-limited configurable per course is confirmed; settle activation and expiry details | Review business rules Q-02; recurring payments remain a separate unresolved scope |
 | Enrollment | Are students also enrolled manually or through offline payment? | Record source, operator, reason, dates, and access status |
 | Completion | Watching, marking complete, passing a quiz, or all required items? | Store explicit rules; enforce them in .NET |
-| Quiz grading | Negative marks, multiple answers, numerical answers, partial credit, rounding? | Match actual assessment rules; do not impose one global exam formula |
+| Quiz grading | Per-quiz marks/negative marking/pass score confirmed; settle types, partial credit and rounding | Review business rules Q-04; do not impose one global exam formula |
 | Retakes | Limits, waiting period, highest/latest/first score? | Configure per assessment and preserve every attempt |
 | Quiz review | When can students see correct answers/explanations? | Configurable release policy; never send hidden answer keys early |
-| Classes | Grade category, coaching batch, live online session, offline session? | Model grade categories, batches, and scheduled sessions separately |
+| Classes | Both online classes and offline coaching batches confirmed; settle eligibility, attendance and recordings | Review business rules Q-06; keep grade, batch and session concepts separate |
 | Refunds | Full/partial, purchased bundle, already consumed content? | Define financial state and access consequences explicitly |
 | Certificates | Completion only, score threshold, attendance, or staff approval? | Eligibility evaluated server-side with auditable issue/revoke records |
 | Reporting | Gross sales, net receipts, refunded revenue, enrollments versus students? | Write definitions and sample reconciliations before charts |
@@ -222,9 +231,9 @@ The phase descriptions below define scope, not permission to execute a whole pha
 **Work:**
 
 1. Review screenshots with the owner; record required, optional, and unused functionality.
-2. Inspect a staging WordPress copy or read-only exports: plugin list/versions, theme, Elementor templates, custom plugins/snippets, roles, jobs and integration settings.
+2. Map existing behavior and integration/data dependencies to standalone replacements. Inspect legacy configuration or read-only exports only when necessary to explain behavior or extract data; do not adopt WordPress packages or runtime services.
 3. Inventory users, courses, curricula, media, questions, attempts, orders, refunds, access grants and public content.
-4. Identify the actual LMS, commerce system, gateway, video sources, email service and live-class provider.
+4. Identify the old source system and providers where they affect migration; record unknowns with an owner and decision point. The new platform implements LMS/commerce capabilities itself and integrates Razorpay/R2 directly.
 5. Capture missing workflows: registration/recovery, checkout success/failure, refunds, curriculum/question authoring, populated live classes, and completed certificates.
 6. Measure data/media volume and current performance; establish realistic workload scenarios for the confirmed target of 500 concurrently active students, including simultaneous quizzes.
 7. Decide identity mapping, password strategy, course access rules, quiz grading, and what historical records must remain accessible.
@@ -567,6 +576,8 @@ For learner data, especially where students are minors, discovery must identify 
 
 ## 10. Timeline and staffing assumptions
 
+**Active model, 15 October 2026:** The owner will implement with Codex, has no fixed launch date, and requested an approximately one-and-a-half-month target. The [0.5 delivery baseline](DELIVERY-BASELINE.md) proposes a six-week stretch sequence for the scoped release candidate, with conditional production readiness and separate post-launch reviews. Its timeboxes are planning budgets, not measured forecasts. The older table below is historical only; do not use it as the current team/calendar assumption.
+
 The table below preserves the version 1.0 baseline for context; it is not the revised delivery commitment. Its assumptions were one frontend engineer, one .NET engineer, shared QA/design/operations support, timely owner feedback, working source exports, one gateway, one meeting integration, and limited custom plugin behavior. Weeks below were elapsed phase estimates for that team, not person-weeks. Re-estimate against the sequential subphase roadmap and new requirements before scheduling.
 
 | Phase | Initial range |
@@ -637,11 +648,11 @@ Suggested next planning deliverables after reviewing this document:
 These are review prompts, not prerequisites for reading this first draft:
 
 1. Review the proposed modern accent palette and visual direction; implementation will include light/dark/system themes.
-2. Keep React with Next.js as proposed, or require a plain React SPA? PostgreSQL is already confirmed.
+2. Review the Next.js App Router choice and .NET/API/worker boundaries in 1.6. PostgreSQL is confirmed; schema remains gated at 2.4.1.
 3. Which LMS/commerce plugins and old payment provider are installed, and can we inspect a read-only export or staging copy? The new gateway is Razorpay.
-4. Are classes live online, offline batches, recorded lectures, or all three? Which meeting/video services are used?
-5. Is paid access one-time/lifetime, time-limited, subscription-based, or mixed? Are offline enrollments common?
-6. Which quiz types, negative-marking rules, retake policies and exam-specific scoring patterns are in actual use?
+4. Online classes and offline coaching batches are confirmed alongside recorded lessons. Which meeting/video services and attendance/recording policies are required?
+5. Lifetime/time-limited course access is confirmed as configurable. Review activation/expiry proposals and indicate whether offline enrollments or existing subscriptions need support.
+6. Per-quiz scoring/retakes/answer-release settings are confirmed as configurable. Review required answer types and concrete scoring examples in the business-rules document.
 7. Must every historical quiz answer remain available, or is some older history allowed to be an archived result record?
 8. Which features are essential for first production launch, and which can be explicitly deferred?
 9. How many staff/developers will work on this, and is there a target launch date or budget limit?
@@ -649,4 +660,4 @@ These are review prompts, not prerequisites for reading this first draft:
 11. At subphase 2.4.1, provide the previous database/table structure and target database details before persistent entity design. Do not paste production credentials into planning documents.
 12. During the authoring prototype, provide representative Word/LaTeX questions and identify the Word versions and other source platforms staff use.
 
-**Recommended first action after review:** Start only **0.1 — scope and workflow inventory**, when the owner requests it. The early code sequence is frontend foundation (2.1), backend foundation (2.2), then integration and the owner-gated PostgreSQL design. Complete and review one nested item at a time. Production migration waits until the agreed learning, commerce, administration and data-preservation gates are complete.
+**Current next action:** Review [2.1.1 frontend scaffold](../delivery/reviews/2.1.1-frontend-scaffold.md), [run instructions](../../apps/web/README.md) and [local preview](http://127.0.0.1:3000/). Owner accepted the 1.6 architecture and authorized 2.1.1 through “go ahead.” Next proposed leaf is **2.1.2**, common CSS/tokens and Light/Dark/System, not started. Shared components, responsive shells, API client and backend follow in separate reviews. PostgreSQL still requires owner-provided prior structure at 2.4.1; native compatibility, converter admission and authoring effort conditions remain.

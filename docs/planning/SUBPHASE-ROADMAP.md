@@ -3,7 +3,7 @@
 [Documentation index](../README.md) · [Progress tracker](../delivery/PROGRESS.md)
 
 **Version:** 1.0, 14 October 2026  
-**Status:** Proposed roadmap; implementation has not started.  
+**Status:** Scope roadmap; execution state is maintained in the progress tracker. Isolated investigations do not authorize production foundations.  
 **Related:** [Master plan](MIGRATION-PLAN.md) · [Design and technical requirements](../requirements/DESIGN-AND-TECHNICAL-REQUIREMENTS.md)
 
 ## 1. Execution agreement
@@ -38,12 +38,14 @@ For foundational work, a working shell, build result, architecture boundaries or
 | ID | Scope | Review gate |
 |---|---|---|
 | 0.1 | Screenshot-based feature inventory and visitor/student/staff journeys | Owner confirms required capabilities and priorities |
-| 0.2 | Current WordPress plugins, theme/custom code and integrations | Legacy LMS/commerce/media/payment dependencies recorded; unknowns assigned |
+| 0.2 | Legacy capabilities, standalone replacements and direct integrations | Replacement ownership recorded; legacy unknowns assigned; no WordPress runtime/package/API dependency |
 | 0.3 | Access, enrollment, assessment, completion and class business rules | Examples agreed for free/paid access, grading, retakes and certificates |
 | 0.4 | Data/media inventory and 500-student workload definition | Record sizes/volume, expected activity mix, exam duration, migration scope and capacity acceptance scenarios |
 | 0.5 | Consolidated backlog, risks and revised estimate | Owner accepts discovery baseline and next design item |
 
 The earlier screenshot audit is reused, not repeated unnecessarily. Detailed persistent table/entity design remains at 2.4.1. Sample export inspection here is feasibility work and does not authorize entity creation.
+
+Owner clarification on 15 October 2026: 0.2 maps existing capabilities into an independent React/.NET platform. Legacy plugin/configuration information is relevant only to understanding source behavior or extracting data; no WordPress technology is selected for the replacement.
 
 ## 4. Phase 1 — Modern design and architecture
 
@@ -60,6 +62,8 @@ The earlier screenshot audit is reused, not repeated unnecessarily. Detailed per
 | 1.6 | Frontend/backend architecture, API conventions and deployment boundaries | Approve proposed Next.js choice, Clean Architecture boundaries and conceptual contracts; no database entities yet |
 
 The prototype is a separately reviewed investigation, not production feature implementation or authority to scaffold the whole application. Paid conversion services are excluded unless separately presented and approved.
+
+The accepted [1.5.4 selection](../design/QUESTION-AUTHORING-DECISION.md) maps editor/paste/conversion/renderer implementation to existing 6.1.1–6.1.4 and records remaining compatibility, exact-converter admission and effort gates. The [1.6 architecture](../architecture/APPLICATION-ARCHITECTURE.md) and [API conventions](../architecture/API-CONVENTIONS.md) were accepted in 1.6. Their acceptance does not authorize all foundation/feature leaves or change their IDs.
 
 ## 5. Phase 2 — Frontend foundation, then backend foundation
 
@@ -234,4 +238,4 @@ These operational steps may occur close together within the agreed maintenance w
 
 Use the [review template](../delivery/REVIEW-TEMPLATE.md) for each authorized item and save the completed record under [delivery/reviews](../delivery/reviews/README.md). Record status in the [progress tracker](../delivery/PROGRESS.md), with a link to that item's evidence. Keep this roadmap focused on scope and review gates.
 
-The first proposed item is **0.1**. If the owner explicitly chooses to start with scaffolding, first identify which assumptions can remain provisional and which prerequisites are essential; keep the schema gate intact and do not present mock behavior as working business functionality.
+Consult the [progress tracker](../delivery/PROGRESS.md) for the next item and the [delivery baseline](DELIVERY-BASELINE.md) for target windows/dependencies. Starting a leaf item never authorizes its whole parent phase. If the owner explicitly chooses to start scaffolding out of sequence, identify essential prerequisites and provisional assumptions, preserve the schema gate and label mock behavior clearly.

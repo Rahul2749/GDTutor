@@ -1,0 +1,366 @@
+{
+  "method": "WCAG relative luminance ratio of specified opaque sRGB token pairs",
+  "scope": "Default palette pair checks; not a full accessibility certification or validation of arbitrary Tweak edits",
+  "results": [
+    {
+      "direction": "Learning Studio",
+      "appearance": "light",
+      "foreground_token": "ink",
+      "background_token": "canvas",
+      "contrast": 17.06,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "light",
+      "foreground_token": "ink",
+      "background_token": "surface",
+      "contrast": 17.85,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "light",
+      "foreground_token": "muted",
+      "background_token": "canvas",
+      "contrast": 7.24,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "light",
+      "foreground_token": "muted",
+      "background_token": "surface",
+      "contrast": 7.58,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "light",
+      "foreground_token": "on-primary",
+      "background_token": "primary",
+      "contrast": 6.29,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "light",
+      "foreground_token": "primary",
+      "background_token": "surface",
+      "contrast": 6.29,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "light",
+      "foreground_token": "primary",
+      "background_token": "soft-primary",
+      "contrast": 5.45,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "light",
+      "foreground_token": "teal",
+      "background_token": "soft-teal",
+      "contrast": 4.85,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "light",
+      "foreground_token": "amber",
+      "background_token": "soft-amber",
+      "contrast": 6.48,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "light",
+      "foreground_token": "control",
+      "background_token": "surface",
+      "contrast": 4.76,
+      "threshold": 3,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "dark",
+      "foreground_token": "ink",
+      "background_token": "canvas",
+      "contrast": 15.87,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "dark",
+      "foreground_token": "ink",
+      "background_token": "surface",
+      "contrast": 14.48,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "dark",
+      "foreground_token": "muted",
+      "background_token": "canvas",
+      "contrast": 8.92,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "dark",
+      "foreground_token": "muted",
+      "background_token": "surface",
+      "contrast": 8.14,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "dark",
+      "foreground_token": "on-primary",
+      "background_token": "primary",
+      "contrast": 8.99,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "dark",
+      "foreground_token": "primary",
+      "background_token": "surface",
+      "contrast": 8.57,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "dark",
+      "foreground_token": "primary",
+      "background_token": "soft-primary",
+      "contrast": 6.92,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "dark",
+      "foreground_token": "teal",
+      "background_token": "soft-teal",
+      "contrast": 8.31,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "dark",
+      "foreground_token": "amber",
+      "background_token": "soft-amber",
+      "contrast": 8.0,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Learning Studio",
+      "appearance": "dark",
+      "foreground_token": "control",
+      "background_token": "surface",
+      "contrast": 5.33,
+      "threshold": 3,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "light",
+      "foreground_token": "ink",
+      "background_token": "canvas",
+      "contrast": 13.74,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "light",
+      "foreground_token": "ink",
+      "background_token": "surface",
+      "contrast": 14.73,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "light",
+      "foreground_token": "muted",
+      "background_token": "canvas",
+      "contrast": 6.06,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "light",
+      "foreground_token": "muted",
+      "background_token": "surface",
+      "contrast": 6.5,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "light",
+      "foreground_token": "on-primary",
+      "background_token": "primary",
+      "contrast": 5.47,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "light",
+      "foreground_token": "primary",
+      "background_token": "surface",
+      "contrast": 5.47,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "light",
+      "foreground_token": "primary",
+      "background_token": "soft-primary",
+      "contrast": 4.74,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "light",
+      "foreground_token": "teal",
+      "background_token": "soft-teal",
+      "contrast": 5.91,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "light",
+      "foreground_token": "amber",
+      "background_token": "soft-amber",
+      "contrast": 6.48,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "light",
+      "foreground_token": "control",
+      "background_token": "surface",
+      "contrast": 4.53,
+      "threshold": 3,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "dark",
+      "foreground_token": "ink",
+      "background_token": "canvas",
+      "contrast": 15.9,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "dark",
+      "foreground_token": "ink",
+      "background_token": "surface",
+      "contrast": 13.93,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "dark",
+      "foreground_token": "muted",
+      "background_token": "canvas",
+      "contrast": 9.09,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "dark",
+      "foreground_token": "muted",
+      "background_token": "surface",
+      "contrast": 7.97,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "dark",
+      "foreground_token": "on-primary",
+      "background_token": "primary",
+      "contrast": 11.0,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "dark",
+      "foreground_token": "primary",
+      "background_token": "surface",
+      "contrast": 10.64,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "dark",
+      "foreground_token": "primary",
+      "background_token": "soft-primary",
+      "contrast": 7.85,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "dark",
+      "foreground_token": "teal",
+      "background_token": "soft-teal",
+      "contrast": 7.56,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "dark",
+      "foreground_token": "amber",
+      "background_token": "soft-amber",
+      "contrast": 8.0,
+      "threshold": 4.5,
+      "passed": true
+    },
+    {
+      "direction": "Focus Workspace",
+      "appearance": "dark",
+      "foreground_token": "control",
+      "background_token": "surface",
+      "contrast": 5.77,
+      "threshold": 3,
+      "passed": true
+    }
+  ]
+}
