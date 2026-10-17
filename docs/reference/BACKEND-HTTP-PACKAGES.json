@@ -1,0 +1,75 @@
+{
+  "reviewed_on": "2026-10-17",
+  "status": "Admitted for 2.2.3; exact official archives and author/repository signatures verified; locked graph and advisory query recorded",
+  "purpose": "Built-in generated OpenAPI, no docs UI",
+  "paid_license_required": false,
+  "alternative": "Manually maintained OpenAPI artifact, rejected because it can drift from actual controller contracts",
+  "packages": [
+    {
+      "name": "Microsoft.AspNetCore.OpenApi",
+      "version": "10.0.13",
+      "publisher": "Microsoft",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "4099f83977f4d29604a9aeb971fb0a7bc1d5f699"
+      },
+      "package_sha256": "355d1297f4ef020f16a91a44822130d0fb14d739ce53abd44e81f9878f438fd3",
+      "notices": [
+        {
+          "path": "docs/reference/licenses/backend-openapi/microsoft.aspnetcore.openapi.10.0.13-THIRD-PARTY-NOTICES.TXT",
+          "sha256": "307d014f65d8482314f1400ddeae7a0cbabb96c2207bcc77f6233cc10588e5d9"
+        }
+      ],
+      "nuget_url": "https://www.nuget.org/packages/Microsoft.AspNetCore.OpenApi/10.0.13"
+    },
+    {
+      "name": "Microsoft.OpenApi",
+      "version": "2.12.2",
+      "publisher": "Microsoft",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Microsoft/OpenAPI.NET",
+        "commit": "a24aac560adbf013ff5aa63a873e5a7babce38d2"
+      },
+      "package_sha256": "3a35b85631e1c7b877b61244ca93e042f6a249ca2e055fd5c3d92b54f1b247a9",
+      "notices": [],
+      "nuget_url": "https://www.nuget.org/packages/Microsoft.OpenApi/2.12.2"
+    }
+  ],
+  "license_text": {
+    "path": "docs/reference/licenses/backend-openapi/MIT.txt",
+    "sha256": "66e7052fea8e95f489e0a277f7bfbbc25d30272596f97f03ce36a51d4637f7d8"
+  },
+  "security": {
+    "source": "https://api.nuget.org/v3/index.json",
+    "audit": "BACKEND-HTTP-NUGET-AUDIT.json",
+    "finding": "No vulnerable NuGet packages reported across all five projects on 17 October 2026; not a guarantee of undiscovered vulnerabilities",
+    "signature_verification": {
+      "command": "dotnet nuget verify <both official archives> --all",
+      "result": "Both packages successfully verified, author Microsoft Corporation plus NuGet.org repository countersignatures",
+      "raw_report_sha256": "88175f6b9e79dd5b01edae94a2941237fcb4ec85acfe7a2ce40295b4c21e652c"
+    }
+  },
+  "graph": {
+    "direct_api": "Microsoft.AspNetCore.OpenApi 10.0.13, exact range [10.0.13]",
+    "transitive": "Microsoft.OpenApi 2.12.2; compatible net8.0 asset, no further package dependencies for net10.0",
+    "inner_projects": "No NuGet packages or ASP.NET framework references",
+    "verification_project": "Inherits the API package graph; no extra test runner package",
+    "lockfiles": [
+      "src/GDTutor.Api/packages.lock.json",
+      "tests/GDTutor.FoundationChecks/packages.lock.json"
+    ]
+  },
+  "maintenance": {
+    "aspnetcore": "Current stable .NET 10 patch from 13 October 2026; follows existing .NET LTS toolchain",
+    "openapi_net": "Microsoft-maintained OpenAPI.NET; package signatures timestamped August 2026, repository commit retained above",
+    "references": [
+      "https://github.com/microsoft/OpenAPI.NET/releases",
+      "https://www.nuget.org/packages/Microsoft.AspNetCore.OpenApi/10.0.13",
+      "https://www.nuget.org/packages/Microsoft.OpenApi/2.12.2"
+    ]
+  }
+}

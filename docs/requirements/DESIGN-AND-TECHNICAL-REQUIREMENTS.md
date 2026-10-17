@@ -3,7 +3,7 @@
 [Documentation index](../README.md) · [Progress tracker](../delivery/PROGRESS.md)
 
 **Version:** 1.0, 14 October 2026  
-**Status:** Requirements baseline; accepted design/editor investigations exist. Frontend foundation 2.1.1 has started; execution/review state is in the progress tracker.  
+**Status:** Requirements baseline; accepted design/editor investigations exist. Frontend foundation through 2.1.5 is accepted; backend foundation 2.2.1–2.2.3 is accepted and frontend/API integration 2.3.1 is accepted; execution/review state is in the progress tracker.  
 **Related:** [Master plan](../planning/MIGRATION-PLAN.md) · [Subphase roadmap](../planning/SUBPHASE-ROADMAP.md)
 
 ## 1. Confirmed choices and proposed choices
@@ -12,15 +12,19 @@ Confirmed by the owner: a modern redesign, mobile-first responsiveness, switchab
 
 **Owner clarification, 15 October 2026:** The replacement has no WordPress plugins, themes, PHP runtime, headless CMS, live WordPress database or API dependency. Public content editing, courses, questions, accounts and commerce are implemented within the new stack. Legacy exports are inputs to a one-time migration; they are not a production service. This constraint does not prohibit ordinary reviewed React/.NET libraries or the selected direct Razorpay/R2 services. See the [standalone replacement map](STANDALONE-REPLACEMENT-MAP.md).
 
-The authoring approach in 1.5.4 is accepted with production compatibility/admission gates. The [1.6 architecture](../architecture/APPLICATION-ARCHITECTURE.md) records the accepted Next.js App Router, .NET 10 Clean Architecture and same-origin API/worker boundaries. Exact production package patches, hosting/provider specifications, video access integration and the converter binary remain separately gated. Focus Workspace is the accepted visual baseline. No paid tool is required by this software baseline.
+The authoring approach in 1.5.4 is accepted with production compatibility/admission gates. The [1.6 architecture](../architecture/APPLICATION-ARCHITECTURE.md) records the accepted Next.js App Router, .NET 10 Clean Architecture and same-origin API/worker boundaries. Exact production package patches, hosting/provider specifications, video access integration and the converter binary remain separately gated. Compact Blue with refined component density and fluid width is the accepted current visual foundation; earlier Focus Workspace values are historical. No paid tool is required by this software baseline.
+
+**Language clarification, 16 October 2026:** Application interface and preview copy must be English-only. Do not use Hindi or Marathi sample text. Preserve original migration/source evidence; do not rewrite historical documents or silently alter imported source material.
 
 ## 2. Visual direction and theme system
+
+**Current foundation:** Owner accepted the refined component preview through “great go ahead” on 16 October after requesting overall design improvements during 2.1.3. The [Compact Blue revision](../design/OVERALL-DESIGN-REVISION.md) and [current palette](../design/UI-DESIGN-TOKENS.json) are accepted in the running frontend; the Focus Workspace details below preserve the earlier accepted baseline.
 
 ### Visual direction
 
 Create a polished learning product that feels approachable to school and entrance-exam students. Use clear typography, generous spacing, rounded cards, restrained shadows, strong course imagery, and prominent learning actions. Use color and progress to help students understand what to do next; keep the examination screen calm and distraction-free.
 
-Selected working direction: **Focus Workspace — teal primary, violet secondary, warm neutral surfaces and editorial headings**. It follows the selected 1.1 preview and the owner's progression instruction. The provisional wordmark remains subject to branding refinement.
+Earlier working direction (superseded by the accepted Compact Blue revision): **Focus Workspace — teal primary, violet secondary, warm neutral surfaces and editorial headings**. It follows the selected 1.1 preview and the owner's progression instruction. The provisional wordmark remains subject to branding refinement.
 
 **1.1 result, 15 October 2026:** [Visual direction](../design/VISUAL-DIRECTION.md) preserves both alternatives. The [theme tokens](../design/THEME-TOKENS.json) record Focus Workspace as selected and contain the complete semantic pairs. [1.2 wireframes](../design/NAVIGATION-AND-WIREFRAMES.md) apply that baseline; their page/navigation structure is separately reviewed.
 
@@ -43,6 +47,8 @@ Use a system font stack initially to avoid external font requests and paid font 
 
 ### Theme behavior
 
+The [2.1.2 foundation](../design/THEME-FOUNDATION.md) implements the accepted browser-local preference and common CSS/tokens. Account synchronization remains Phase 3, and theme behavior in future components/features must be verified when those are built. The original design-token JSON remains the baseline snapshot.
+
 - Provide Light, Dark and System choices in a convenient appearance control and account preferences.
 - Respect system preference on first visit; remember an explicit choice across reloads and navigation.
 - Resolve initial appearance before the first visible render where possible; verify no hydration mismatch or noticeable theme flash.
@@ -55,7 +61,7 @@ Use a system font stack initially to avoid external font requests and paid font 
 
 - Review at 320, 360, 390, 768, 1024 and 1440 CSS-pixel widths, with portrait/landscape and text zoom checks.
 - Avoid whole-page horizontal scrolling. Wide formulas or tables may use a clearly bounded scroll region with a suitable accessible alternative.
-- Target touch controls around 44 by 44 CSS pixels, with separation for quiz answers and navigation.
+- Target touch controls around 44 by 44 CSS pixels, with separation for quiz answers and navigation. Owner requested more compact UI on 16 October: accepted component foundation permits 32px desktop controls while preserving 44px on narrow/coarse-pointer devices and 16px mobile field text. Keep page width fluid; compactness is a component/type/alignment requirement, not increased outer margins. See the current design revision.
 - Use adaptive public navigation and compact student navigation; select bottom navigation or a drawer during screen review rather than adding both everywhere.
 - Collapse curriculum into a drawer on small screens. Keep player, lesson title and next action easy to reach.
 - Keep quiz timer, saved state and submit action visible without covering questions or the device keyboard; respect safe areas.
@@ -89,6 +95,8 @@ Foundation subphases deliver:
 Use built-in fetch and CSS capabilities where adequate. Evaluate a UI primitive library or utility-CSS framework only if it reduces effort without creating duplicate styling systems. Do not install a package for every small helper. Generated API contracts follow backend agreements; mock contracts must be labeled as provisional.
 
 ### Backend
+
+The [2.2.1 foundation](../architecture/BACKEND-FOUNDATION.md) establishes the pinned SDK, solution/project references, common compiler policies and empty host only. [Services/DI/configuration 2.2.2](../architecture/BACKEND-SERVICES-CONFIGURATION.md) now demonstrate validated startup settings and replaceable sample adapters; [HTTP/errors/logging/health/OpenAPI 2.2.3](../architecture/BACKEND-HTTP-FOUNDATION.md) are accepted. [Live frontend/API integration 2.3.1](../architecture/LIVE-API-INTEGRATION.md) is accepted; deployment and persistence remain separate leaves.
 
 Use ASP.NET Core on the .NET 10 baseline accepted in 1.6, with Clean Architecture boundaries:
 

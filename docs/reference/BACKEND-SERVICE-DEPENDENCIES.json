@@ -1,0 +1,62 @@
+{
+  "checked_at_utc": "2026-10-16T16:33:55.170193+00:00",
+  "scope": "2.2.2; existing admitted .NET shared framework only, no new NuGet library or test framework",
+  "toolchain": "docs/reference/BACKEND-TOOLCHAIN.json",
+  "package_graph": {
+    "version": 1,
+    "parameters": "--include-transitive",
+    "projects": [
+      {
+        "path": "src/GDTutor.Api/GDTutor.Api.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0"
+          }
+        ]
+      },
+      {
+        "path": "src/GDTutor.Application/GDTutor.Application.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0"
+          }
+        ]
+      },
+      {
+        "path": "src/GDTutor.Domain/GDTutor.Domain.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0"
+          }
+        ]
+      },
+      {
+        "path": "src/GDTutor.Infrastructure/GDTutor.Infrastructure.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0"
+          }
+        ]
+      },
+      {
+        "path": "tests/GDTutor.FoundationChecks/GDTutor.FoundationChecks.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0"
+          }
+        ]
+      }
+    ]
+  },
+  "nuget_package_count": 0,
+  "production_projects": 4,
+  "verification_projects": 1,
+  "source_sha256": {
+    "GDTutor.slnx": "29ce613df6251553431638fea4f3ce21f0a1a263a8a37a720325fdebfaedd8c1",
+    "Directory.Build.props": "60b66d58bc48354ca87ecef7e5e9dabefd8347df77d66f12280fe55076ade2f4",
+    "NuGet.Config": "78a66f561f2ef988c27e5d895bf668085f891539cf26946714abf376bd497276",
+    "global.json": "81ae2087dbfb46027fd94748351fb4b1ab24145fbb52544a2822bf128e2e48f1",
+    "tests/GDTutor.FoundationChecks/GDTutor.FoundationChecks.csproj": "00d96693f6ad7635134f32f7821985581db3ab64787dd844aa8b560c30971617"
+  },
+  "passed": true
+}

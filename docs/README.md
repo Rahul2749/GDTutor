@@ -6,7 +6,7 @@ Use this index to find the plan, requirements, evidence and current review item.
 ## Recommended reading order
 
 1. [Progress tracker](delivery/PROGRESS.md) — what is active, awaiting review or accepted.
-   Current review: [2.1.1 frontend scaffold](delivery/reviews/2.1.1-frontend-scaffold.md); [run instructions](../apps/web/README.md) and [local preview](http://127.0.0.1:3000/).
+   Current checkpoint: [2.3.1 live frontend/API integration](delivery/reviews/2.3.1-live-api-integration.md) is accepted. [Guide](architecture/LIVE-API-INTEGRATION.md), [live preview](http://127.0.0.1:3000/connection-preview?phase=2.3.1) and [browser evidence](architecture/LIVE-INTEGRATION-CHECKS.json) remain available. Owner requested the GitHub checkpoint; next leaf 2.3.2 is not started.
 2. [Master migration plan](planning/MIGRATION-PLAN.md) — overall scope, architecture, migration strategy and parent phases.
 3. [Subphase roadmap](planning/SUBPHASE-ROADMAP.md) — exact work boundaries and review gates.
 4. [Design and technical requirements](requirements/DESIGN-AND-TECHNICAL-REQUIREMENTS.md) — themes, responsiveness, formula authoring, capacity, packages and costs.
@@ -50,6 +50,14 @@ docs/
     PASTE-EDITOR-REGRESSION-CHECKS.json
     PASTE-ROUNDTRIP-CHECKS.json
     FRONTEND-SCAFFOLD-CHECKS.json
+    THEME-FOUNDATION.md
+    APPEARANCE-CHECKS.json
+    SHARED-UI-FOUNDATION.md
+    OVERALL-DESIGN-REVISION.md
+    UI-DESIGN-TOKENS.json
+    COMPACT-DENSITY-CHECKS.json
+    SHARED-UI-CHECKS.json
+    UI-THEME-REGRESSION-CHECKS.json
     QUESTION-AUTHORING-DECISION.md
     previews/
   reference/
@@ -83,6 +91,8 @@ docs/
 | [Master plan](planning/MIGRATION-PLAN.md) | Overall scope, parent-phase dependencies, migration and launch approach | Scope or strategy changes |
 | [Application architecture](architecture/APPLICATION-ARCHITECTURE.md) / [API conventions](architecture/API-CONVENTIONS.md) | Framework/project boundaries, rendering, deployment topology, HTTP/auth/concurrency contracts | Architecture review or an implementation finding changes the agreed boundary |
 | [Frontend scaffold](../apps/web/README.md) / [package register](reference/FRONTEND-PACKAGES.json) / [review](delivery/reviews/2.1.1-frontend-scaffold.md) | Running frontend structure, local commands, dependency admission and verification | Authorized frontend work or dependency changes |
+| [Theme foundation](design/THEME-FOUNDATION.md) / [checks](design/APPEARANCE-CHECKS.json) | Common CSS/token ownership, browser appearance persistence and verified fallback behavior | Theme review or implementation changes |
+| [Shared UI](design/SHARED-UI-FOUNDATION.md) / [checks](design/SHARED-UI-CHECKS.json) | Common component contracts, interaction examples and current theme regression | Shared component review or consuming integration changes |
 | [Roadmap](planning/SUBPHASE-ROADMAP.md) | Leaf subphase IDs, work boundaries and acceptance gates | An item is split, reordered or its scope changes |
 | [Delivery baseline](planning/DELIVERY-BASELINE.md) / [backlog](planning/DELIVERY-BACKLOG.json) | Scope coverage, sequential dependencies, six-week target timeboxes, risks and milestones | Scope/order/target assumptions change; regenerate backlog references when roadmap IDs change |
 | [Requirements](requirements/DESIGN-AND-TECHNICAL-REQUIREMENTS.md) | Detailed design and technical acceptance requirements | Product or technical requirements change |
@@ -120,4 +130,4 @@ Avoid multiple competing status lists. The roadmap defines the work; the tracker
 
 ## Starting the next item
 
-Phases 0 and 1 are accepted with their future admission/compatibility gates. Review the [2.1.1 frontend scaffold](delivery/reviews/2.1.1-frontend-scaffold.md) and [local preview](http://127.0.0.1:3000/). Next proposed leaf is 2.1.2, common CSS/theme tokens and Light/Dark/System behavior. Shared components, responsive shells, API client and backend remain later leaves; schema work remains owner-gated at 2.4.1.
+[2.3.1 live frontend/API integration](delivery/reviews/2.3.1-live-api-integration.md) is accepted. The [preview](http://127.0.0.1:3000/connection-preview?phase=2.3.1) and [guide](architecture/LIVE-API-INTEGRATION.md) remain available. Next proposed leaf is 2.3.2, build/dependency checks and repeatable local/staging setup; await separate authorization. The database input gate remains 2.4.1.

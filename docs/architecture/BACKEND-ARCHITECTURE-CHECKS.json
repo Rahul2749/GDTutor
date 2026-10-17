@@ -1,0 +1,64 @@
+{
+  "checked_at_utc": "2026-10-16T13:26:29.8964250Z",
+  "scope": "2.2.1 project/reference and restored-assets guard only; build/format/startup outcomes are recorded separately.",
+  "checks": [
+    {
+      "project": "GDTutor.Domain",
+      "references": [],
+      "restored_nuget_packages": 0,
+      "passed": true
+    },
+    {
+      "project": "GDTutor.Application",
+      "references": [
+        "GDTutor.Domain"
+      ],
+      "restored_nuget_packages": 0,
+      "passed": true
+    },
+    {
+      "project": "GDTutor.Infrastructure",
+      "references": [
+        "GDTutor.Application",
+        "GDTutor.Domain"
+      ],
+      "restored_nuget_packages": 0,
+      "passed": true
+    },
+    {
+      "project": "GDTutor.Api",
+      "references": [
+        "GDTutor.Application",
+        "GDTutor.Infrastructure"
+      ],
+      "restored_nuget_packages": 0,
+      "passed": true
+    }
+  ],
+  "solution_project_count": 4,
+  "handwritten_csharp_files": [
+    "src/GDTutor.Api/Program.cs"
+  ],
+  "source_sha256": {
+    "GDTutor.slnx": "3d17dc17169601f5868fe3ff57eab5ffb0c434f909a8c0c701fce0418c430618",
+    "global.json": "81ae2087dbfb46027fd94748351fb4b1ab24145fbb52544a2822bf128e2e48f1",
+    "Directory.Build.props": "60b66d58bc48354ca87ecef7e5e9dabefd8347df77d66f12280fe55076ade2f4",
+    "NuGet.Config": "78a66f561f2ef988c27e5d895bf668085f891539cf26946714abf376bd497276",
+    "docs/reference/BACKEND-TOOLCHAIN.json": "9d9275bf3df0afa26ca915aee0cdfdddb210ad4a592b8112df49c0a32734ac65",
+    "tools/backend/Verify-Architecture.ps1": "bcbf593750bf7a1f6f9b368933f17be047d823eeb6d3f77af9cfd51a4194a946",
+    "tools/backend/Verify-Startup.ps1": "5502704c24c731775df9d309e96e4efd191a5838caae67510cc3f94faf03904f",
+    "tools/backend/dotnet.ps1": "71e6179533ac5225d682c723605b1a6fc4e60a7bf8463fb993ded40119a197b5",
+    "tools/backend/Install-LocalSdk.ps1": "84d9e61ad13443cd108ffd482e6ba0d18cc0070ffd1033367a5c8f8099658605",
+    "src/GDTutor.Domain/GDTutor.Domain.csproj": "8d654c44b7bebb6b31a9f2f606927f45b5072193adc4eef8cce3f3cf3b278df3",
+    "src/GDTutor.Domain/packages.lock.json": "a4364d81a6de2707d66fbced18fbbc926c882ab96e1d1aebbb17e871285b9d75",
+    "src/GDTutor.Application/GDTutor.Application.csproj": "5474f1502e441e3f4f262033a6003bbc3ea61a69b51f763d16f0c2a2497f2cb5",
+    "src/GDTutor.Application/packages.lock.json": "05a5c08d5a0b70d7fb0910319b65a5b29c4a02e186bf4b2d11e17ebd7cf21ccf",
+    "src/GDTutor.Infrastructure/GDTutor.Infrastructure.csproj": "b246f4672ba2d57bfb39e208f4fda844cdfd3f67fa87caa0288a8b1eadd11dce",
+    "src/GDTutor.Infrastructure/packages.lock.json": "ac427781168a9962843866b0e186f4d2e26de9bbde996ccec14ed4dd26935c37",
+    "src/GDTutor.Api/GDTutor.Api.csproj": "da07362edf4ac8f8525620caa1b99dfd86be5b04f45329d0c2eb368fdb52a8c8",
+    "src/GDTutor.Api/packages.lock.json": "0f94bd99697dec004237312b593871d2aa17966b996acb2b1249d2bed2104121",
+    "src/GDTutor.Api/Program.cs": "17fff90170754c53b60660bb7ab835c3ba8b91c4132334b5008d8d0408344021",
+    "src/GDTutor.Api/Properties/launchSettings.json": "54031d1789f67ffb9a21a410a22cb2d578049c1a647e761ec69462513e6e20fa"
+  },
+  "passed": true
+}

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <UserSecretsId>GDTutor.Api.Development</UserSecretsId>
+    <RuntimeFrameworkVersion>10.0.13</RuntimeFrameworkVersion>
+    <RollForward>LatestPatch</RollForward>
+    <UseAppHost>false</UseAppHost>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="[10.0.13]" />
+    <ProjectReference Include="../GDTutor.Application/GDTutor.Application.csproj" />
+    <ProjectReference Include="../GDTutor.Infrastructure/GDTutor.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,138 @@
+{
+  "direction": "Compact Blue",
+  "status": "Accepted through owner “great go ahead” after the refined-components preview on 16 October 2026; shared UI 2.1.3 accepted, responsive shells reviewed separately in 2.1.4",
+  "updated_on": "2026-10-16",
+  "inspiration": "Owner reference 1 blue #0054A8; reference 2 slate/steel blues; reference 5 #007ACC and neutral #1E1E1E/#252525/#333333. Reference 7 purple was considered, but blue/charcoal is the proposed coherent main direction. Other reference accents are limited to semantic feedback.",
+  "palette": {
+    "canvas": {
+      "light": "#f5f6f8",
+      "dark": "#181818"
+    },
+    "surface": {
+      "light": "#ffffff",
+      "dark": "#222222"
+    },
+    "raised": {
+      "light": "#edf0f4",
+      "dark": "#2b2b2b"
+    },
+    "ink": {
+      "light": "#24292f",
+      "dark": "#eeeeee"
+    },
+    "muted": {
+      "light": "#576273",
+      "dark": "#b1b7c0"
+    },
+    "line": {
+      "light": "#dce1e7",
+      "dark": "#3c3c3c"
+    },
+    "control": {
+      "light": "#788392",
+      "dark": "#8a929e"
+    },
+    "primary": {
+      "light": "#0054a8",
+      "dark": "#79b8ff"
+    },
+    "on-primary": {
+      "light": "#ffffff",
+      "dark": "#102338"
+    },
+    "soft-primary": {
+      "light": "#eaf2fc",
+      "dark": "#203348"
+    },
+    "teal": {
+      "light": "#365c88",
+      "dark": "#a5bddb"
+    },
+    "soft-teal": {
+      "light": "#edf2f8",
+      "dark": "#293443"
+    },
+    "amber": {
+      "light": "#92400e",
+      "dark": "#fbbf24"
+    },
+    "soft-amber": {
+      "light": "#fff4da",
+      "dark": "#3b2d16"
+    },
+    "focus": {
+      "light": "#0054a8",
+      "dark": "#79b8ff"
+    },
+    "success": {
+      "light": "#166534",
+      "dark": "#86efac"
+    },
+    "success-soft": {
+      "light": "#edf7ee",
+      "dark": "#173725"
+    },
+    "danger": {
+      "light": "#b42318",
+      "dark": "#fda29b"
+    },
+    "danger-soft": {
+      "light": "#fff0ee",
+      "dark": "#482421"
+    },
+    "disabled-ink": {
+      "light": "#576273",
+      "dark": "#b1b7c0"
+    },
+    "disabled-surface": {
+      "light": "#edf0f4",
+      "dark": "#2b2b2b"
+    },
+    "hero": {
+      "light": "#edf3fa",
+      "dark": "#242a32"
+    },
+    "feature": {
+      "light": "#e8f2f7",
+      "dark": "#293540"
+    },
+    "feature-ink": {
+      "light": "#2e536c",
+      "dark": "#bfd5e8"
+    },
+    "action": {
+      "light": "#0054a8",
+      "dark": "#007acc"
+    },
+    "action-hover": {
+      "light": "#0147ad",
+      "dark": "#006bb3"
+    },
+    "action-pressed": {
+      "light": "#003d83",
+      "dark": "#005a9c"
+    },
+    "on-action": {
+      "light": "#ffffff",
+      "dark": "#ffffff"
+    },
+    "action-border": {
+      "light": "#9cabbc",
+      "dark": "#65768b"
+    }
+  },
+  "density": {
+    "body_rem": 0.8125,
+    "desktop_control_rem": 2,
+    "mobile_or_coarse_control_rem": 2.75,
+    "field_desktop_rem": 0.8125,
+    "field_mobile_rem": 1,
+    "card_padding_rem": 1,
+    "card_radius_rem": 0.5,
+    "control_radius_rem": 0.375,
+    "dialog_max_rem": 27.5,
+    "drawer_max_rem": 22,
+    "page_gutter_max_rem": 1.5
+  },
+  "typography": "Local Segoe UI/system sans-serif; 20–24px page title, 15px card/modal titles, 13px body/buttons/desktop inputs, 500 labels and 600 emphasis; touch input text 16px. No remote fonts."
+}

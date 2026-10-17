@@ -1,0 +1,436 @@
+{
+  "checked_at_utc": "2026-10-16T12:23:48.356Z",
+  "browser": "154.0.8037.98",
+  "base_url": "http://127.0.0.1:3000/",
+  "mode": "Actual production HTTP; Chrome viewport/media emulation, not real device or screen-reader certification",
+  "checks": [
+    {
+      "name": "Fresh visit uses System and the device dark palette",
+      "passed": true
+    },
+    {
+      "name": "Explicit Light persists after reload and overrides device changes",
+      "passed": true
+    },
+    {
+      "name": "System responds live to dark and light device changes",
+      "passed": true
+    },
+    {
+      "name": "New page and cross-tab changes share the saved preference",
+      "passed": true
+    },
+    {
+      "name": "Clearing or removing the preference in another tab restores System",
+      "passed": true
+    },
+    {
+      "name": "Invalid stored values fall back to System without script errors",
+      "passed": true
+    },
+    {
+      "name": "Keyboard can focus and change the native appearance selector",
+      "passed": true
+    },
+    {
+      "name": "light semantic palette matches the current Compact Blue proposal",
+      "passed": true
+    },
+    {
+      "name": "light at 320px: no overflow and responsive control target",
+      "passed": true
+    },
+    {
+      "name": "light at 360px: no overflow and responsive control target",
+      "passed": true
+    },
+    {
+      "name": "light at 390px: no overflow and responsive control target",
+      "passed": true
+    },
+    {
+      "name": "light at 768px: no overflow and responsive control target",
+      "passed": true
+    },
+    {
+      "name": "light at 1024px: no overflow and responsive control target",
+      "passed": true
+    },
+    {
+      "name": "light at 1440px: no overflow and responsive control target",
+      "passed": true
+    },
+    {
+      "name": "light with 200% base text size at 320px reflows",
+      "passed": true
+    },
+    {
+      "name": "dark semantic palette matches the current Compact Blue proposal",
+      "passed": true
+    },
+    {
+      "name": "dark at 320px: no overflow and responsive control target",
+      "passed": true
+    },
+    {
+      "name": "dark at 360px: no overflow and responsive control target",
+      "passed": true
+    },
+    {
+      "name": "dark at 390px: no overflow and responsive control target",
+      "passed": true
+    },
+    {
+      "name": "dark at 768px: no overflow and responsive control target",
+      "passed": true
+    },
+    {
+      "name": "dark at 1024px: no overflow and responsive control target",
+      "passed": true
+    },
+    {
+      "name": "dark at 1440px: no overflow and responsive control target",
+      "passed": true
+    },
+    {
+      "name": "dark with 200% base text size at 320px reflows",
+      "passed": true
+    },
+    {
+      "name": "All 34 observed opaque token contrast pairs meet their targets",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion and forced-colors keep focus usable",
+      "passed": true
+    },
+    {
+      "name": "Saved Dark applies before hydration with application bundles blocked",
+      "passed": true
+    },
+    {
+      "name": "Blocked storage uses System then allows a temporary explicit choice",
+      "passed": true
+    },
+    {
+      "name": "Write failure overrides an old stored value for the current visit",
+      "passed": true
+    },
+    {
+      "name": "No-JavaScript rendering follows the dark device palette",
+      "passed": true
+    }
+  ],
+  "contrasts": [
+    {
+      "mode": "light",
+      "foreground": "ink",
+      "background": "canvas",
+      "ratio": 13.55,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "ink",
+      "background": "surface",
+      "ratio": 14.65,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "ink",
+      "background": "raised",
+      "ratio": 12.82,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "muted",
+      "background": "canvas",
+      "ratio": 5.71,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "muted",
+      "background": "surface",
+      "ratio": 6.18,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "muted",
+      "background": "raised",
+      "ratio": 5.4,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "primary",
+      "background": "surface",
+      "ratio": 7.41,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "primary",
+      "background": "primary-soft",
+      "ratio": 6.57,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "on-primary",
+      "background": "primary",
+      "ratio": 7.41,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "secondary",
+      "background": "secondary-soft",
+      "ratio": 6.13,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "highlight",
+      "background": "highlight-soft",
+      "ratio": 6.48,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "success",
+      "background": "success-soft",
+      "ratio": 6.5,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "danger",
+      "background": "danger-soft",
+      "ratio": 5.93,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "disabled-ink",
+      "background": "disabled-surface",
+      "ratio": 5.4,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "control",
+      "background": "surface",
+      "ratio": 3.85,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "focus",
+      "background": "surface",
+      "ratio": 7.41,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "focus",
+      "background": "canvas",
+      "ratio": 6.85,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "ink",
+      "background": "canvas",
+      "ratio": 15.3,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "ink",
+      "background": "surface",
+      "ratio": 13.71,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "ink",
+      "background": "raised",
+      "ratio": 12.2,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "muted",
+      "background": "canvas",
+      "ratio": 8.8,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "muted",
+      "background": "surface",
+      "ratio": 7.88,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "muted",
+      "background": "raised",
+      "ratio": 7.01,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "primary",
+      "background": "surface",
+      "ratio": 7.66,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "primary",
+      "background": "primary-soft",
+      "ratio": 6.21,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "on-primary",
+      "background": "primary",
+      "ratio": 7.66,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "secondary",
+      "background": "secondary-soft",
+      "ratio": 6.54,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "highlight",
+      "background": "highlight-soft",
+      "ratio": 8,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "success",
+      "background": "success-soft",
+      "ratio": 9.29,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "danger",
+      "background": "danger-soft",
+      "ratio": 6.98,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "disabled-ink",
+      "background": "disabled-surface",
+      "ratio": 7.01,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "control",
+      "background": "surface",
+      "ratio": 5.07,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "focus",
+      "background": "surface",
+      "ratio": 7.66,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "focus",
+      "background": "canvas",
+      "ratio": 8.55,
+      "minimum": 3,
+      "passed": true
+    }
+  ],
+  "page_errors": [],
+  "external_requests": [],
+  "captures": [
+    {
+      "path": "docs/design/previews/shared-ui/theme-regression/light-390.png",
+      "sha256": "66ec6982396131dfe2935fc077bd48597369a339a02011734809020d38f84513",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/theme-regression/light-1440.png",
+      "sha256": "d49c75f537021a63ea0b38dc128bbcbfe1b422808b254e84c7c4bd46b66dbacf",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/theme-regression/dark-390.png",
+      "sha256": "b70d9a7ccd2d73e24deeac81d0ed54f6ce5d5099e1b443f3d63786cf3022ddf0",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/theme-regression/dark-1440.png",
+      "sha256": "f846bbd853a19dff18597176f9f195a0e9d39be4cabe31388703d4ee13dd9a56",
+      "visually_reviewed": false
+    }
+  ],
+  "source_sha256": {
+    "apps/web/src/lib/appearance.ts": "78d4d2d9a92a1193018e546806e0ef781612ab80cd18d01b6c3a3a1598416d2c",
+    "apps/web/src/components/appearance/appearance-select.tsx": "ffab5a2de40857c7a102ac6810cd06a2398d46d09a94eacafe22dd0ac4358a62",
+    "apps/web/src/components/appearance/appearance-select.module.css": "af59db86dabf114e7866446a23bc3c9e0217e80dcd8e81bd33abb7694f7ad86b",
+    "apps/web/src/styles/tokens.css": "e3f8a7faf1bded462e22c36006c73b70b000b3f91763e5795bd6d0936b7ba6e9",
+    "apps/web/src/styles/globals.css": "7ef15406a9b117aaa8f92f3247ec972e158d111bb8d9cf56138035ed5a957780",
+    "apps/web/src/app/layout.tsx": "86f02ed79c2d286fd938c8c68aa1725daa11bf7c2e91e4f35fbe0e7fb63970f1",
+    "apps/web/src/app/(public)/page.tsx": "5c6c20326455aceed85d8b18d8e73db04b450f3574b9c679a54f3fd7153790aa",
+    "apps/web/src/app/(public)/page.module.css": "cce81495fe51916a41f3fa2ee8c86f92fedbecb279ae6ad6a3e96b7624880324",
+    "docs/design/UI-DESIGN-TOKENS.json": "9c11c9cd95cddc35f0cd5892ab3956c5b1b28cc6e723671aedb7547316cc4263",
+    "apps/web/package-lock.json": "82d434bf672e9655464aac5a10f3fe370e8bbbb7e0ec32c6c4da7d4e4b1939ac",
+    "tools/frontend/verify-appearance.cjs": "e9e46beb171928c380b08a9ddde0381dbf31dd0f4d48f8738804a042758d47ec"
+  },
+  "passed": true
+}

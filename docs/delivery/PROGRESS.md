@@ -1,10 +1,10 @@
 # Subphase progress tracker
 
-**Updated:** 16 October 2026  
-**Active item:** 2.1.1 accepted — Git checkpoint before 2.1.2  
-**Awaiting owner review:** None for 2.1.1; owner requested commit/push before theme work  
-**Next authorized item:** 2.1.2 — common CSS, theme tokens and Light/Dark/System; not started pending requested push  
-**Execution authorization:** Owner said “ok go ahead but before push changes” after the 2.1.1 preview on 16 October: accept 2.1.1, commit/push reviewed work first, then execute 2.1.2 only. No production deployment or other leaf is authorized.
+**Updated:** 17 October 2026  
+**Active item:** None — 2.3.1 accepted; repository checkpoint requested  
+**Awaiting owner review:** None  
+**Next proposed item:** 2.3.2 — build/dependency checks and repeatable setup; not started  
+**Execution authorization:** Owner accepted 2.3.1 with “great” and requested a commit/push on 17 October 2026. No next implementation leaf is authorized by this checkpoint request.
 
 ## How to use this tracker
 
@@ -22,13 +22,13 @@ This is the single source of execution status. The [roadmap](../planning/SUBPHAS
 
 | State | Leaf items |
 |---|---:|
-| Not started | 74 |
+| Not started | 66 |
 | In progress | 0 |
 | Ready for review | 0 |
 | Changes requested | 0 |
-| Accepted | 15 |
+| Accepted | 23 |
 
-Phases 0 and 1 are accepted with their documented future admission/compatibility gates. Frontend scaffold 2.1.1 is accepted: Next.js/React/strict TypeScript, folder/import boundaries, pinned packages and passing local checks/preview. Themes, shared UI, responsive app shells, API client and all backend/schema/provider work remain in their separate leaves. No migration or capacity claim is made.
+Phases 0 and 1 and frontend leaves 2.1.1–2.1.5 are accepted. Compact Blue with refined component density and fluid width is the accepted current visual foundation. Backend project foundation 2.2.1 is accepted. Service/configuration 2.2.2 is accepted; HTTP foundation 2.2.3 is accepted; frontend/API integration 2.3.1 is accepted; schema and provider work remain later leaves. Owner requested a new GitHub checkpoint on 17 October 2026; see Git history for its commit identity. Previous checkpoint was 4d064ee.
 
 **Required database input:** At **2.4.1**, request and review the previous database/table structure and PostgreSQL environment details before persistent entities, EF mappings or migrations.
 
@@ -63,14 +63,14 @@ Phases 0 and 1 are accepted with their documented future admission/compatibility
 | ID | Work | Status | Review record |
 |---|---|---|---|
 | 2.1.1 | React/TypeScript framework scaffold and folder structure | Accepted | [2.1.1 review](reviews/2.1.1-frontend-scaffold.md) |
-| 2.1.2 | Common CSS, theme tokens and Light/Dark/System switching | Not started | — |
-| 2.1.3 | Shared UI primitives and common interaction patterns | Not started | — |
-| 2.1.4 | Public/student/staff responsive layout shells | Not started | — |
-| 2.1.5 | API-client contracts, shared utilities and form/error conventions | Not started | — |
-| 2.2.1 | .NET solution, Domain/Application/Infrastructure/API projects and references | Not started | — |
-| 2.2.2 | Service interfaces, dependency injection and environment configuration | Not started | — |
-| 2.2.3 | HTTP conventions, validation/error response shape, logging and health endpoints | Not started | — |
-| 2.3.1 | Connect frontend shell to backend health/sample contract | Not started | — |
+| 2.1.2 | Common CSS, theme tokens and Light/Dark/System switching | Accepted | [2.1.2 review](reviews/2.1.2-theme-foundation.md) |
+| 2.1.3 | Shared UI primitives and common interaction patterns | Accepted | [2.1.3 review](reviews/2.1.3-shared-ui.md) |
+| 2.1.4 | Public/student/staff responsive layout shells | Accepted | [2.1.4 review](reviews/2.1.4-responsive-shells.md) |
+| 2.1.5 | API-client contracts, shared utilities and form/error conventions | Accepted | [2.1.5 review](reviews/2.1.5-api-conventions.md) |
+| 2.2.1 | .NET solution, Domain/Application/Infrastructure/API projects and references | Accepted | [2.2.1 review](reviews/2.2.1-backend-scaffold.md) |
+| 2.2.2 | Service interfaces, dependency injection and environment configuration | Accepted | [2.2.2 review](reviews/2.2.2-services-configuration.md) |
+| 2.2.3 | HTTP conventions, validation/error response shape, logging and health endpoints | Accepted | [2.2.3 review](reviews/2.2.3-http-foundation.md) |
+| 2.3.1 | Connect frontend shell to backend health/sample contract | Accepted | [2.3.1 review](reviews/2.3.1-live-api-integration.md) |
 | 2.3.2 | Build checks, dependency/license scanning and repeatable local/staging setup | Not started | — |
 | 2.4.1 | Ask the owner for previous table structures/database details; inspect them together | Not started | — |
 | 2.4.2 | Proposed target schema and source-to-target mapping | Not started | — |

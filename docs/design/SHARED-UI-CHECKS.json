@@ -1,0 +1,655 @@
+{
+  "checked_at_utc": "2026-10-16T11:57:01.236Z",
+  "browser": "154.0.8037.98",
+  "url": "http://127.0.0.1:3000/ui-preview",
+  "scope": "Production HTTP; Chrome keyboard/viewport/media emulation, not physical-device or screen-reader certification",
+  "checks": [
+    {
+      "name": "UI preview is real HTTP 200, labelled and excluded from indexing",
+      "passed": true
+    },
+    {
+      "name": "Default action buttons do not submit; disabled/busy semantics are native",
+      "passed": true
+    },
+    {
+      "name": "Empty form reports and associates errors, then focuses the first invalid field",
+      "passed": true
+    },
+    {
+      "name": "Email correction and valid local form recover without a request",
+      "passed": true
+    },
+    {
+      "name": "Checkbox keyboard interaction and native read-only/disabled fields work",
+      "passed": true
+    },
+    {
+      "name": "Form reset clears fields, errors and success feedback",
+      "passed": true
+    },
+    {
+      "name": "Tabs have linked panels, roving focus, arrows/Home/End and disabled skipping",
+      "passed": true
+    },
+    {
+      "name": "Hidden tab content retains local form input",
+      "passed": true
+    },
+    {
+      "name": "Review example: focus contained, background inert, Escape restores focus/scroll",
+      "passed": true
+    },
+    {
+      "name": "Review example: visible close and repeated opening remain synchronized",
+      "passed": true
+    },
+    {
+      "name": "Study checklist: focus contained, background inert, Escape restores focus/scroll",
+      "passed": true
+    },
+    {
+      "name": "Study checklist: visible close and repeated opening remain synchronized",
+      "passed": true
+    },
+    {
+      "name": "Dialog confirmation and drawer Done close through controlled state",
+      "passed": true
+    },
+    {
+      "name": "light: hover and keyboard focus stay visible",
+      "passed": true
+    },
+    {
+      "name": "light 320px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "light 360px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "light 390px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "light 768px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "light 820px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "light 1024px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "light 1440px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "light 1920px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "light: compact desktop dialog and aligned header",
+      "passed": true
+    },
+    {
+      "name": "light: text zoom reflows without page overflow",
+      "passed": true
+    },
+    {
+      "name": "light: modal fits narrow landscape viewport with a usable close action",
+      "passed": true
+    },
+    {
+      "name": "dark: hover and keyboard focus stay visible",
+      "passed": true
+    },
+    {
+      "name": "dark 320px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "dark 360px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "dark 390px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "dark 768px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "dark 820px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "dark 1024px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "dark 1440px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "dark 1920px: viewport and responsive action targets",
+      "passed": true
+    },
+    {
+      "name": "dark: compact desktop dialog and aligned header",
+      "passed": true
+    },
+    {
+      "name": "dark: text zoom reflows without page overflow",
+      "passed": true
+    },
+    {
+      "name": "dark: modal fits narrow landscape viewport with a usable close action",
+      "passed": true
+    },
+    {
+      "name": "All observed button contrast pairs and interaction states pass",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion stops spinner and skeleton animations",
+      "passed": true
+    },
+    {
+      "name": "Touch tablets in both themes retain readable controls and usable modal layers",
+      "passed": true
+    },
+    {
+      "name": "Sample form/actions never issue a write request",
+      "passed": true
+    }
+  ],
+  "contrasts": [
+    {
+      "mode": "light",
+      "name": "Start learning",
+      "state": "rest",
+      "ratio": 7.41,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "Explore courses",
+      "state": "rest",
+      "ratio": 6.13,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "View syllabus",
+      "state": "rest",
+      "ratio": 7.41,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "Delete draft",
+      "state": "rest",
+      "ratio": 5.93,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "Unavailable",
+      "state": "rest",
+      "ratio": 5.4,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "Saving example\u2026",
+      "state": "busy",
+      "ratio": 6.13,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "Start learning",
+      "state": "hover",
+      "ratio": 8.38,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "Start learning",
+      "state": "pressed",
+      "ratio": 10.53,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "Explore courses",
+      "state": "hover",
+      "ratio": 6.13,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "Explore courses",
+      "state": "pressed",
+      "ratio": 6.13,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "View syllabus",
+      "state": "hover",
+      "ratio": 6.57,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "View syllabus",
+      "state": "pressed",
+      "ratio": 6.57,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "Delete draft",
+      "state": "hover",
+      "ratio": 5.93,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "name": "Delete draft",
+      "state": "pressed",
+      "ratio": 5.93,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "Start learning",
+      "state": "rest",
+      "ratio": 4.51,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "Explore courses",
+      "state": "rest",
+      "ratio": 6.54,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "View syllabus",
+      "state": "rest",
+      "ratio": 7.66,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "Delete draft",
+      "state": "rest",
+      "ratio": 6.98,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "Unavailable",
+      "state": "rest",
+      "ratio": 7.01,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "Saving example\u2026",
+      "state": "busy",
+      "ratio": 6.54,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "Start learning",
+      "state": "hover",
+      "ratio": 5.59,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "Start learning",
+      "state": "pressed",
+      "ratio": 7.14,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "Explore courses",
+      "state": "hover",
+      "ratio": 6.54,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "Explore courses",
+      "state": "pressed",
+      "ratio": 6.54,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "View syllabus",
+      "state": "hover",
+      "ratio": 6.21,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "View syllabus",
+      "state": "pressed",
+      "ratio": 6.21,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "Delete draft",
+      "state": "hover",
+      "ratio": 6.98,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "name": "Delete draft",
+      "state": "pressed",
+      "ratio": 6.98,
+      "minimum": 4.5,
+      "passed": true
+    }
+  ],
+  "layout_metrics": [
+    {
+      "mode": "light",
+      "width": 320,
+      "pageHeight": 2859,
+      "heroHeight": 186,
+      "actionHeight": 44
+    },
+    {
+      "mode": "light",
+      "width": 360,
+      "pageHeight": 2749,
+      "heroHeight": 186,
+      "actionHeight": 44
+    },
+    {
+      "mode": "light",
+      "width": 390,
+      "pageHeight": 2654,
+      "heroHeight": 186,
+      "actionHeight": 44
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "pageHeight": 1437,
+      "heroHeight": 106.5,
+      "actionHeight": 32
+    },
+    {
+      "mode": "light",
+      "width": 820,
+      "pageHeight": 1437,
+      "heroHeight": 106.5,
+      "actionHeight": 32
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "pageHeight": 1437,
+      "heroHeight": 107.078125,
+      "actionHeight": 32
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "pageHeight": 1331,
+      "heroHeight": 111.296875,
+      "actionHeight": 32
+    },
+    {
+      "mode": "light",
+      "width": 1920,
+      "pageHeight": 1331,
+      "heroHeight": 111.296875,
+      "actionHeight": 32
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "pageHeight": 2859,
+      "heroHeight": 186,
+      "actionHeight": 44
+    },
+    {
+      "mode": "dark",
+      "width": 360,
+      "pageHeight": 2749,
+      "heroHeight": 186,
+      "actionHeight": 44
+    },
+    {
+      "mode": "dark",
+      "width": 390,
+      "pageHeight": 2654,
+      "heroHeight": 186,
+      "actionHeight": 44
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "pageHeight": 1437,
+      "heroHeight": 106.5,
+      "actionHeight": 32
+    },
+    {
+      "mode": "dark",
+      "width": 820,
+      "pageHeight": 1437,
+      "heroHeight": 106.5,
+      "actionHeight": 32
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "pageHeight": 1437,
+      "heroHeight": 107.078125,
+      "actionHeight": 32
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "pageHeight": 1331,
+      "heroHeight": 111.296875,
+      "actionHeight": 32
+    },
+    {
+      "mode": "dark",
+      "width": 1920,
+      "pageHeight": 1331,
+      "heroHeight": 111.296875,
+      "actionHeight": 32
+    }
+  ],
+  "page_errors": [],
+  "external_requests": [],
+  "write_requests": [],
+  "captures": [
+    {
+      "path": "docs/design/previews/shared-ui/light-390.png",
+      "sha256": "2664a0f7373771c34b58369891587229f5e53c1866abab9f862e16ff6f487437",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/shared-ui/light-768.png",
+      "sha256": "f59abbe987f2500b330887ca47a20f258f1f048ffa19a0733c3918727af22217",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/light-1024.png",
+      "sha256": "b86ba30af2eafc21e1caf391ea527e2506de8d33edcf6d104ddb97933d75cce9",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/light-1440.png",
+      "sha256": "12ffdf9e5e4110755b80458fd80fc2828355416e351c3ceffcd26e1d9365479d",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/shared-ui/buttons-light-rest.png",
+      "sha256": "e7b47f829efe62c82534485613896cb6e7d647f27e359495f52e54ae74e03c8e",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/buttons-light-hover.png",
+      "sha256": "ba99ee4b372dba5e3c567d33728aca33e2e9d42b3c373c9bf47b0751e972f878",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/buttons-light-pressed.png",
+      "sha256": "d20ca2855bda28a5f84ba7d257f4dc325822e0f1c656af686358fda1f722615f",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/dialog-light-1440.png",
+      "sha256": "87c32a9b88043ca81d199d7bb3d2fe5ae5ca092bfa144c8e9441cf42532f7933",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/dialog-light-390.png",
+      "sha256": "1484770864f4f11232b80f379175ef07d73d870a00c1d1b913ef46b69fc8f12a",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/shared-ui/drawer-light-390.png",
+      "sha256": "4511a32e783e80eb35792e8c4db14a971936131b173f6a95627b2c43f9696185",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/shared-ui/dark-390.png",
+      "sha256": "e7d283f0deeb44e7ee6f455893616f52e37f4c015c8e05e849717cd8134ce04d",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/dark-768.png",
+      "sha256": "2c0c85dc861a7fc5bef6b0413683e21a0948275e6f60e9b42bbdfdae4522efac",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/dark-1024.png",
+      "sha256": "5b1ac9adb403853fe2b6e7e3019e397019d576962c41e8d0a297eb82c83ead99",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/dark-1440.png",
+      "sha256": "b0dafb1d019c4659ee1345bb9690e8381d33da7ad9539ac14d5d463ecc3d7709",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/buttons-dark-rest.png",
+      "sha256": "41ee03ab7354b7668fa197975f7ed07aca71e769ed2fe08a1a6bdbdd80e3ce0b",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/buttons-dark-hover.png",
+      "sha256": "3edc1b7d75dc1901b4bc44dfb6a185a2356a4ae7aa22355dbcc00ffcbbe2f5f3",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/buttons-dark-pressed.png",
+      "sha256": "e035438c6df6d06d976b35269556e2da7341d8c1544af9eb92061fbd9b4275f3",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/dialog-dark-1440.png",
+      "sha256": "69f55c1ab45cf27405020bd0df855726f734409e013b101d8902a5747680f184",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/shared-ui/dialog-dark-390.png",
+      "sha256": "d910478bf986435510d193116cc8d610cc3a8e047b351c0a59788f73b06b95c3",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/drawer-dark-390.png",
+      "sha256": "851e3ea20d92f65ff01a4e8907e64bb1e014182c8865286e441e6e15f8d1c944",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/shared-ui/tablet-light-768.png",
+      "sha256": "700227f0e763123c7663e9de79a3e2dd908cf5bd668a7910d32f6c36945e1b7c",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/shared-ui/tablet-light-1024.png",
+      "sha256": "7a1915299ba565b08b2eee6a4aef52cf437ea27c675438ba99b85a378cc63b7c",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/tablet-dark-768.png",
+      "sha256": "29374456d080f153158ffbbd1dd258af3c554f516366d756349c733898295e1b",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shared-ui/tablet-dark-1024.png",
+      "sha256": "1c2f72a89e6d9a1495eb8ba8aa82761f43532728d0615a51c7e4f788d1ef88d9",
+      "visually_reviewed": true
+    }
+  ],
+  "source_sha256": {
+    "apps/web/src/components/ui/button.tsx": "2cbce6ee7754839aaf5dd367ceb909c08ef141a35fd34870a9417d9c2f37579e",
+    "apps/web/src/components/ui/card.tsx": "e495ec4be38359f07cde5076f40e390fd8f22e0681a43836676f9ce8d8f23837",
+    "apps/web/src/components/ui/feedback.tsx": "7b21a59072ce1d0388a22851d30fa105aa984c74cbec00c253c838a4d51be974",
+    "apps/web/src/components/ui/fields.tsx": "8a00703f44b7f47b3d25f5e8f07d8308fe1ab48eb95914aea610696a33238a92",
+    "apps/web/src/components/ui/index.ts": "380d0b6f7547ab6cb47357ebf16885414b1b0bbc9c2b543b5c064fa5652f5eb9",
+    "apps/web/src/components/ui/modal.tsx": "99b4138f46c5f5999b14aa8474c737a8ae99368d010a7b92b0d77011b074a7fe",
+    "apps/web/src/components/ui/tabs.tsx": "896aeca25074ae248a80fc8c5cb5c99701b5b406261ea83f46ca7598444e192d",
+    "apps/web/src/components/ui/ui.module.css": "0dca012447265b8315646d469239e31a27362e41005114d5e773c79ef537372d",
+    "apps/web/src/app/(public)/ui-preview/page.tsx": "34302112cb3ede4ecfcde24484412d28ea113478975e4af4592acd47d7cf5e53",
+    "apps/web/src/app/(public)/ui-preview/preview.module.css": "52bb1409b3fa6d01b7a2136293124653819c3d69e2ef30b6a1dafae4a627c993",
+    "apps/web/src/app/(public)/ui-preview/preview.tsx": "b9605f0e2ffc4b924d8217ea4cf42f4ee19c2b7b1db7e8d45fe067d6394931f0",
+    "apps/web/src/styles/tokens.css": "e3f8a7faf1bded462e22c36006c73b70b000b3f91763e5795bd6d0936b7ba6e9",
+    "apps/web/src/app/(public)/page.tsx": "5c6c20326455aceed85d8b18d8e73db04b450f3574b9c679a54f3fd7153790aa",
+    "apps/web/package-lock.json": "82d434bf672e9655464aac5a10f3fe370e8bbbb7e0ec32c6c4da7d4e4b1939ac",
+    "tools/frontend/verify-ui.cjs": "022ca008788fab21401c79b47c5a0b209c48c6ec34c572102d456c3c1e4c9158"
+  },
+  "passed": true
+}

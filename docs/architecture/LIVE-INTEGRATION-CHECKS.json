@@ -1,0 +1,284 @@
+{
+  "checked_at_utc": "2026-10-17T10:47:00.987Z",
+  "browser": "155.0.8059.84",
+  "url": "http://127.0.0.1:3000/connection-preview",
+  "scope": "Production-build Next frontend and actual published .NET process via same-origin local forwarding; real requests only, no route mocking; desktop Chrome viewport/media emulation",
+  "checks": [
+    {
+      "name": "Live connection page is labelled read-only, English and excluded from indexing",
+      "passed": true
+    },
+    {
+      "name": "Actual .NET status traverses same-origin forwarding, retains no-store/trace and renders current UTC data",
+      "passed": true
+    },
+    {
+      "name": "ready: real health GET renders bounded scope",
+      "passed": true
+    },
+    {
+      "name": "live: real health GET renders bounded scope",
+      "passed": true
+    },
+    {
+      "name": "Delayed real request shows loading/busy then success",
+      "passed": true
+    },
+    {
+      "name": "Cancellation of an actual delayed request cannot apply its late result",
+      "passed": true
+    },
+    {
+      "name": "Replacing a pending delayed check aborts stale feedback and renders the newer status",
+      "passed": true
+    },
+    {
+      "name": "Actual two-second endpoint produces a distinct one-second client timeout",
+      "passed": true
+    },
+    {
+      "name": "Actual server 500 preserves safe ProblemDetails and trace correlation through Next",
+      "passed": true
+    },
+    {
+      "name": "Retry is explicit and reset clears previous feedback",
+      "passed": true
+    },
+    {
+      "name": "Stopped API yields a safe proxy/transport error without infrastructure HTML or a fake success",
+      "passed": true
+    },
+    {
+      "name": "Restarted API recovers on explicit retry",
+      "passed": true
+    },
+    {
+      "name": "Production backend serves status but returns 404 for the local diagnostic operation",
+      "passed": true
+    },
+    {
+      "name": "Failure reference can be matched to the actual API safe log event",
+      "passed": true
+    },
+    {
+      "name": "light/320: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "light/360: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "light/390: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "light/768: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "light/820: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "light/1024: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "light/1440: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "light/1920: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "light: 200% text retains mobile reflow",
+      "passed": true
+    },
+    {
+      "name": "dark/320: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "dark/360: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "dark/390: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "dark/768: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "dark/820: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "dark/1024: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "dark/1440: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "dark/1920: compact mobile/tablet/desktop layout without page overflow",
+      "passed": true
+    },
+    {
+      "name": "dark: 200% text retains mobile reflow",
+      "passed": true
+    },
+    {
+      "name": "System appearance follows browser media preference",
+      "passed": true
+    },
+    {
+      "name": "Keyboard access reaches the select and request action",
+      "passed": true
+    },
+    {
+      "name": "Navigating away while loading does not apply an unmounted result",
+      "passed": true
+    }
+  ],
+  "captures": [
+    {
+      "path": "docs/design/previews/integration/connection-light-390.png",
+      "sha256": "b2634a0fabbe6c0d34a1228f5177d85984317296fa6f8e4073a54e8ecbe95ad0",
+      "visually_reviewed": true,
+      "visual_notes": "Reviewed final light/dark 390/768/1440 captures: aligned labels and values, readable hierarchy, compact controls, fluid gutters, no clipped content."
+    },
+    {
+      "path": "docs/design/previews/integration/connection-light-768.png",
+      "sha256": "35676f9bb7ef43c75eb68fbb4fc488bb297fbff3e0a2671f14b73c4e0f3ae68b",
+      "visually_reviewed": true,
+      "visual_notes": "Reviewed final light/dark 390/768/1440 captures: aligned labels and values, readable hierarchy, compact controls, fluid gutters, no clipped content."
+    },
+    {
+      "path": "docs/design/previews/integration/connection-light-1440.png",
+      "sha256": "95e5fe1849f90006557dc2c7b6cd98087fe0f6c4bafa54c9848998346da52dec",
+      "visually_reviewed": true,
+      "visual_notes": "Reviewed final light/dark 390/768/1440 captures: aligned labels and values, readable hierarchy, compact controls, fluid gutters, no clipped content."
+    },
+    {
+      "path": "docs/design/previews/integration/connection-dark-390.png",
+      "sha256": "4463338ddda00a93fc8e93a1fd74156e646d7c740d1484e20547ac66c48b43d0",
+      "visually_reviewed": true,
+      "visual_notes": "Reviewed final light/dark 390/768/1440 captures: aligned labels and values, readable hierarchy, compact controls, fluid gutters, no clipped content."
+    },
+    {
+      "path": "docs/design/previews/integration/connection-dark-768.png",
+      "sha256": "6849badb028944d5af345a55797af1c2aa24d7f9109bd8c61b9eca9dd16d4505",
+      "visually_reviewed": true,
+      "visual_notes": "Reviewed final light/dark 390/768/1440 captures: aligned labels and values, readable hierarchy, compact controls, fluid gutters, no clipped content."
+    },
+    {
+      "path": "docs/design/previews/integration/connection-dark-1440.png",
+      "sha256": "14c871151f57338f0a90ef461ad720e29af4d0fd5fe4f6d8ff2a114745fbdc28",
+      "visually_reviewed": true,
+      "visual_notes": "Reviewed final light/dark 390/768/1440 captures: aligned labels and values, readable hierarchy, compact controls, fluid gutters, no clipped content."
+    }
+  ],
+  "source_sha256": {
+    "apps/web/next.config.ts": "7f3f5eb3a34c6eed91d1c47bec9650ac2dfd97daed8eb0eac5ed78ee6b275000",
+    "apps/web/src/lib/server/local-api.ts": "021c7eac6ce290242b5fe5c48bde812a7604aabbf2112d3dd811c7ed00a69138",
+    "apps/web/src/lib/api/client.ts": "66a1e06c11a613ffaa16ded2414b2da553bfee57665f007c0f284deed9fdd887",
+    "apps/web/src/lib/api/foundation.ts": "e78e0a3517d04e63b8b5d67e81964c44a5658ff1c67b975ba56167feae3abe59",
+    "apps/web/src/lib/api/generated/foundation.ts": "5ea13e11fe798c0d3fce4de64d1fc2445b3b5eb83d1f0ae6717c7c3235ed2257",
+    "apps/web/src/features/connection/connection-preview.tsx": "31bb2e855af75605be3f1864a10a324329020669305fa7f3e6188601a2487bfa",
+    "apps/web/src/features/connection/connection.module.css": "738596a4b28af6ba965d7d348b273f33825c923b7bc4edf06ac2ca2e71a1460e",
+    "apps/web/src/app/(public)/connection-preview/page.tsx": "0d03a42d6a1087b6814e0e59a6803ed99b7f854e8d14ffe655b64fdbf426006a",
+    "src/GDTutor.Api/Controllers/DevelopmentDiagnosticsController.cs": "c95c38bfddd9b752940f290eeb8f86165dcda770a082fa9644d142db1b0a2c71",
+    "src/GDTutor.Api/Contracts/SystemStatusResponse.cs": "0505d174d5b62af00cd026dc66b100372ae52b2d9341ea8076c7017fa4902cf6",
+    "tools/frontend/verify-live-integration.cjs": "6912bf0db0ba44d53dca81da5f0e3d7f5c098e9e636e0fe11892fd99076da1ab"
+  },
+  "responses": [
+    {
+      "path": "/api/v1/system/status",
+      "status": 200,
+      "traceId": "0HNPC7FOJBEO3:00000001",
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/health/ready",
+      "status": 200,
+      "traceId": "0HNPC7FOJBEO3:00000002",
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/health/live",
+      "status": 200,
+      "traceId": "0HNPC7FOJBEO3:00000003",
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/api/v1/diagnostics/delay",
+      "status": 200,
+      "traceId": "0HNPC7FOJBEO3:00000004",
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/api/v1/system/status",
+      "status": 200,
+      "traceId": "0HNPC7FOJBEO5:00000001",
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/api/v1/diagnostics/failure",
+      "status": 500,
+      "traceId": "0HNPC7FOJBEO6:00000001",
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/api/v1/diagnostics/failure",
+      "status": 500,
+      "traceId": "0HNPC7FOJBEO6:00000002",
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/api/v1/system/status",
+      "status": 500
+    },
+    {
+      "path": "/api/v1/system/status",
+      "status": 200,
+      "traceId": "0HNPC7FS065QM:00000001",
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/api/v1/diagnostics/failure",
+      "status": 404,
+      "traceId": "0HNPC7FS4VVNM:00000001",
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/api/v1/system/status",
+      "status": 200,
+      "traceId": "0HNPC7FS4VVNM:00000002",
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/api/v1/system/status",
+      "status": 200,
+      "traceId": "0HNPC7FSAIUK0:00000001",
+      "cacheControl": "no-store"
+    }
+  ],
+  "request_count": 39,
+  "external_requests": [],
+  "writes": [],
+  "page_errors": [],
+  "expected_http_console_errors": [
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "unexpected_console_errors": [],
+  "owned_test_api_processes_stopped": true,
+  "passed": true
+}

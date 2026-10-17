@@ -1,0 +1,492 @@
+{
+  "checked_at_utc": "2026-10-16T12:44:38.393Z",
+  "browser": "154.0.8037.98",
+  "base_url": "http://127.0.0.1:3000/",
+  "scope": "Local production HTTP; Chrome viewport/media and touch emulation. Not real-device, authorization or screen-reader certification.",
+  "checks": [
+    {
+      "name": "public: direct route is HTTP 200 with preview boundaries",
+      "passed": true
+    },
+    {
+      "name": "public/light/320: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/light/360: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/light/390: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/light/768: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/light/820: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/light/1024: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/light/1440: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/light/1920: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/light: menu Escape, route selection, Back and theme persistence",
+      "passed": true
+    },
+    {
+      "name": "public/light: long content and 200% text reflow",
+      "passed": true
+    },
+    {
+      "name": "public/dark/320: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/dark/360: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/dark/390: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/dark/768: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/dark/820: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/dark/1024: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/dark/1440: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/dark/1920: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "public/dark: menu Escape, route selection, Back and theme persistence",
+      "passed": true
+    },
+    {
+      "name": "public/dark: long content and 200% text reflow",
+      "passed": true
+    },
+    {
+      "name": "public: reachable links resolve and fixtures respect navigation scope",
+      "passed": true
+    },
+    {
+      "name": "student: direct route is HTTP 200 with preview boundaries",
+      "passed": true
+    },
+    {
+      "name": "student/light/320: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/light/360: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/light/390: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/light/768: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/light/820: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/light/1024: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/light/1440: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/light/1920: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/light: menu Escape, route selection, Back and theme persistence",
+      "passed": true
+    },
+    {
+      "name": "student/light: long content and 200% text reflow",
+      "passed": true
+    },
+    {
+      "name": "student/dark/320: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/dark/360: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/dark/390: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/dark/768: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/dark/820: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/dark/1024: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/dark/1440: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/dark/1920: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "student/dark: menu Escape, route selection, Back and theme persistence",
+      "passed": true
+    },
+    {
+      "name": "student/dark: long content and 200% text reflow",
+      "passed": true
+    },
+    {
+      "name": "student: reachable links resolve and fixtures respect navigation scope",
+      "passed": true
+    },
+    {
+      "name": "staff: direct route is HTTP 200 with preview boundaries",
+      "passed": true
+    },
+    {
+      "name": "staff/light/320: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/light/360: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/light/390: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/light/768: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/light/820: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/light/1024: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/light/1440: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/light/1920: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/light: menu Escape, route selection, Back and theme persistence",
+      "passed": true
+    },
+    {
+      "name": "staff/light: long content and 200% text reflow",
+      "passed": true
+    },
+    {
+      "name": "staff/dark/320: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/dark/360: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/dark/390: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/dark/768: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/dark/820: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/dark/1024: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/dark/1440: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/dark/1920: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "staff/dark: menu Escape, route selection, Back and theme persistence",
+      "passed": true
+    },
+    {
+      "name": "staff/dark: long content and 200% text reflow",
+      "passed": true
+    },
+    {
+      "name": "staff: reachable links resolve and fixtures respect navigation scope",
+      "passed": true
+    },
+    {
+      "name": "admin: direct route is HTTP 200 with preview boundaries",
+      "passed": true
+    },
+    {
+      "name": "admin/light/320: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/light/360: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/light/390: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/light/768: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/light/820: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/light/1024: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/light/1440: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/light/1920: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/light: menu Escape, route selection, Back and theme persistence",
+      "passed": true
+    },
+    {
+      "name": "admin/light: long content and 200% text reflow",
+      "passed": true
+    },
+    {
+      "name": "admin/dark/320: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/dark/360: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/dark/390: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/dark/768: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/dark/820: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/dark/1024: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/dark/1440: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/dark/1920: content, navigation and target layout",
+      "passed": true
+    },
+    {
+      "name": "admin/dark: menu Escape, route selection, Back and theme persistence",
+      "passed": true
+    },
+    {
+      "name": "admin/dark: long content and 200% text reflow",
+      "passed": true
+    },
+    {
+      "name": "admin: reachable links resolve and fixtures respect navigation scope",
+      "passed": true
+    },
+    {
+      "name": "Skip link moves keyboard focus into the main content",
+      "passed": true
+    },
+    {
+      "name": "Touch tablet navigation works in both orientations and themes",
+      "passed": true
+    }
+  ],
+  "captures": [
+    {
+      "path": "docs/design/previews/shells/public-light-390.png",
+      "sha256": "63e70f00f30b5e090bb1cc241dfbf4e8f2b4ef7cfcfbdf731566aec6db52080c",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/public-light-768.png",
+      "sha256": "b0b88f6259d8522f917be1568529a7f3dacd9a2cde1f025812f85b3dab0dcaf9",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/public-light-1440.png",
+      "sha256": "1def28db9639f81ec4a391c7e729f20d755e178d9d16ec58d78cf0d4b449a8ac",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/public-dark-390.png",
+      "sha256": "36268391b415b0b23ccd126cbabf862994b3e7d5b665122a55907dd99083dec7",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/public-dark-768.png",
+      "sha256": "2a408407e52d2fb0bde8bcf4eb7158a4ed6dbe5072c24fc37b1cbc9a35b536d7",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/public-dark-1440.png",
+      "sha256": "d3a21f8cc761668ade5f41a2a68931c5904897c08a44af4c9279c4d4b59fa4ed",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/student-light-390.png",
+      "sha256": "e4c427412605b4b7d3da6de01b0b02b95a66e94c6258b3884773989dac040542",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/shells/student-light-768.png",
+      "sha256": "da9b9cdaa06b98601f10028fbc333783dd4344e158106f5283affcef650ed0c0",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/student-light-1440.png",
+      "sha256": "81463393256f4f6cba6a57c126294c33dddd60eef563c7d1e178deee6b2f1aaf",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/student-dark-390.png",
+      "sha256": "bbabbc81f844a782664759ff6b020b38f91b64b101786ce200673c17ad1c1c8b",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/student-dark-768.png",
+      "sha256": "aeb32d00dec3bfc41862d30bc75daa91e0e2bd9f2ca6866540362946ef2afc25",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/student-dark-1440.png",
+      "sha256": "1deb1072dcdb7124be5fa2e5ffd9c21478060468e87e4c23e371f5d6eaaea25e",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/staff-light-390.png",
+      "sha256": "718e9a80191105fd739b8b6a86beda59424e70b8cf45469a028fe6ff7ab1a12e",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/staff-light-768.png",
+      "sha256": "5bc136762345d5e2d7e4c65325d8730b6b220ad395e9ffd116a622b80b4170e5",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/staff-light-1440.png",
+      "sha256": "8cf47e3526cdbd649e7e01cf1512588a92364447732e1b02da29b12971aaedc6",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/staff-dark-390.png",
+      "sha256": "cedec4a3eb755636a242cacfc2860e8a72b2afc3d052acd2cb8a574b4230aa28",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/staff-dark-768.png",
+      "sha256": "d00465776f4001bc2597d5a157a27ec4c2986058faf4a9c19baf673ff3fc1799",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/shells/staff-dark-1440.png",
+      "sha256": "5d58b81d4257e2e255d727c3866e9fef54b2961ad94f4955e61d9d7ebb870d0a",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/admin-light-1440.png",
+      "sha256": "8b93e5c6c7a3319475d6b2fd113be736dcc7a99f1d2604ae8e3d55a69d3e52df",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/admin-dark-1440.png",
+      "sha256": "835150f81e02b30e0f8b169aa01018fbd7d74a51548431f7afbda993e9396f17",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/design/previews/shells/student-menu-dark-390.png",
+      "sha256": "2b179e90329b0b7030b5123cfca64b3c717166e9a97dcc5dbd8aaa8c6940037e",
+      "visually_reviewed": false,
+      "note": "Supplemental visual inspection of expanded mobile navigation; production build unchanged."
+    }
+  ],
+  "source_sha256": {
+    "apps/web/src/components/layout/workspace-shell.tsx": "58bb8126b1f98a1269e4abc6be7446f947b0d1467eb8e6ddd2c59dead7fff8ad",
+    "apps/web/src/components/layout/workspace-shell.module.css": "1a7b68c010968058c3d5a04974eeccae3a7493d1b1d22138e8693d13e21bc96a",
+    "apps/web/src/app/(preview)/layout-preview/navigation.ts": "cea5aeb5a32a980fda16339f1bf9f26e37014a9031c62488d3284c40fe16d915",
+    "apps/web/src/app/(preview)/layout-preview/layout.tsx": "58a4601a34add3ab4ead469ec246cff36dec4b76f3ffa19274cd5f7814011839",
+    "apps/web/src/app/(preview)/layout-preview/page.tsx": "428163b68c505c01ebc3dd3eee974d49c949aef3a5662d66bbf87f708e8d15dc",
+    "apps/web/src/app/(preview)/layout-preview/[area]/[section]/page.tsx": "f4d4282d65ea13eb62122e4c9cd403b04f215034d144d40a8326f8ec62f88efe",
+    "apps/web/src/app/(preview)/layout-preview/preview.module.css": "168627498e3a95fbdef041fb270ac865bb67a9e151ab5fa07fc6001440fbc5c9",
+    "apps/web/src/styles/tokens.css": "e3f8a7faf1bded462e22c36006c73b70b000b3f91763e5795bd6d0936b7ba6e9",
+    "apps/web/package-lock.json": "82d434bf672e9655464aac5a10f3fe370e8bbbb7e0ec32c6c4da7d4e4b1939ac",
+    "tools/frontend/verify-shells.cjs": "daea2b786828dcdd194e2e19423595bbea649df8c23ae08cd2b6b1e8dd1d0582"
+  },
+  "page_errors": [],
+  "external_requests": [],
+  "write_requests": [],
+  "passed": true
+}

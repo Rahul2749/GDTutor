@@ -1,0 +1,53 @@
+{
+  "checked_at_utc": "2026-10-17T10:43:24.184Z",
+  "scope": "Compiled runtime decoders, exact-path GET boundaries, local rewrite configuration and generated contract parity; injected transports only",
+  "checks": [
+    {
+      "name": "Foundation decoder admits current explicit sample and projects only known fields",
+      "passed": true
+    },
+    {
+      "name": "Missing, wrong-type and overstated capability values fail before rendering",
+      "passed": true
+    },
+    {
+      "name": "Dates reject invalid calendar values, ambiguous timezones and excessive precision",
+      "passed": true
+    },
+    {
+      "name": "Health decoding distinguishes only supported bounded scopes",
+      "passed": true
+    },
+    {
+      "name": "Only exact health GETs reach the normal same-origin transport",
+      "passed": true
+    },
+    {
+      "name": "Unset local origin leaves deployment routing disabled",
+      "passed": true
+    },
+    {
+      "name": "Local IPv4, hostname and IPv6 origins yield exactly three narrow rewrite rules",
+      "passed": true
+    },
+    {
+      "name": "Remote, credential-bearing, malformed and path/query origins fail without rejected-value leakage",
+      "passed": true
+    },
+    {
+      "name": "Generated TypeScript matches the saved actual OpenAPI document",
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "apps/web/src/lib/api/foundation.ts": "e78e0a3517d04e63b8b5d67e81964c44a5658ff1c67b975ba56167feae3abe59",
+    "apps/web/src/lib/api/generated/foundation.ts": "5ea13e11fe798c0d3fce4de64d1fc2445b3b5eb83d1f0ae6717c7c3235ed2257",
+    "apps/web/src/lib/api/client.ts": "66a1e06c11a613ffaa16ded2414b2da553bfee57665f007c0f284deed9fdd887",
+    "apps/web/src/lib/server/local-api.ts": "021c7eac6ce290242b5fe5c48bde812a7604aabbf2112d3dd811c7ed00a69138",
+    "apps/web/next.config.ts": "7f3f5eb3a34c6eed91d1c47bec9650ac2dfd97daed8eb0eac5ed78ee6b275000",
+    "docs/architecture/openapi/integration-v1.json": "9a7a291bac01ae4102cfe62b53cc345b673165fec72499e709ac7480563cad78",
+    "tools/frontend/generate-foundation-contracts.cjs": "ee15170783d9b0ed403edd94d4557bef56085e6d44e2ad67dcd4caef0bb93b61",
+    "tools/frontend/verify-integration-contracts.cjs": "a6a6d06c0a5e81ad29749cdcfa012fb9bdb4bf5d7a92f1ad75d3e08b21bdd150"
+  },
+  "passed": true
+}

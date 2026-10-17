@@ -1,0 +1,42 @@
+{
+  "checked_at_utc": "2026-10-16T13:26:29.7388419Z",
+  "scope": "Published framework-dependent empty host; local process and HTTP startup only, not health/business/auth/integration/load testing.",
+  "requests": [
+    {
+      "path": "/",
+      "actual_status": 404,
+      "expected_status": 404
+    },
+    {
+      "path": "/api/v1/system/status",
+      "actual_status": 404,
+      "expected_status": 404
+    }
+  ],
+  "listener": "127.0.0.1:5081",
+  "runtime_configuration": {
+    "runtimeOptions": {
+      "tfm": "net10.0",
+      "rollForward": "LatestPatch",
+      "frameworks": [
+        {
+          "name": "Microsoft.NETCore.App",
+          "version": "10.0.13"
+        },
+        {
+          "name": "Microsoft.AspNetCore.App",
+          "version": "10.0.13"
+        }
+      ],
+      "configProperties": {
+        "System.GC.Server": true,
+        "System.Reflection.Metadata.MetadataUpdater.IsSupported": false,
+        "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false
+      }
+    }
+  },
+  "assembly_sha256": "8afa3ee9f259a2f5e96199c0d201adf947be0f2f3482b711f24310f3361a6a4c",
+  "script_sha256": "5502704c24c731775df9d309e96e4efd191a5838caae67510cc3f94faf03904f",
+  "process_stopped_after_check": true,
+  "passed": true
+}

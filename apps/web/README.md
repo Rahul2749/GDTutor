@@ -44,7 +44,7 @@ src/app/                   Routes and root composition only
   (student)/              Reserved student route group
   (staff)/                Reserved staff route group
 src/features/              Feature-owned code as each feature starts
-src/components/ui/         Shared primitives, beginning in 2.1.3
+src/components/ui/         Shared primitives implemented in 2.1.3
 src/components/layout/     Shared responsive shells, beginning in 2.1.4
 src/lib/                   Shared utilities and future API client
 src/hooks/                 Genuinely shared hooks only
@@ -56,6 +56,22 @@ src/types/                 Shared/generated contracts when real APIs exist
 
 Readme-only reserved folders expose no routes and do not provide authorization. Do not add empty business classes or sample student/order entities to fill the structure. `.NET` owns business rules and authorization; the PostgreSQL/table checkpoint remains 2.4.1.
 
-The preview CSS module is deliberately local. Approved common CSS, theme initialization and Light/Dark/System are **2.1.2**; components, navigation/layouts and API-client behavior follow in separate leaves. Editor libraries are not installed or imported into this app yet.
+The shared CSS/theme foundation is implemented for accepted **2.1.2**. Use Appearance to choose Light/Dark/System; choices persist locally where browser storage is available, and System follows device changes. A fixed early script and CSS fallback handle initial/no-script rendering. Shared component states are implemented in 2.1.3. Responsive shells are implemented for review in 2.1.4; API-client behavior and account preference synchronization follow separately. Editor libraries are not installed/imported here.
+
+See the [theme guide](../../docs/design/THEME-FOUNDATION.md) for token ownership, storage/initial-render behavior, verification and CSP integration limits. Do not add hard-coded light/dark colors to page modules or store authentication data in the appearance preference.
+
+Review the [shared UI preview](http://127.0.0.1:3000/ui-preview?phase=2.1.3), [component API](src/components/ui/README.md) and [implementation guide](../../docs/design/SHARED-UI-FOUNDATION.md). All preview form/action state is local; it issues no writes. Native controls, keyboard tabs and controlled dialog/drawer interactions share the light/dark tokens.
 
 See the [architecture](../../docs/architecture/APPLICATION-ARCHITECTURE.md), [API conventions](../../docs/architecture/API-CONVENTIONS.md), [package admission](../../docs/reference/FRONTEND-PACKAGES.json) and [2.1.1 review](../../docs/delivery/reviews/2.1.1-frontend-scaffold.md).
+
+The owner requested an overall visual revision during 2.1.3. The running frontend uses the accepted [Compact Blue](../../docs/design/OVERALL-DESIGN-REVISION.md), including global colors/typography and the component preview composition. The earlier Focus Workspace palette remains historical; the owner accepted the refined component revision on 16 October 2026.
+
+Review the [responsive layout hub](http://127.0.0.1:3000/layout-preview) and [shell guide](../../docs/design/RESPONSIVE-LAYOUT-SHELLS.md). Public/student/instructor/administrator destinations are labelled sample routes under `/layout-preview`; production account/feature routes are still separate implementation.
+
+Review the [2.1.5 mock request/form preview](http://127.0.0.1:3000/api-preview) and [API foundation guide](../../docs/architecture/FRONTEND-API-FOUNDATION.md). Shared transport is under src/lib/api, request state under src/hooks, and form/display helpers under src/lib. There is no backend integration yet. Application and preview copy are English-only.
+
+## Live API review — 2.3.1
+
+[Connection preview](http://127.0.0.1:3000/connection-preview?phase=2.3.1) now uses actual same-origin status/health requests. Set GDTUTOR_LOCAL_API_ORIGIN=http://127.0.0.1:5080 before build/dev and start the .NET Development API separately. Rebuild when changing this local setting. Leave it unset for deployed builds; production routing belongs to reviewed ingress. It is server configuration, never NEXT_PUBLIC. The older /api-preview remains mocked.
+
+See the [integration guide](../../docs/architecture/LIVE-API-INTEGRATION.md) for two-terminal commands, contract generation, failure/cancellation review and evidence. No additional package or paid service was added.

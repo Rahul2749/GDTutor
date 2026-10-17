@@ -103,3 +103,15 @@ This does not establish an allowed duration for every quiz; duration is configur
 Generate an explicit versioned OpenAPI artifact from the .NET HTTP surface, document statuses/auth/headers/examples, and generate frontend types only from admitted tooling when endpoints exist. Use [built-in ASP.NET OpenAPI support](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/overview?view=aspnetcore-10.0); production docs/UI access must be reviewed and restricted as appropriate. Schema-generation tooling does not authorize database generation.
 
 2.1.5 may use labelled mocked contracts until the real backend exists. 2.3.1 demonstrates an actual health/sample request through the same-origin path, success, cancellation and controlled failure, with no fake enrollment or invented table. Authentication/CSRF, retries, concurrency, restart/replay, rate limits, sensitive-field filtering and 500-user capacity require meaningful runtime tests in their respective implementation leaves. This documentation is not evidence those tests pass.
+
+## Frontend implementation checkpoint
+
+2.1.5 implements the frontend transport/state/form conventions with labelled mocks; see [frontend foundation](FRONTEND-API-FOUNDATION.md). This does not create the conceptual endpoints above or prove server authentication, concurrency or durability.
+
+## HTTP implementation checkpoint — 17 October 2026
+
+[2.2.3 HTTP foundation](BACKEND-HTTP-FOUNDATION.md) is ready for review. The system-status sample, process/foundation health, safe errors/logging and Development-only OpenAPI/diagnostics now exist. [Generated contract](openapi/foundation-v1.json) describes that actual surface. All other conceptual business/auth/concurrency operations above remain unimplemented. Frontend calls still use mocks until 2.3.1. Foundation health is not dependency or launch readiness.
+
+## Live integration checkpoint — 17 October 2026
+
+[2.3.1](LIVE-API-INTEGRATION.md) connects the browser client to real status and health reads through narrow local same-origin rewrites. Exact GET /health/live and /health/ready are operational-path exceptions to the versioned client guard; arbitrary health paths/queries and writes are refused. A bounded Development-only GET /api/v1/diagnostics/delay supports cancellation/timeout review. [Current generated artifact](openapi/integration-v1.json) includes it; the earlier foundation artifact is preserved. No authentication, durable write, production ingress or database policy is implemented by this integration.

@@ -1,0 +1,100 @@
+{
+  "checked_at_utc": "2026-10-16T12:44:40.522Z",
+  "runtime": "v24.19.0",
+  "scope": "Compiled framework-independent TypeScript with injected transports and real Request/Response/Abort APIs; no network or backend integration.",
+  "checks": [
+    {
+      "name": "GET uses same-origin cookies, no-store, JSON accept and redirect refusal",
+      "passed": true
+    },
+    {
+      "name": "External, protocol-relative, fragment, traversal and backslash paths never reach transport",
+      "passed": true
+    },
+    {
+      "name": "Writes require a valid token before transport",
+      "passed": true
+    },
+    {
+      "name": "Version/idempotency/CSRF headers and JSON body are passed exactly once",
+      "passed": true
+    },
+    {
+      "name": "Weak tags, invalid keys and non-JSON bodies fail before writes",
+      "passed": true
+    },
+    {
+      "name": "204 is decoded explicitly as null",
+      "passed": true
+    },
+    {
+      "name": "ProblemDetails preserves HTTP status/code/trace and bounded validation messages",
+      "passed": true
+    },
+    {
+      "name": "Unexpected HTML/JSON server errors do not leak body, title or detail",
+      "passed": true
+    },
+    {
+      "name": "Malformed problem JSON retains safe HTTP failure",
+      "passed": true
+    },
+    {
+      "name": "Each documented HTTP status has a safe recovery message",
+      "passed": true
+    },
+    {
+      "name": "429 honors delta-seconds and HTTP-date Retry-After; values are bounded",
+      "passed": true
+    },
+    {
+      "name": "Explicitly mapped fields do not map unknown properties or prototypes",
+      "passed": true
+    },
+    {
+      "name": "Network errors are safe and do not trigger automatic retries",
+      "passed": true
+    },
+    {
+      "name": "Failed writes are never automatically replayed",
+      "passed": true
+    },
+    {
+      "name": "Pre-cancelled requests do not reach transport",
+      "passed": true
+    },
+    {
+      "name": "In-flight cancellation differs from timeout",
+      "passed": true
+    },
+    {
+      "name": "Cancellation after a late transport success cannot apply data",
+      "passed": true
+    },
+    {
+      "name": "Malformed, wrong-media, oversized and schema-invalid successes are contract failures",
+      "passed": true
+    },
+    {
+      "name": "Response and timeout limits reject invalid configurations",
+      "passed": true
+    },
+    {
+      "name": "Currency display respects integer units, INR/JPY/KWD precision and invalid values",
+      "passed": true
+    },
+    {
+      "name": "English date display uses explicit timezone and rejects ambiguous/invalid timestamps",
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "apps/web/src/lib/api/client.ts": "01c0328e2542fcb647c264ca9efcc24025eb14a0b1e25bd43eb5e09fae8a19a1",
+    "apps/web/src/lib/api/errors.ts": "27bf8787eff1e54d1f69eb08807f812809d41d1b51f04e7119804fc6abfca90b",
+    "apps/web/src/lib/forms.ts": "30adaa3306d905c33994cc1dd218bd5195bf42bee09c81d185ef12429ce4e9bc",
+    "apps/web/src/lib/format.ts": "d21db7f7003e58f75d08484db8659128ba23ba02c8ef1b27aa4bfc8c17521a90",
+    "tools/frontend/api-checks.tsconfig.json": "5cd258ffbe421dbf839b5475ed4c60412577dbe239bb42b041e53b3d481cf764",
+    "tools/frontend/verify-api.cjs": "8423ffd8197e139ac2b68f56fa04296cfc4d92ae56c9251239d6877095764d19"
+  },
+  "passed": true
+}

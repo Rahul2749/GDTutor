@@ -1,0 +1,435 @@
+{
+  "checked_at_utc": "2026-10-16T08:25:33.734Z",
+  "browser": "154.0.8037.98",
+  "base_url": "http://127.0.0.1:3000/",
+  "mode": "Actual production HTTP; Chrome viewport/media emulation, not real device or screen-reader certification",
+  "checks": [
+    {
+      "name": "Fresh visit uses System and the device dark palette",
+      "passed": true
+    },
+    {
+      "name": "Explicit Light persists after reload and overrides device changes",
+      "passed": true
+    },
+    {
+      "name": "System responds live to dark and light device changes",
+      "passed": true
+    },
+    {
+      "name": "New page and cross-tab changes share the saved preference",
+      "passed": true
+    },
+    {
+      "name": "Clearing or removing the preference in another tab restores System",
+      "passed": true
+    },
+    {
+      "name": "Invalid stored values fall back to System without script errors",
+      "passed": true
+    },
+    {
+      "name": "Keyboard can focus and change the native appearance selector",
+      "passed": true
+    },
+    {
+      "name": "light semantic palette matches accepted Focus Workspace values",
+      "passed": true
+    },
+    {
+      "name": "light at 320px: no overflow and 44px control",
+      "passed": true
+    },
+    {
+      "name": "light at 360px: no overflow and 44px control",
+      "passed": true
+    },
+    {
+      "name": "light at 390px: no overflow and 44px control",
+      "passed": true
+    },
+    {
+      "name": "light at 768px: no overflow and 44px control",
+      "passed": true
+    },
+    {
+      "name": "light at 1024px: no overflow and 44px control",
+      "passed": true
+    },
+    {
+      "name": "light at 1440px: no overflow and 44px control",
+      "passed": true
+    },
+    {
+      "name": "light with 200% base text size at 320px reflows",
+      "passed": true
+    },
+    {
+      "name": "dark semantic palette matches accepted Focus Workspace values",
+      "passed": true
+    },
+    {
+      "name": "dark at 320px: no overflow and 44px control",
+      "passed": true
+    },
+    {
+      "name": "dark at 360px: no overflow and 44px control",
+      "passed": true
+    },
+    {
+      "name": "dark at 390px: no overflow and 44px control",
+      "passed": true
+    },
+    {
+      "name": "dark at 768px: no overflow and 44px control",
+      "passed": true
+    },
+    {
+      "name": "dark at 1024px: no overflow and 44px control",
+      "passed": true
+    },
+    {
+      "name": "dark at 1440px: no overflow and 44px control",
+      "passed": true
+    },
+    {
+      "name": "dark with 200% base text size at 320px reflows",
+      "passed": true
+    },
+    {
+      "name": "All 34 observed opaque token contrast pairs meet their targets",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion and forced-colors keep focus usable",
+      "passed": true
+    },
+    {
+      "name": "Saved Dark applies before hydration with application bundles blocked",
+      "passed": true
+    },
+    {
+      "name": "Blocked storage uses System then allows a temporary explicit choice",
+      "passed": true
+    },
+    {
+      "name": "Write failure overrides an old stored value for the current visit",
+      "passed": true
+    },
+    {
+      "name": "No-JavaScript rendering follows the dark device palette",
+      "passed": true
+    }
+  ],
+  "contrasts": [
+    {
+      "mode": "light",
+      "foreground": "ink",
+      "background": "canvas",
+      "ratio": 13.74,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "ink",
+      "background": "surface",
+      "ratio": 14.73,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "ink",
+      "background": "raised",
+      "ratio": 12.67,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "muted",
+      "background": "canvas",
+      "ratio": 6.06,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "muted",
+      "background": "surface",
+      "ratio": 6.5,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "muted",
+      "background": "raised",
+      "ratio": 5.59,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "primary",
+      "background": "surface",
+      "ratio": 5.47,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "primary",
+      "background": "primary-soft",
+      "ratio": 4.74,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "on-primary",
+      "background": "primary",
+      "ratio": 5.47,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "secondary",
+      "background": "secondary-soft",
+      "ratio": 5.91,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "highlight",
+      "background": "highlight-soft",
+      "ratio": 6.48,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "success",
+      "background": "success-soft",
+      "ratio": 6.5,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "danger",
+      "background": "danger-soft",
+      "ratio": 5.93,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "disabled-ink",
+      "background": "disabled-surface",
+      "ratio": 5.59,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "control",
+      "background": "surface",
+      "ratio": 4.53,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "focus",
+      "background": "surface",
+      "ratio": 5.47,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "mode": "light",
+      "foreground": "focus",
+      "background": "canvas",
+      "ratio": 5.11,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "ink",
+      "background": "canvas",
+      "ratio": 15.9,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "ink",
+      "background": "surface",
+      "ratio": 13.93,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "ink",
+      "background": "raised",
+      "ratio": 11.77,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "muted",
+      "background": "canvas",
+      "ratio": 9.09,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "muted",
+      "background": "surface",
+      "ratio": 7.97,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "muted",
+      "background": "raised",
+      "ratio": 6.73,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "primary",
+      "background": "surface",
+      "ratio": 10.64,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "primary",
+      "background": "primary-soft",
+      "ratio": 7.85,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "on-primary",
+      "background": "primary",
+      "ratio": 11,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "secondary",
+      "background": "secondary-soft",
+      "ratio": 7.56,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "highlight",
+      "background": "highlight-soft",
+      "ratio": 8,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "success",
+      "background": "success-soft",
+      "ratio": 9.29,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "danger",
+      "background": "danger-soft",
+      "ratio": 6.98,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "disabled-ink",
+      "background": "disabled-surface",
+      "ratio": 6.73,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "control",
+      "background": "surface",
+      "ratio": 5.77,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "focus",
+      "background": "surface",
+      "ratio": 10.64,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "focus",
+      "background": "canvas",
+      "ratio": 12.14,
+      "minimum": 3,
+      "passed": true
+    }
+  ],
+  "page_errors": [],
+  "external_requests": [],
+  "captures": [
+    {
+      "path": "docs/design/previews/theme-foundation/light-390.png",
+      "sha256": "e69e6836c41c6f766289f5fc60cca61130735a2d3487d41e483a9d247813a239",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/theme-foundation/light-1440.png",
+      "sha256": "fc136e8a3d031c11ecaaf2853b478563901ed38da8578132d194d2d2e070b36d",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/theme-foundation/dark-390.png",
+      "sha256": "8ce2ceefcf3b28d1aec7e501eb9362ae20e5057ee83dffedd143a263898f0fbb",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/theme-foundation/dark-1440.png",
+      "sha256": "6337c03b110f0b3b633a153392e7daf886d67a300072b4dbde8585cf8f1c50a7",
+      "visually_reviewed": true
+    }
+  ],
+  "source_sha256": {
+    "apps/web/src/lib/appearance.ts": "78d4d2d9a92a1193018e546806e0ef781612ab80cd18d01b6c3a3a1598416d2c",
+    "apps/web/src/components/appearance/appearance-select.tsx": "62a3ba08d6b8a029d5766d2bc8ec8d170a82de924ab74370518ed298245c874f",
+    "apps/web/src/components/appearance/appearance-select.module.css": "a2146494b1a58a76d0dfc035a618f8c53bb2a900c5c084be645cd0136d06c18a",
+    "apps/web/src/styles/tokens.css": "6b039ca4f48a7637913ac935ab367039d7ccd40d75e52445309999dfde30788d",
+    "apps/web/src/styles/globals.css": "7ef15406a9b117aaa8f92f3247ec972e158d111bb8d9cf56138035ed5a957780",
+    "apps/web/src/app/layout.tsx": "86f02ed79c2d286fd938c8c68aa1725daa11bf7c2e91e4f35fbe0e7fb63970f1",
+    "apps/web/src/app/(public)/page.tsx": "e6c2408360ace6c6a4d0b633e30273d99abba56b4160bd2737c38b481e95170b",
+    "apps/web/src/app/(public)/page.module.css": "0487844ea9215cbf368d41c0335dab4ae9879cd55482458457b25808151888a3",
+    "apps/web/package-lock.json": "82d434bf672e9655464aac5a10f3fe370e8bbbb7e0ec32c6c4da7d4e4b1939ac",
+    "tools/frontend/verify-appearance.cjs": "8c6e905b411192eb54fb7a9bbd2a6c6c17237496c98941100d5eec9103ff038b"
+  },
+  "passed": true
+}

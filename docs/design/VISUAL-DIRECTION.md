@@ -5,6 +5,8 @@
 **Prepared:** 15 October 2026  
 **State:** Accepted visual baseline. Focus Workspace was selected in the preview before the owner's "go next" on 15 October 2026 and is carried forward. Application scaffolding has not started.
 
+**16 October follow-up:** Owner requested an overall design revision during 2.1.3. [Compact Blue](OVERALL-DESIGN-REVISION.md) is proposed in the running frontend. Original alternatives and their acceptance history below remain unchanged; the new direction awaits owner review.
+
 ## Two directions to compare
 
 | Direction | Visual character | Recommendation |

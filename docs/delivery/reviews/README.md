@@ -17,6 +17,17 @@
 - [1.5.4 — Editor, renderer and conversion scope selection](1.5.4-editor-selection.md).
 - [1.6 — Architecture, API conventions and deployment boundaries](1.6-architecture.md).
 - [2.1.1 — Frontend scaffold and folder structure](2.1.1-frontend-scaffold.md).
+- [2.1.2 — Common CSS, theme tokens and Light/Dark/System](2.1.2-theme-foundation.md).
+
+- [2.1.3 — Shared UI primitives and interaction patterns](2.1.3-shared-ui.md).
+
+- [2.1.4 — Responsive public/student/staff layout shells](2.1.4-responsive-shells.md).
+
+- [2.1.5 — API-client, utilities and form/error conventions](2.1.5-api-conventions.md).
+
+- [2.2.1 — .NET solution and Clean Architecture projects](2.2.1-backend-scaffold.md).
+
+- [2.2.2 — Services, dependency injection and configuration](2.2.2-services-configuration.md).
 
 See the [progress tracker](../PROGRESS.md) for execution status. Creating a record does not mark an item accepted.
 
@@ -27,3 +38,7 @@ When an item is authorized, copy the [review template](../REVIEW-TEMPLATE.md) he
 Record the work, verification and owner feedback in the same item record. Link it from the [progress tracker](../PROGRESS.md). Use child IDs if the owner agrees to split the item; preserve parent context and evidence.
 
 Review states and execution rules are defined in the [roadmap](../../planning/SUBPHASE-ROADMAP.md). Do not use file creation, a green build or the passage of time as evidence of owner acceptance.
+
+- [2.2.3 — HTTP errors, logging, health and OpenAPI](2.2.3-http-foundation.md).
+
+- [2.3.1 — Live frontend/API integration](2.3.1-live-api-integration.md).

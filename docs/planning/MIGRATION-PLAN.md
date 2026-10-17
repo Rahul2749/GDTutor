@@ -4,8 +4,8 @@
 
 **Version:** 1.2 — independent replacement and standalone capability mapping  
 **Prepared:** 14 October 2026  
-**Updated:** 16 October 2026  
-**Status:** Planning/design with isolated editor investigation; production application foundation has not started.  
+**Updated:** 17 October 2026  
+**Status:** Accepted architecture; frontend foundation through 2.1.5 accepted; backend foundation 2.2.1–2.2.3 accepted and live frontend/API integration 2.3.1 accepted. Repeatable setup and schema work remain separately gated.  
 **Evidence:** All 65 PNG screenshots in `Project Files`: 17 public/login screenshots, 10 admin screenshots, 30 student screenshots, and 8 common screenshots. See [the screenshot index](../reference/SCREENSHOT-INDEX.md).
 
 ## Confirmed direction from the owner
@@ -660,4 +660,4 @@ These are review prompts, not prerequisites for reading this first draft:
 11. At subphase 2.4.1, provide the previous database/table structure and target database details before persistent entity design. Do not paste production credentials into planning documents.
 12. During the authoring prototype, provide representative Word/LaTeX questions and identify the Word versions and other source platforms staff use.
 
-**Current next action:** Review [2.1.1 frontend scaffold](../delivery/reviews/2.1.1-frontend-scaffold.md), [run instructions](../../apps/web/README.md) and [local preview](http://127.0.0.1:3000/). Owner accepted the 1.6 architecture and authorized 2.1.1 through “go ahead.” Next proposed leaf is **2.1.2**, common CSS/tokens and Light/Dark/System, not started. Shared components, responsive shells, API client and backend follow in separate reviews. PostgreSQL still requires owner-provided prior structure at 2.4.1; native compatibility, converter admission and authoring effort conditions remain.
+**Current next action:** Review [2.1.2 theme foundation](../design/THEME-FOUNDATION.md) in the [local preview](http://127.0.0.1:3000/). Owner accepted 2.1.1 and requested pushing first; checkpoint 4d064ee is on `origin/main`. New theme work is ready for local review. Next proposed leaf is **2.1.3**, shared UI primitives, not started. Responsive shells, API client and backend follow in separate reviews. PostgreSQL still requires owner-provided prior structure at 2.4.1; native compatibility, converter admission and authoring effort conditions remain.

@@ -1,0 +1,59 @@
+{
+  "checked_on": "2026-10-17",
+  "scope": "NuGet advisory query, all five projects and transitive graph; no frontend or platform binary certification",
+  "report": {
+    "version": 1,
+    "parameters": "--vulnerable --include-transitive",
+    "sources": [
+      "https://api.nuget.org/v3/index.json"
+    ],
+    "projects": [
+      {
+        "path": "src/GDTutor.Api/GDTutor.Api.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0",
+            "topLevelPackages": []
+          }
+        ]
+      },
+      {
+        "path": "src/GDTutor.Application/GDTutor.Application.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0",
+            "topLevelPackages": []
+          }
+        ]
+      },
+      {
+        "path": "src/GDTutor.Domain/GDTutor.Domain.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0",
+            "topLevelPackages": []
+          }
+        ]
+      },
+      {
+        "path": "src/GDTutor.Infrastructure/GDTutor.Infrastructure.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0",
+            "topLevelPackages": []
+          }
+        ]
+      },
+      {
+        "path": "tests/GDTutor.FoundationChecks/GDTutor.FoundationChecks.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0",
+            "topLevelPackages": []
+          }
+        ]
+      }
+    ]
+  },
+  "passed": true
+}

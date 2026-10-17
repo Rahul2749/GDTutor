@@ -1,5 +1,56 @@
 # Documentation changelog
 
+- 17 October 2026: Owner accepted 2.3.1 and requested a GitHub commit/push of completed work. Recorded acceptance and checkpoint intent; 2.3.2 remains not started. Sensitive exports, credentials, local SDK/caches and build outputs remain excluded.
+
+- 17 October 2026: Owner accepted 2.2.3 and authorized 2.3.1. Connected a new compact responsive preview to the actual API through validated local Next rewrites, added two contract-derived DTO types/runtime decoders and a bounded Development-only delayed read. All 35 live browser checks, 9 contract checks, 21 client regressions, 19 backend HTTP checks and 21 service regressions pass; six captures visually reviewed. Awaiting review. No new dependency, database, provider, authentication or staging/CI setup.
+
+- 17 October 2026: Owner accepted 2.2.2 and authorized 2.2.3. Added controller-based status/health contracts, safe ProblemDetails and JSON request logs, Development-only validation/failure demos and generated OpenAPI. Admitted two signed MIT Microsoft OpenAPI packages with locked graph and advisory evidence. All 19 HTTP checks, 21 service regressions and three published startup cases pass; awaiting review. No frontend/API integration, database or provider work started.
+
+- 16 October 2026: Owner accepted 2.2.1 and authorized 2.2.2. Added an Application sample port/service, immutable in-memory adapter, API composition, validated startup options, explicit lifetime checks and a dependency-free verification harness. All 21 service checks and three published configuration cases pass; awaiting review. No persistent model, provider integration or endpoint added.
+
+- 16 October 2026: Owner accepted 2.1.5 and authorized 2.2.1. Added pinned/verified local .NET 10 SDK admission, four Clean Architecture projects, inward references, common compiler/restore policies, lockfiles and minimal empty host. Build, format, package graph and published startup checks pass; awaiting review. No persistent entity/schema or service/endpoint work started.
+
+- 16 October 2026: Owner accepted 2.1.4 and required English-only copy; replaced the Hindi fixture and recorded the language requirement. Added 2.1.5 same-origin API-client/result/error handling, cancellation/state hook, form mapping/focus and English display utilities, with labelled mock preview and contract/browser evidence. Awaiting review.
+
+- 16 October 2026: Owner accepted refined shared UI 2.1.3 and authorized 2.1.4. Added configurable public/student/staff shells, labelled instructor/admin fixtures, responsive navigation and linked placeholder routes. Browser/static evidence and guide added; awaiting shell review.
+
+- 16 October 2026: Refined 2.1.3 after owner clarified compactness: restored fluid page width, reduced component typography/controls/modal size, aligned text and fields, simplified tabs, and extended light/dark mobile/tablet checks. Awaiting review; no phase progression.
+
+## 16 October 2026 — Compactness and blue/charcoal reference feedback
+
+- Owner supplied seven reference images and requested smaller overall UI and changed accents. Proposed Compact Blue with neutral charcoal dark surfaces and blue/slate emphasis, replacing the large illustrative hero with a concise workspace intro.
+- Reduced shared typography, card/control radii, padding/gaps and desktop controls; retained 44px narrow/coarse-pointer controls and 16px mobile field text. Paired related fields with aligned labels.
+- 35 shared UI checks/28 button contrast-state pairs and 29 theme checks/34 token pairs pass. Preserved four prior captures: preview height reduced 40.3% at 1440px and 37.3% at 390px. No new dependency or progression to the next leaf.
+
+
+## 16 October 2026 — Overall design revision in 2.1.3
+
+- Owner clarified that overall design needs improvement. Proposed Student Studio across global colors/typography, masthead/hero with original code-native lesson illustration, cards, forms, tabs and feedback; original Focus Workspace evidence remains historical.
+- Added a separate current palette register and design guide; new appearance checks compare that proposal and derive fallback colors from it. Fixed actual compact-control overflow at 200% text zoom.
+- Production build and both browser suites pass. No new dependency, paid asset/service, backend/schema or progression to layout-shell leaf 2.1.4. Awaiting design review.
+
+
+## 16 October 2026 — Button appearance feedback in 2.1.3
+
+- Refined the shared buttons after the owner found the initial colors/appearance ordinary: violet/lilac main actions, lavender alternatives, icon slots, improved dimensions and spacing, subtle depth and motion-aware interaction states.
+- Rebuilt the local preview and reran 34 shared UI checks, expanded to 28 button contrast/state pairs, plus the 29-check/34-pair theme regression. Current evidence and captures replace the previous 2.1.3 iteration; historical 2.1.2 evidence remains intact. No package change or progression to 2.1.4.
+
+
+## 16 October 2026 — Subphase 2.1.3 shared UI foundation
+
+- Owner accepted 2.1.2 and authorized 2.1.3 through “go for next phase.” Implemented typed buttons, native fields, cards, tabs, notices/badges, loading/empty states and dialog/drawer layers with no new package.
+- Added local component review route, responsive light/dark styles and documented component contracts. Fixed observed modal Tab boundary behavior; verification awaits rendered validation and settled style transitions.
+- Recorded 34 shared UI checks/10 button contrast pairs, 29 theme regression checks/34 token contrast pairs, build/type/lint/format passes and 12 inspected captures. Historical theme evidence preserved.
+- Shared UI is ready for review; layout shells 2.1.4 remain not started. Work stays local; backend/schema input gate 2.4.1 remains.
+
+
+## 16 October 2026 — Git checkpoint and subphase 2.1.2 theme foundation
+
+- Owner accepted 2.1.1 and requested pushing before progression. Committed/pushed reviewed work as `4d064ee` to `origin/main`, verifying matching heads; private exports/captures, dependencies and build output excluded.
+- Then implemented only 2.1.2: shared reset/semantic tokens, Focus Workspace Light/Dark/System, early head initialization, persisted browser choices, cross-tab/device updates and safe storage/no-script fallbacks. New theme work remains local for review.
+- Added a labelled native appearance selector, focus/touch/reduced-motion behavior and tokenized responsive demo. Corrected detected narrow-grid overflow.
+- Recorded passing production build/type/lint/format, 29 browser checks, 34 contrast pairs and four inspected captures; no new package, provider, backend/schema or production deployment. Next proposed leaf is 2.1.3.
+
 ## 16 October 2026 — Subphase 2.1.1 initial frontend scaffold
 
 - Recorded acceptance of 1.6 and authorization of 2.1.1 through “go ahead.” Created `apps/web` Next.js/React/TypeScript structure with route groups, shared/feature ownership notes, strict types, aliases, import guards and explicit local check/build/run scripts.

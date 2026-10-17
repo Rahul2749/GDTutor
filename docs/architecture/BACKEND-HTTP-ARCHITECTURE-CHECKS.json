@@ -1,0 +1,106 @@
+{
+  "checked_at_utc": "2026-10-17T02:58:44.8874552Z",
+  "scope": "2.2.3: four production reference boundaries, one harness, two admitted OpenAPI packages at the API boundary, and authorized foundation HTTP source; no business/persistence entities.",
+  "checks": [
+    {
+      "project": "GDTutor.Domain",
+      "references": [],
+      "restored_nuget_packages": 0,
+      "passed": true
+    },
+    {
+      "project": "GDTutor.Application",
+      "references": [
+        "GDTutor.Domain"
+      ],
+      "restored_nuget_packages": 0,
+      "passed": true
+    },
+    {
+      "project": "GDTutor.Infrastructure",
+      "references": [
+        "GDTutor.Application",
+        "GDTutor.Domain"
+      ],
+      "restored_nuget_packages": 0,
+      "passed": true
+    },
+    {
+      "project": "GDTutor.Api",
+      "references": [
+        "GDTutor.Application",
+        "GDTutor.Infrastructure"
+      ],
+      "restored_nuget_packages": 2,
+      "passed": true
+    }
+  ],
+  "solution_project_count": 5,
+  "production_project_count": 4,
+  "verification_project_count": 1,
+  "handwritten_csharp_files": [
+    "src/GDTutor.Application/Foundation/IFoundationSampleSource.cs",
+    "src/GDTutor.Application/Foundation/FoundationSample.cs",
+    "src/GDTutor.Application/Foundation/FoundationSampleService.cs",
+    "src/GDTutor.Infrastructure/Foundation/InMemoryFoundationSampleSource.cs",
+    "src/GDTutor.Api/Configuration/ApplicationOptions.cs",
+    "src/GDTutor.Api/Configuration/ApplicationOptionsValidator.cs",
+    "src/GDTutor.Api/Composition/BackendServices.cs",
+    "src/GDTutor.Api/Program.cs",
+    "src/GDTutor.Api/Composition/BackendHttp.cs",
+    "src/GDTutor.Api/Contracts/HealthResponse.cs",
+    "src/GDTutor.Api/Contracts/SystemStatusResponse.cs",
+    "src/GDTutor.Api/Controllers/DevelopmentDiagnosticsController.cs",
+    "src/GDTutor.Api/Controllers/HealthController.cs",
+    "src/GDTutor.Api/Controllers/SystemController.cs",
+    "src/GDTutor.Api/Http/ApiExceptionHandler.cs",
+    "src/GDTutor.Api/Http/ApiProblems.cs",
+    "src/GDTutor.Api/Http/DevelopmentDiagnosticsFeatureProvider.cs",
+    "src/GDTutor.Api/Http/RequestLogMiddleware.cs"
+  ],
+  "source_sha256": {
+    "GDTutor.slnx": "29ce613df6251553431638fea4f3ce21f0a1a263a8a37a720325fdebfaedd8c1",
+    "global.json": "81ae2087dbfb46027fd94748351fb4b1ab24145fbb52544a2822bf128e2e48f1",
+    "Directory.Build.props": "60b66d58bc48354ca87ecef7e5e9dabefd8347df77d66f12280fe55076ade2f4",
+    "NuGet.Config": "78a66f561f2ef988c27e5d895bf668085f891539cf26946714abf376bd497276",
+    "docs/reference/BACKEND-TOOLCHAIN.json": "9d9275bf3df0afa26ca915aee0cdfdddb210ad4a592b8112df49c0a32734ac65",
+    "tools/backend/Verify-Architecture.ps1": "0cd7502215bf1e3b72b13262031b16ac146e5d51bcdf1f6cdfdc4e9ed7d3f0ee",
+    "tools/backend/Verify-Startup.ps1": "299d219c0e86d7e378b4d2c6672c183af5f6249d21650f964ad369d6038201fd",
+    "tools/backend/dotnet.ps1": "71e6179533ac5225d682c723605b1a6fc4e60a7bf8463fb993ded40119a197b5",
+    "tools/backend/Install-LocalSdk.ps1": "84d9e61ad13443cd108ffd482e6ba0d18cc0070ffd1033367a5c8f8099658605",
+    "src/GDTutor.Domain/GDTutor.Domain.csproj": "8d654c44b7bebb6b31a9f2f606927f45b5072193adc4eef8cce3f3cf3b278df3",
+    "src/GDTutor.Domain/packages.lock.json": "a4364d81a6de2707d66fbced18fbbc926c882ab96e1d1aebbb17e871285b9d75",
+    "src/GDTutor.Application/GDTutor.Application.csproj": "5474f1502e441e3f4f262033a6003bbc3ea61a69b51f763d16f0c2a2497f2cb5",
+    "src/GDTutor.Application/packages.lock.json": "05a5c08d5a0b70d7fb0910319b65a5b29c4a02e186bf4b2d11e17ebd7cf21ccf",
+    "src/GDTutor.Infrastructure/GDTutor.Infrastructure.csproj": "b246f4672ba2d57bfb39e208f4fda844cdfd3f67fa87caa0288a8b1eadd11dce",
+    "src/GDTutor.Infrastructure/packages.lock.json": "ac427781168a9962843866b0e186f4d2e26de9bbde996ccec14ed4dd26935c37",
+    "src/GDTutor.Api/GDTutor.Api.csproj": "cb00aa8045d9d9e87efea977f9b20a084f6cde97bd7c4752d5b9b3991851c104",
+    "src/GDTutor.Api/packages.lock.json": "5d8c7c4068ee5679a8184ea78a059777c16fd36350e900da07c417409a8fc989",
+    "src/GDTutor.Application/Foundation/IFoundationSampleSource.cs": "5783943adc60f4793f29f2f19254c34965a3352b981e6afce350673971855c50",
+    "src/GDTutor.Application/Foundation/FoundationSample.cs": "8779d33f1c09484dac3d1634d639c9ae1f641d83c67baf1ae6d9d7c6f5041560",
+    "src/GDTutor.Application/Foundation/FoundationSampleService.cs": "8e8e90f2dec8ee59e54816ee642366a059cc42904de10e194720a16c59f97911",
+    "src/GDTutor.Infrastructure/Foundation/InMemoryFoundationSampleSource.cs": "85571d3501a9053dd99846389b63814939775b9f064782d5f072f79452c40242",
+    "src/GDTutor.Api/Configuration/ApplicationOptions.cs": "38eb419013251711ae0aae6c09a8e794d48a302d2cce827d747753809aef2287",
+    "src/GDTutor.Api/Configuration/ApplicationOptionsValidator.cs": "4da7e8c1cf79be46ec0979d4409293a6f246320d34396b5c823586fa201bc32d",
+    "src/GDTutor.Api/Composition/BackendServices.cs": "928ba4622c7214fb0682144d2b766991287ea55467cf5f2c9a03a8d3b59452d7",
+    "src/GDTutor.Api/Program.cs": "76572d76080802689214e67885e6587cd2395445d09b15fdfae70fc9c09255ee",
+    "src/GDTutor.Api/Composition/BackendHttp.cs": "fc935589353d8eb910bef595adc8eabf9def994b4f73b6ad50b8c1fd0a1572e4",
+    "src/GDTutor.Api/Contracts/HealthResponse.cs": "5acee282c23d9a88c8dd923385b8fb401401c3ef016575c3e84023b9bf296569",
+    "src/GDTutor.Api/Contracts/SystemStatusResponse.cs": "8a929b5a2b9b7ace6e7869cc72dc2de5fba36fe1c121f44dd026c870509d7705",
+    "src/GDTutor.Api/Controllers/DevelopmentDiagnosticsController.cs": "8bf3d90c101be307de4f41f6cb3ea1103e629772f8bb606aa71a1730723e3ca6",
+    "src/GDTutor.Api/Controllers/HealthController.cs": "863d4fa7bbf073e88661797038344304c7080f98d651a2963f4db8013ceea3b8",
+    "src/GDTutor.Api/Controllers/SystemController.cs": "f9484046e45f33bd256c9f8b818ac7c5aae4cb3e16d5fccc3f1761a5fcb58aa8",
+    "src/GDTutor.Api/Http/ApiExceptionHandler.cs": "0eca268676d19b448376ddff788dc5509db4184053d1c0dbc8d71b22f42c173b",
+    "src/GDTutor.Api/Http/ApiProblems.cs": "e7640ea883ac2ff416297c7721c7cfdcc2296b4fed7e254c78a8f6aed7425527",
+    "src/GDTutor.Api/Http/DevelopmentDiagnosticsFeatureProvider.cs": "113be467a0896e708c1506fec94724870d930880e7d556dd1fea43a710690fc8",
+    "src/GDTutor.Api/Http/RequestLogMiddleware.cs": "c272fa3ccb3f08ffb755dac6b24d7015a07e0c8c868866d65209be65edb4c5b5",
+    "src/GDTutor.Api/Properties/launchSettings.json": "54031d1789f67ffb9a21a410a22cb2d578049c1a647e761ec69462513e6e20fa",
+    "src/GDTutor.Api/appsettings.json": "13f9cc4e1225d7bc203172a17bf0aa1327d85ce59a6a9e98e5a2c0a7112414a4",
+    "src/GDTutor.Api/appsettings.Development.json": "5db8ab591d49c888308c3eff4691af7ca61e9ccee97ff7303fc29a519f122525",
+    "tests/GDTutor.FoundationChecks/GDTutor.FoundationChecks.csproj": "00d96693f6ad7635134f32f7821985581db3ab64787dd844aa8b560c30971617",
+    "tests/GDTutor.FoundationChecks/Program.cs": "7756f1d8560ee6ec2dd36b704394562440c719324dd9448a498aa6c99c61b5df",
+    "tests/GDTutor.FoundationChecks/HttpChecks.cs": "215c30e0c91feb3f68d04cdd660c1f65cd14fb4eb4918ff8afda10980913da37",
+    "tests/GDTutor.FoundationChecks/packages.lock.json": "c25d2a5af81c2cb0b08e5c6d38bae22d44077dc7fe3eecc53c79109f4cdffeb5"
+  },
+  "passed": true
+}

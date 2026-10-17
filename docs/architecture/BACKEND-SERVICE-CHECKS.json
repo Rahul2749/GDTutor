@@ -1,0 +1,128 @@
+{
+  "checked_at_utc": "2026-10-16T16:29:49.9191687+00:00",
+  "scope": "Real Host/DI/options validation with local sample adapters; no HTTP/database/provider calls.",
+  "checks": [
+    {
+      "name": "Valid Development configuration starts and resolves the scoped sample service",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Production HTTPS configuration starts without a database or external provider",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Missing public origin fails during host startup",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Missing display name fails during host startup",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Overlong display name fails validation",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Invalid default time zone fails during startup",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Production and Staging reject HTTP even on loopback",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Development rejects non-loopback HTTP",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Development permits loopback host, IPv4 and IPv6 HTTP origins",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Origins with credentials, paths, queries, fragments or malformed schemes are refused",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Validation errors do not echo rejected configuration values",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Unknown configuration keys are rejected rather than silently ignored",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Adapter and TimeProvider can be replaced without changing the application service",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Caller registrations made before composition remain replaceable through TryAdd",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Scoped services are distinct per scope while the immutable adapter is shared",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Root-provider resolution of a scoped service is rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "A singleton capturing a scoped service is rejected at build time",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Cancellation prevents even a replacement source from being invoked",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Cancellation arriving from an adapter cannot return a successful sample",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "The in-memory adapter honors cancellation directly",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Explicit later configuration values override earlier defaults",
+      "passed": true,
+      "error": null
+    }
+  ],
+  "source_sha256": {
+    "src/GDTutor.Application/Foundation/IFoundationSampleSource.cs": "5783943adc60f4793f29f2f19254c34965a3352b981e6afce350673971855c50",
+    "src/GDTutor.Application/Foundation/FoundationSample.cs": "8779d33f1c09484dac3d1634d639c9ae1f641d83c67baf1ae6d9d7c6f5041560",
+    "src/GDTutor.Application/Foundation/FoundationSampleService.cs": "8e8e90f2dec8ee59e54816ee642366a059cc42904de10e194720a16c59f97911",
+    "src/GDTutor.Infrastructure/Foundation/InMemoryFoundationSampleSource.cs": "85571d3501a9053dd99846389b63814939775b9f064782d5f072f79452c40242",
+    "src/GDTutor.Api/Configuration/ApplicationOptions.cs": "38eb419013251711ae0aae6c09a8e794d48a302d2cce827d747753809aef2287",
+    "src/GDTutor.Api/Configuration/ApplicationOptionsValidator.cs": "4da7e8c1cf79be46ec0979d4409293a6f246320d34396b5c823586fa201bc32d",
+    "src/GDTutor.Api/Composition/BackendServices.cs": "928ba4622c7214fb0682144d2b766991287ea55467cf5f2c9a03a8d3b59452d7",
+    "src/GDTutor.Api/Program.cs": "9f040dbe0f2f9a059d69575c2245050d30366dcada9dba0deff736f4f5d9c83d",
+    "src/GDTutor.Api/appsettings.json": "13f9cc4e1225d7bc203172a17bf0aa1327d85ce59a6a9e98e5a2c0a7112414a4",
+    "src/GDTutor.Api/appsettings.Development.json": "5db8ab591d49c888308c3eff4691af7ca61e9ccee97ff7303fc29a519f122525",
+    "src/GDTutor.Api/GDTutor.Api.csproj": "d875424eea11790ffcbb3b5ab2b98c8b2e521527bccb3ecd7fb01d741bb7a4e3",
+    "tests/GDTutor.FoundationChecks/Program.cs": "e169099f1a5ff560a627179b4a72170eea200d729146095b8ae08b57c7d547a9",
+    "tests/GDTutor.FoundationChecks/GDTutor.FoundationChecks.csproj": "00d96693f6ad7635134f32f7821985581db3ab64787dd844aa8b560c30971617",
+    "tests/GDTutor.FoundationChecks/packages.lock.json": "4ee45ddea7a156576e740682ab73aa69b0992c6f1bd59a93e344eea2b8d9f693"
+  },
+  "passed": true
+}

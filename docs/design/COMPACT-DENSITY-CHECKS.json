@@ -1,0 +1,49 @@
+{
+  "scope": "Historical Student Studio to first Compact Blue comparison; superseded by the component-density refinement. These archived captures are not the current UI. Page-height reduction is not the owner acceptance criterion.",
+  "comparisons": [
+    {
+      "mode": "light",
+      "width": 390,
+      "before_height": 4730,
+      "before_capture": "docs/design/previews/density-before/light-390.png",
+      "after_capture": "docs/design/previews/compact-blue-initial/light-390.png",
+      "after_height": 2966,
+      "height_reduction_percent": 37.3,
+      "before_sha256": "fb39e63548227e4cad02c595aa7d04f35b578ad938c00352383a8efe325456a4",
+      "after_sha256": "07a1f11c99095ec83cb0a0063aeb8e474614ca9d29b62de474300b5e1bfc3245"
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "before_height": 2706,
+      "before_capture": "docs/design/previews/density-before/light-1440.png",
+      "after_capture": "docs/design/previews/compact-blue-initial/light-1440.png",
+      "after_height": 1616,
+      "height_reduction_percent": 40.3,
+      "before_sha256": "20f8f340230a05ab981cd3086f689329ccaebb48243edefc6be714e193925124",
+      "after_sha256": "69a94f0498d0ea4532c3050caa84d9195f369d0b5656d430a319afa34c8ebf51"
+    },
+    {
+      "mode": "dark",
+      "width": 390,
+      "before_height": 4730,
+      "before_capture": "docs/design/previews/density-before/dark-390.png",
+      "after_capture": "docs/design/previews/compact-blue-initial/dark-390.png",
+      "after_height": 2966,
+      "height_reduction_percent": 37.3,
+      "before_sha256": "2e404fb96c05caa76724ba7feadcd025800cbec1abcbb18a4cb9561eb091bdc2",
+      "after_sha256": "9e6b8d5ac8466c586c0817921411788dfec3052627c2c5fc53a76dd42b6d1e0d"
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "before_height": 2706,
+      "before_capture": "docs/design/previews/density-before/dark-1440.png",
+      "after_capture": "docs/design/previews/compact-blue-initial/dark-1440.png",
+      "after_height": 1616,
+      "height_reduction_percent": 40.3,
+      "before_sha256": "2a541bb3716068eca336e6631de68baa519afbe7142173092daa3b88d9df39e1",
+      "after_sha256": "588c4dc783362963a5fb461dbbbcfd58e3ae4329ccbebd0264e39d5571b06e77"
+    }
+  ]
+}

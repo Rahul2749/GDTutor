@@ -1,0 +1,85 @@
+{
+  "checked_at_utc": "2026-10-16T16:29:56.8516724Z",
+  "scope": "2.2.2: four production reference boundaries, one dependency-free harness, evaluated package graph and authorized foundation-only source; no business/persistence entities.",
+  "checks": [
+    {
+      "project": "GDTutor.Domain",
+      "references": [],
+      "restored_nuget_packages": 0,
+      "passed": true
+    },
+    {
+      "project": "GDTutor.Application",
+      "references": [
+        "GDTutor.Domain"
+      ],
+      "restored_nuget_packages": 0,
+      "passed": true
+    },
+    {
+      "project": "GDTutor.Infrastructure",
+      "references": [
+        "GDTutor.Application",
+        "GDTutor.Domain"
+      ],
+      "restored_nuget_packages": 0,
+      "passed": true
+    },
+    {
+      "project": "GDTutor.Api",
+      "references": [
+        "GDTutor.Application",
+        "GDTutor.Infrastructure"
+      ],
+      "restored_nuget_packages": 0,
+      "passed": true
+    }
+  ],
+  "solution_project_count": 5,
+  "production_project_count": 4,
+  "verification_project_count": 1,
+  "handwritten_csharp_files": [
+    "src/GDTutor.Application/Foundation/IFoundationSampleSource.cs",
+    "src/GDTutor.Application/Foundation/FoundationSample.cs",
+    "src/GDTutor.Application/Foundation/FoundationSampleService.cs",
+    "src/GDTutor.Infrastructure/Foundation/InMemoryFoundationSampleSource.cs",
+    "src/GDTutor.Api/Configuration/ApplicationOptions.cs",
+    "src/GDTutor.Api/Configuration/ApplicationOptionsValidator.cs",
+    "src/GDTutor.Api/Composition/BackendServices.cs",
+    "src/GDTutor.Api/Program.cs"
+  ],
+  "source_sha256": {
+    "GDTutor.slnx": "29ce613df6251553431638fea4f3ce21f0a1a263a8a37a720325fdebfaedd8c1",
+    "global.json": "81ae2087dbfb46027fd94748351fb4b1ab24145fbb52544a2822bf128e2e48f1",
+    "Directory.Build.props": "60b66d58bc48354ca87ecef7e5e9dabefd8347df77d66f12280fe55076ade2f4",
+    "NuGet.Config": "78a66f561f2ef988c27e5d895bf668085f891539cf26946714abf376bd497276",
+    "docs/reference/BACKEND-TOOLCHAIN.json": "9d9275bf3df0afa26ca915aee0cdfdddb210ad4a592b8112df49c0a32734ac65",
+    "tools/backend/Verify-Architecture.ps1": "30f799c14cee4d5fb5340095a693d1f1b6d398d52e76165469cf2d0feb701e9e",
+    "tools/backend/Verify-Startup.ps1": "089dfd5984646b26e9c05813c1accb878e4975c0fbed05a856f375c133d84fbf",
+    "tools/backend/dotnet.ps1": "71e6179533ac5225d682c723605b1a6fc4e60a7bf8463fb993ded40119a197b5",
+    "tools/backend/Install-LocalSdk.ps1": "84d9e61ad13443cd108ffd482e6ba0d18cc0070ffd1033367a5c8f8099658605",
+    "src/GDTutor.Domain/GDTutor.Domain.csproj": "8d654c44b7bebb6b31a9f2f606927f45b5072193adc4eef8cce3f3cf3b278df3",
+    "src/GDTutor.Domain/packages.lock.json": "a4364d81a6de2707d66fbced18fbbc926c882ab96e1d1aebbb17e871285b9d75",
+    "src/GDTutor.Application/GDTutor.Application.csproj": "5474f1502e441e3f4f262033a6003bbc3ea61a69b51f763d16f0c2a2497f2cb5",
+    "src/GDTutor.Application/packages.lock.json": "05a5c08d5a0b70d7fb0910319b65a5b29c4a02e186bf4b2d11e17ebd7cf21ccf",
+    "src/GDTutor.Infrastructure/GDTutor.Infrastructure.csproj": "b246f4672ba2d57bfb39e208f4fda844cdfd3f67fa87caa0288a8b1eadd11dce",
+    "src/GDTutor.Infrastructure/packages.lock.json": "ac427781168a9962843866b0e186f4d2e26de9bbde996ccec14ed4dd26935c37",
+    "src/GDTutor.Api/GDTutor.Api.csproj": "d875424eea11790ffcbb3b5ab2b98c8b2e521527bccb3ecd7fb01d741bb7a4e3",
+    "src/GDTutor.Api/packages.lock.json": "0f94bd99697dec004237312b593871d2aa17966b996acb2b1249d2bed2104121",
+    "src/GDTutor.Application/Foundation/IFoundationSampleSource.cs": "5783943adc60f4793f29f2f19254c34965a3352b981e6afce350673971855c50",
+    "src/GDTutor.Application/Foundation/FoundationSample.cs": "8779d33f1c09484dac3d1634d639c9ae1f641d83c67baf1ae6d9d7c6f5041560",
+    "src/GDTutor.Application/Foundation/FoundationSampleService.cs": "8e8e90f2dec8ee59e54816ee642366a059cc42904de10e194720a16c59f97911",
+    "src/GDTutor.Infrastructure/Foundation/InMemoryFoundationSampleSource.cs": "85571d3501a9053dd99846389b63814939775b9f064782d5f072f79452c40242",
+    "src/GDTutor.Api/Configuration/ApplicationOptions.cs": "38eb419013251711ae0aae6c09a8e794d48a302d2cce827d747753809aef2287",
+    "src/GDTutor.Api/Configuration/ApplicationOptionsValidator.cs": "4da7e8c1cf79be46ec0979d4409293a6f246320d34396b5c823586fa201bc32d",
+    "src/GDTutor.Api/Composition/BackendServices.cs": "928ba4622c7214fb0682144d2b766991287ea55467cf5f2c9a03a8d3b59452d7",
+    "src/GDTutor.Api/Program.cs": "9f040dbe0f2f9a059d69575c2245050d30366dcada9dba0deff736f4f5d9c83d",
+    "src/GDTutor.Api/Properties/launchSettings.json": "54031d1789f67ffb9a21a410a22cb2d578049c1a647e761ec69462513e6e20fa",
+    "src/GDTutor.Api/appsettings.json": "13f9cc4e1225d7bc203172a17bf0aa1327d85ce59a6a9e98e5a2c0a7112414a4",
+    "src/GDTutor.Api/appsettings.Development.json": "5db8ab591d49c888308c3eff4691af7ca61e9ccee97ff7303fc29a519f122525",
+    "tests/GDTutor.FoundationChecks/GDTutor.FoundationChecks.csproj": "00d96693f6ad7635134f32f7821985581db3ab64787dd844aa8b560c30971617",
+    "tests/GDTutor.FoundationChecks/Program.cs": "e169099f1a5ff560a627179b4a72170eea200d729146095b8ae08b57c7d547a9",
+    "tests/GDTutor.FoundationChecks/packages.lock.json": "4ee45ddea7a156576e740682ab73aa69b0992c6f1bd59a93e344eea2b8d9f693"
+  },
+  "passed": true
+}

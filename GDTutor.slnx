@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/GDTutor.Domain/GDTutor.Domain.csproj" />
+    <Project Path="src/GDTutor.Application/GDTutor.Application.csproj" />
+    <Project Path="src/GDTutor.Infrastructure/GDTutor.Infrastructure.csproj" />
+    <Project Path="src/GDTutor.Api/GDTutor.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/GDTutor.FoundationChecks/GDTutor.FoundationChecks.csproj" />
+  </Folder>
+</Solution>

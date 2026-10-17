@@ -1,0 +1,140 @@
+{
+  "checked_at_utc": "2026-10-17T10:41:49.5621709+00:00",
+  "scope": "2.3.1 backend regression, actual Kestrel HTTP; includes generated delayed-read contract and diagnostics absence in Production/Staging",
+  "checks": [
+    {
+      "name": "Status controller uses sample service, camelCase JSON, UTC and explicit demonstration scope",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Liveness and readiness expose only bounded foundation scope",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Unknown route returns safe 404 even when Accept requests HTML",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Unsupported method returns 405 ProblemDetails and retains Allow header",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Development validation demo succeeds without echoing or saving submitted text",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Required/length validation uses known field keys and static messages",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Malformed, wrong-type, empty and unknown-member JSON reject without raw input/type leakage",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "JSON nesting is bounded",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Unsupported media type returns 415 ProblemDetails",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Declared oversized body returns 413 without reflecting content",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Chunked oversized body is rejected, with server status 413 even if transport closes",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Controlled exception returns safe 500, including in Development",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Incoming trace/header/cookie fixtures are not used as response identifiers",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Generated OpenAPI describes real endpoints, validation/health/status shapes and error extensions",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Production serves sample/health but removes OpenAPI and diagnostics routes",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Staging serves sample/health but removes OpenAPI and diagnostics routes",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Failed dependency readiness returns bounded 503 while process liveness stays 200",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Production application failure uses the same sanitized 500 response",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "Structured logs correlate errors/completions and omit all injected sensitive fixtures",
+      "passed": true,
+      "error": null
+    }
+  ],
+  "chunked_overflow_observation": "HTTP 413 response",
+  "all_hosts_stopped": true,
+  "passed": true,
+  "source_sha256": {
+    "src/GDTutor.Api/Composition/BackendHttp.cs": "fc935589353d8eb910bef595adc8eabf9def994b4f73b6ad50b8c1fd0a1572e4",
+    "src/GDTutor.Api/Composition/BackendServices.cs": "928ba4622c7214fb0682144d2b766991287ea55467cf5f2c9a03a8d3b59452d7",
+    "src/GDTutor.Api/Configuration/ApplicationOptions.cs": "38eb419013251711ae0aae6c09a8e794d48a302d2cce827d747753809aef2287",
+    "src/GDTutor.Api/Configuration/ApplicationOptionsValidator.cs": "4da7e8c1cf79be46ec0979d4409293a6f246320d34396b5c823586fa201bc32d",
+    "src/GDTutor.Api/Contracts/HealthResponse.cs": "5acee282c23d9a88c8dd923385b8fb401401c3ef016575c3e84023b9bf296569",
+    "src/GDTutor.Api/Contracts/SystemStatusResponse.cs": "0505d174d5b62af00cd026dc66b100372ae52b2d9341ea8076c7017fa4902cf6",
+    "src/GDTutor.Api/Controllers/DevelopmentDiagnosticsController.cs": "c95c38bfddd9b752940f290eeb8f86165dcda770a082fa9644d142db1b0a2c71",
+    "src/GDTutor.Api/Controllers/HealthController.cs": "863d4fa7bbf073e88661797038344304c7080f98d651a2963f4db8013ceea3b8",
+    "src/GDTutor.Api/Controllers/SystemController.cs": "cde01651fa3cce650ace5ec5d1a2701b3518d60fe195eadffae3d8f413958983",
+    "src/GDTutor.Api/GDTutor.Api.csproj": "cb00aa8045d9d9e87efea977f9b20a084f6cde97bd7c4752d5b9b3991851c104",
+    "src/GDTutor.Api/Http/ApiExceptionHandler.cs": "0eca268676d19b448376ddff788dc5509db4184053d1c0dbc8d71b22f42c173b",
+    "src/GDTutor.Api/Http/ApiProblems.cs": "e7640ea883ac2ff416297c7721c7cfdcc2296b4fed7e254c78a8f6aed7425527",
+    "src/GDTutor.Api/Http/DevelopmentDiagnosticsFeatureProvider.cs": "113be467a0896e708c1506fec94724870d930880e7d556dd1fea43a710690fc8",
+    "src/GDTutor.Api/Http/RequestLogMiddleware.cs": "c272fa3ccb3f08ffb755dac6b24d7015a07e0c8c868866d65209be65edb4c5b5",
+    "src/GDTutor.Api/packages.lock.json": "5d8c7c4068ee5679a8184ea78a059777c16fd36350e900da07c417409a8fc989",
+    "src/GDTutor.Api/Program.cs": "76572d76080802689214e67885e6587cd2395445d09b15fdfae70fc9c09255ee",
+    "src/GDTutor.Application/Foundation/FoundationSample.cs": "8779d33f1c09484dac3d1634d639c9ae1f641d83c67baf1ae6d9d7c6f5041560",
+    "src/GDTutor.Application/Foundation/FoundationSampleService.cs": "8e8e90f2dec8ee59e54816ee642366a059cc42904de10e194720a16c59f97911",
+    "src/GDTutor.Application/Foundation/IFoundationSampleSource.cs": "5783943adc60f4793f29f2f19254c34965a3352b981e6afce350673971855c50",
+    "src/GDTutor.Application/GDTutor.Application.csproj": "5474f1502e441e3f4f262033a6003bbc3ea61a69b51f763d16f0c2a2497f2cb5",
+    "src/GDTutor.Application/packages.lock.json": "05a5c08d5a0b70d7fb0910319b65a5b29c4a02e186bf4b2d11e17ebd7cf21ccf",
+    "src/GDTutor.Domain/GDTutor.Domain.csproj": "8d654c44b7bebb6b31a9f2f606927f45b5072193adc4eef8cce3f3cf3b278df3",
+    "src/GDTutor.Domain/packages.lock.json": "a4364d81a6de2707d66fbced18fbbc926c882ab96e1d1aebbb17e871285b9d75",
+    "src/GDTutor.Infrastructure/Foundation/InMemoryFoundationSampleSource.cs": "85571d3501a9053dd99846389b63814939775b9f064782d5f072f79452c40242",
+    "src/GDTutor.Infrastructure/GDTutor.Infrastructure.csproj": "b246f4672ba2d57bfb39e208f4fda844cdfd3f67fa87caa0288a8b1eadd11dce",
+    "src/GDTutor.Infrastructure/packages.lock.json": "ac427781168a9962843866b0e186f4d2e26de9bbde996ccec14ed4dd26935c37",
+    "tests/GDTutor.FoundationChecks/GDTutor.FoundationChecks.csproj": "00d96693f6ad7635134f32f7821985581db3ab64787dd844aa8b560c30971617",
+    "tests/GDTutor.FoundationChecks/HttpChecks.cs": "18385c4e8e2377061cf18da11a56f9f8ab4803731bda6ba142f14ef670ae1f19",
+    "tests/GDTutor.FoundationChecks/packages.lock.json": "c25d2a5af81c2cb0b08e5c6d38bae22d44077dc7fe3eecc53c79109f4cdffeb5",
+    "tests/GDTutor.FoundationChecks/Program.cs": "7756f1d8560ee6ec2dd36b704394562440c719324dd9448a498aa6c99c61b5df",
+    "tools/backend/Verify-Architecture.ps1": "b076328071323eca45d54747f4cd99b552431cb30a66a9678482d5bb1393eb13",
+    "global.json": "81ae2087dbfb46027fd94748351fb4b1ab24145fbb52544a2822bf128e2e48f1",
+    "Directory.Build.props": "60b66d58bc48354ca87ecef7e5e9dabefd8347df77d66f12280fe55076ade2f4",
+    "docs/architecture/openapi/integration-v1.json": "9a7a291bac01ae4102cfe62b53cc345b673165fec72499e709ac7480563cad78"
+  }
+}

@@ -15,6 +15,7 @@ Start with `docs/README.md` and `docs/delivery/PROGRESS.md`. Before implementati
 
 - The replacement must be independent of WordPress: no WordPress plugins, themes, PHP runtime, headless WordPress CMS, live WordPress database connection or WordPress API dependency. Legacy content/data may be read for a one-time migration only. Build equivalent capabilities in React/.NET; use direct Razorpay/R2 integrations. Owner clarified this on 15 October 2026.
 - React/TypeScript frontend using the accepted Next.js App Router architecture; .NET backend organized with Clean Architecture. Owner accepted 1.6 through “go ahead” on 16 October 2026. Exact dependency/tool patches and runtime behavior still require admission and verification in implementation leaves.
+- English-only application interface and preview copy: owner said not to use Hindi or Marathi on 16 October 2026. Preserve original source/export evidence; do not add Hindi/Marathi sample text to the application.
 - Modern student-focused redesign, mobile-first responsive layouts, and Light/Dark/System appearance throughout the application.
 - PostgreSQL is the database. **Before creating persistent entities, table definitions, EF mappings or migrations, ask the owner for the prior database/table structure and target database details, then review them.** This is subphase 2.4.1. Do not bypass it with an inferred schema.
 - Razorpay for new payments; Cloudflare R2 for images. Video delivery is a separate decision.

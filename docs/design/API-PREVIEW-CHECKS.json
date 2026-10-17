@@ -1,0 +1,197 @@
+{
+  "checked_at_utc": "2026-10-16T12:44:40.644Z",
+  "browser": "154.0.8037.98",
+  "url": "http://127.0.0.1:3000/api-preview",
+  "scope": "Production HTTP preview with injected local transport; Chrome viewport/media emulation, not backend, real-device or screen-reader certification.",
+  "checks": [
+    {
+      "name": "HTTP preview is labelled as mock and excluded from indexing",
+      "passed": true
+    },
+    {
+      "name": "Loading state transitions to decoded sample success",
+      "passed": true
+    },
+    {
+      "name": "Cancel stops loading and does not apply a response",
+      "passed": true
+    },
+    {
+      "name": "Replacing an in-flight request cannot overwrite the newest result",
+      "passed": true
+    },
+    {
+      "name": "timeout: safe request feedback",
+      "passed": true
+    },
+    {
+      "name": "network: safe request feedback",
+      "passed": true
+    },
+    {
+      "name": "unavailable: safe request feedback",
+      "passed": true
+    },
+    {
+      "name": "session: safe request feedback",
+      "passed": true
+    },
+    {
+      "name": "limited: safe request feedback",
+      "passed": true
+    },
+    {
+      "name": "invalid: safe request feedback",
+      "passed": true
+    },
+    {
+      "name": "Read retry is explicit and remains safe on repeated failure",
+      "passed": true
+    },
+    {
+      "name": "Client validation focuses its linked invalid field",
+      "passed": true
+    },
+    {
+      "name": "Mock server field errors preserve input and focus",
+      "passed": true
+    },
+    {
+      "name": "Editing a pending form cancels stale feedback and preserves current text",
+      "passed": true
+    },
+    {
+      "name": "Corrected form uses busy state and reports mock-only success",
+      "passed": true
+    },
+    {
+      "name": "light/320: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "light/360: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "light/390: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "light/768: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "light/820: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "light/1024: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "light/1440: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "light/1920: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "light: 200% text reflows",
+      "passed": true
+    },
+    {
+      "name": "dark/320: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "dark/360: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "dark/390: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "dark/768: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "dark/820: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "dark/1024: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "dark/1440: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "dark/1920: aligned responsive English-only preview",
+      "passed": true
+    },
+    {
+      "name": "dark: 200% text reflows",
+      "passed": true
+    },
+    {
+      "name": "Leaving during loading does not update an unmounted page",
+      "passed": true
+    },
+    {
+      "name": "Layout preview reading copy is English",
+      "passed": true
+    }
+  ],
+  "captures": [
+    {
+      "path": "docs/design/previews/api/api-light-390.png",
+      "sha256": "c2e2dee983cc64f68fffe7bdd77eea440e463eaea9cbabc677aa6d3043711eff",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/api/api-light-768.png",
+      "sha256": "e27b16eb38373e2e8d9936d7c619f06f307241ff1dd2578ffdab862363cfad9b",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/api/api-light-1440.png",
+      "sha256": "1bd5ef2e1bf3d4941144d04a763d20ef86bd59cc93c0e0431630291dc8822054",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/api/api-dark-390.png",
+      "sha256": "dc4c776bfdffccbd3ad634da747ec4fd4e6377d0152c3b21503a11b538d27cc2",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/api/api-dark-768.png",
+      "sha256": "8892bd6689adf9f76e8eb8bfec9d52d48549ca97e94994ed190ad95a1117d3d1",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/design/previews/api/api-dark-1440.png",
+      "sha256": "9ba363dae39f680d65c42806121d22c83c3b6600fac62eaa1655f7b5c2c07294",
+      "visually_reviewed": true
+    }
+  ],
+  "source_sha256": {
+    "apps/web/src/app/(public)/api-preview/page.tsx": "3998f8644b3f9c68ddca6373fa889399268c6ffd4c82a6c625290dbcccd0e3c6",
+    "apps/web/src/app/(public)/api-preview/preview.tsx": "97d4720c512b68b9f6e541b4c9dcedbc38bf75251040a644e44206ff322da29d",
+    "apps/web/src/app/(public)/api-preview/mock-transport.ts": "6beed52393f11cde52c00a346dd24356708cb77791670ab2508a6b77b74d77f6",
+    "apps/web/src/app/(public)/api-preview/preview.module.css": "984e0f0568c2fed65cf7a6834f3b6d0e647a2bd6ef6063d811089703a7c0c9ac",
+    "apps/web/src/hooks/use-api-request.ts": "9ad41d5d61a9ae51b152c40577c4c4c510016f714c9d048a44b614643574f2b3",
+    "apps/web/src/lib/api/client.ts": "01c0328e2542fcb647c264ca9efcc24025eb14a0b1e25bd43eb5e09fae8a19a1",
+    "apps/web/src/lib/api/errors.ts": "27bf8787eff1e54d1f69eb08807f812809d41d1b51f04e7119804fc6abfca90b",
+    "apps/web/src/lib/forms.ts": "30adaa3306d905c33994cc1dd218bd5195bf42bee09c81d185ef12429ce4e9bc",
+    "apps/web/src/lib/format.ts": "d21db7f7003e58f75d08484db8659128ba23ba02c8ef1b27aa4bfc8c17521a90",
+    "tools/frontend/verify-api-preview.cjs": "4fd6a7ac685ddef76ff450c651006892bb8dfeb7a561fbf3506159fef5424b83"
+  },
+  "page_errors": [],
+  "external_requests": [],
+  "write_requests": [],
+  "api_requests": [],
+  "passed": true
+}

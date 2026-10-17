@@ -1,0 +1,137 @@
+{
+  "checked_at_utc": "2026-10-16T13:28:51.301884+00:00",
+  "scope": "2.2.1 only; four assembly boundaries and empty framework-dependent host. No business/API/schema/auth/load test claim.",
+  "sdk_version_observed": "10.0.402",
+  "shared_runtime_versions_observed": {
+    "Microsoft.NETCore.App": "10.0.13",
+    "Microsoft.AspNetCore.App": "10.0.13"
+  },
+  "checks": [
+    {
+      "name": "Official Windows x64 SDK archive SHA-512 verified before execution and rechecked",
+      "passed": true
+    },
+    {
+      "name": "Initial restore generated four lockfiles, then locked restore succeeded",
+      "passed": true
+    },
+    {
+      "name": "Release solution build succeeded with zero warnings and zero errors",
+      "passed": true
+    },
+    {
+      "name": "dotnet format --verify-no-changes --no-restore succeeded",
+      "passed": true
+    },
+    {
+      "name": "Four inward project reference graphs and evaluated restored assets verified",
+      "passed": true
+    },
+    {
+      "name": "No application NuGet packages in full graph or vulnerable-package report",
+      "passed": true
+    },
+    {
+      "name": "Framework-dependent publish succeeded; build/publish API assembly hashes match",
+      "passed": true
+    },
+    {
+      "name": "Published host listens only on 127.0.0.1:5081, returns expected 404s, and was stopped",
+      "passed": true
+    },
+    {
+      "name": "No business/service/persistence C# source beyond minimal API Program",
+      "passed": true
+    }
+  ],
+  "package_graph": {
+    "version": 1,
+    "parameters": "--include-transitive",
+    "projects": [
+      {
+        "path": "src/GDTutor.Api/GDTutor.Api.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0"
+          }
+        ]
+      },
+      {
+        "path": "src/GDTutor.Application/GDTutor.Application.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0"
+          }
+        ]
+      },
+      {
+        "path": "src/GDTutor.Domain/GDTutor.Domain.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0"
+          }
+        ]
+      },
+      {
+        "path": "src/GDTutor.Infrastructure/GDTutor.Infrastructure.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0"
+          }
+        ]
+      }
+    ]
+  },
+  "vulnerable_package_report": {
+    "version": 1,
+    "parameters": "--vulnerable --include-transitive",
+    "sources": [
+      "https://api.nuget.org/v3/index.json"
+    ],
+    "projects": [
+      {
+        "path": "src/GDTutor.Api/GDTutor.Api.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0",
+            "topLevelPackages": []
+          }
+        ]
+      },
+      {
+        "path": "src/GDTutor.Application/GDTutor.Application.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0",
+            "topLevelPackages": []
+          }
+        ]
+      },
+      {
+        "path": "src/GDTutor.Domain/GDTutor.Domain.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0",
+            "topLevelPackages": []
+          }
+        ]
+      },
+      {
+        "path": "src/GDTutor.Infrastructure/GDTutor.Infrastructure.csproj",
+        "frameworks": [
+          {
+            "framework": "net10.0",
+            "topLevelPackages": []
+          }
+        ]
+      }
+    ]
+  },
+  "nuget_audit_limitation": "No NuGet packages are present. This does not audit shared runtimes/frameworks or establish zero vulnerabilities.",
+  "evidence": {
+    "architecture": "docs/architecture/BACKEND-ARCHITECTURE-CHECKS.json",
+    "startup": "docs/architecture/BACKEND-STARTUP-CHECKS.json",
+    "admission": "docs/reference/BACKEND-TOOLCHAIN.json"
+  },
+  "passed": true
+}

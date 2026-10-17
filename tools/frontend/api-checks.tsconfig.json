@@ -1,0 +1,14 @@
+{
+  "extends": "../../apps/web/tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noEmit": false,
+    "incremental": false,
+    "rootDir": "../../apps/web/src/lib",
+    "outDir": "../../.planning-review/api-tests",
+    "types": []
+  },
+  "include": ["../../apps/web/src/lib/api/**/*.ts", "../../apps/web/src/lib/forms.ts", "../../apps/web/src/lib/format.ts", "../../apps/web/src/lib/server/local-api.ts"],
+  "exclude": []
+}

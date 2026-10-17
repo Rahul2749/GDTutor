@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-10-17T02:58:44.5090911Z",
+  "scope": "2.2.3 published HTTP API; Development endpoints/generated docs/safe failure and JSON logs, Production hidden docs, invalid configuration fail-fast. No database/provider/auth/load test.",
+  "checks": [
+    {
+      "openapi_status": 200,
+      "name": "Development JSON configuration",
+      "status_endpoint": 200,
+      "stopped": true,
+      "root_status": 404,
+      "readiness": 200,
+      "json_logs_sanitized": true,
+      "passed": true,
+      "listener": "127.0.0.1:5081"
+    },
+    {
+      "openapi_status": 404,
+      "name": "Production environment override",
+      "status_endpoint": 200,
+      "stopped": true,
+      "root_status": 404,
+      "readiness": 200,
+      "json_logs_sanitized": true,
+      "passed": true,
+      "listener": "127.0.0.1:5081"
+    },
+    {
+      "rejected_value_not_logged": true,
+      "exit_code": 78,
+      "name": "Production invalid configuration fails before listening",
+      "stopped": true,
+      "passed": true
+    }
+  ],
+  "assembly_sha256": "737a08df828093ab0965b809f5210fd378ac47f3b357ad4ec5a92ca4f786e9e4",
+  "script_sha256": "299d219c0e86d7e378b4d2c6672c183af5f6249d21650f964ad369d6038201fd",
+  "all_processes_stopped": true,
+  "passed": true
+}

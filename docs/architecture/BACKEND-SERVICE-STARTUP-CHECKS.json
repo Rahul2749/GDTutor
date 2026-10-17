@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-10-16T16:29:56.5308762Z",
+  "scope": "2.2.2 published no-endpoint API; Development JSON, Production environment override, fail-fast invalid configuration and sanitized diagnostics. No database/provider/auth/load test.",
+  "checks": [
+    {
+      "name": "Development JSON configuration",
+      "passed": true,
+      "root_status": 404,
+      "listener": "127.0.0.1:5081",
+      "stopped": true,
+      "status_endpoint": 404
+    },
+    {
+      "name": "Production environment override",
+      "passed": true,
+      "root_status": 404,
+      "listener": "127.0.0.1:5081",
+      "stopped": true,
+      "status_endpoint": 404
+    },
+    {
+      "stopped": true,
+      "name": "Production invalid configuration fails before listening",
+      "passed": true,
+      "rejected_value_not_logged": true,
+      "exit_code": 78
+    }
+  ],
+  "assembly_sha256": "abd0492d76b15c2c8a46f9c6b8d5e9aec5e5ecb853935f8231f3a2ad5b5be5a1",
+  "script_sha256": "089dfd5984646b26e9c05813c1accb878e4975c0fbed05a856f375c133d84fbf",
+  "all_processes_stopped": true,
+  "passed": true
+}

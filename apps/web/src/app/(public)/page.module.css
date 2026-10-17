@@ -1,64 +1,74 @@
-/* Temporary local preview styles. Shared reset/tokens/themes belong to 2.1.2. */
 .stage {
-  box-sizing: border-box;
-  min-height: calc(100svh - 16px);
+  min-height: 100svh;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   place-items: center;
-  padding: clamp(1rem, 4vw, 4rem);
-  background: #f8f7f3;
-  color: #172c27;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: clamp(var(--space-4), 4vw, var(--space-12));
+  background: radial-gradient(
+    ellipse at 15% 15%,
+    var(--color-primary-soft),
+    transparent 60%
+  );
 }
-
 .card {
-  box-sizing: border-box;
-  width: min(100%, 48rem);
-  padding: clamp(1.25rem, 6vw, 4.5rem);
-  border: 1px solid #d9e1db;
-  border-radius: 1.5rem;
-  background: #fff;
+  min-width: 0;
+  width: min(100%, var(--content-width));
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
 }
-
 .brand {
-  margin: 0 0 3rem;
+  margin: 0 0 1rem;
   font-size: 1.5rem;
-  font-weight: 750;
+  font-weight: var(--weight-strong);
   letter-spacing: -0.04em;
 }
-
 .dot {
-  color: #0f766e;
+  color: var(--color-primary);
 }
-
 .label {
-  margin: 0 0 1rem;
-  color: #0f766e;
-  font-size: 0.875rem;
-  font-weight: 650;
+  margin: 0 0 var(--space-4);
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--weight-strong);
 }
-
 .title {
   margin: 0;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: clamp(2.25rem, 6vw, 4.25rem);
-  font-weight: 500;
-  line-height: 1.08;
+  font-family: var(--font-display);
+  font-size: var(--font-size-display);
+  font-weight: 700;
+  line-height: var(--leading-display);
   letter-spacing: -0.045em;
 }
-
 .description {
   max-width: 36rem;
-  margin: 1.5rem 0 0;
-  color: #4f625b;
-  font-size: 1rem;
-  line-height: 1.7;
+  margin: var(--space-6) 0 0;
+  color: var(--color-muted);
 }
-
-.note {
-  margin: 2.5rem 0 0;
-  padding-top: 1.25rem;
-  border-top: 1px solid #d9e1db;
-  color: #4f625b;
-  font-size: 0.875rem;
-  line-height: 1.6;
+.appearance {
+  margin-top: 1.25rem;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-line);
+}
+.accents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-6);
+  font-size: var(--font-size-sm);
+}
+.primary,
+.secondary {
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-control);
+}
+.primary {
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+.secondary {
+  color: var(--color-secondary);
+  background: var(--color-secondary-soft);
 }

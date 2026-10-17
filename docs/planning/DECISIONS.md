@@ -28,13 +28,15 @@ Confirmed means selected by the owner, not implemented or verified. Proposed mea
 | D-027 | Exams up to 180 minutes with 200+ questions | Owner answer during 0.4; 500 active students still required; no exact upper question bound supplied |
 | D-028 | 250-question test fixture and synthetic data scale accepted as capacity-planning assumptions | Acceptance of 0.4 on 15 October 2026; not a fixed product cap or measured source history |
 | D-029 | Owner working with Codex; no fixed launch date; approximately one-and-a-half-month planning target | Owner answer during 0.5. Six-week stretch sequence proposed; readiness gates and review boundaries remain mandatory |
-| D-013 | Focus Workspace visual baseline: teal actions, violet secondary accents, warm neutrals and editorial headings | Selected preview variant followed by owner "go next" on 15 October 2026; carried forward into 1.2. [Visual direction](../design/VISUAL-DIRECTION.md) and [tokens](../design/THEME-TOKENS.json). Layout/navigation proposals still require their own reviews |
+| D-013 | Focus Workspace visual baseline: teal actions, violet secondary accents, warm neutrals and editorial headings | Selected preview variant followed by owner "go next" on 15 October 2026; carried forward into 1.2. [Visual direction](../design/VISUAL-DIRECTION.md) and [tokens](../design/THEME-TOKENS.json). Owner explicitly reopened overall appearance in 2.1.3 on 16 October; [Compact Blue revision](../design/OVERALL-DESIGN-REVISION.md) with refined component density and fluid width was accepted through owner “great go ahead” on 16 October after the refined-components preview. It supersedes the earlier appearance; layout shells remain separately reviewed in 2.1.4 |
 | D-014 | Tiptap OSS + MathLive + custom equation nodes + KaTeX authoring baseline, with bundled mhchem planned | Owner accepted 1.5.4 through subsequent “ok go ahead” on 16 October. [Selection](../design/QUESTION-AUTHORING-DECISION.md) retains exact-version admission, production integration, notices and notation/accessibility gates; no compatibility certification |
 
 | D-011 | Next.js App Router for React frontend | Owner accepted 1.6 through “go ahead” on 16 October. 2.1.1 pins Next 16.4.2/React 19.3.1; public/private API boundaries remain in the [architecture](../architecture/APPLICATION-ARCHITECTURE.md) |
-| D-012 | .NET 10 LTS backend baseline | Owner accepted 1.6; exact supported SDK/runtime patch admission remains 2.2.1, not the installed older runtime |
+| D-012 | .NET 10 LTS backend baseline | Owner accepted 1.6; 2.2.1 admits SDK 10.0.402/runtime 10.0.13 from official metadata with verified local archive; system SDK is unchanged. See [admission](../reference/BACKEND-TOOLCHAIN.json); ongoing patch review is required |
 | D-030 | Clean Architecture modular monolith with durable .NET Worker and bounded trusted Node content tool | Accepted 1.6; PostgreSQL coordination after schema review, converter only after admission, no default microservices/message broker |
 | D-031 | Same-origin versioned .NET API, Identity cookies/antiforgery, ProblemDetails, ETags and durable scoped idempotency | Accepted 1.6 [API conventions](../architecture/API-CONVENTIONS.md); security/durability/runtime evidence remains implementation work |
+
+| D-032 | English-only application interface and preview copy | Owner clarified on 16 October 2026 after 2.1.4: do not use Hindi/Marathi. Removed the sample text; original source/export evidence is preserved |
 
 ## Proposals and open decisions
 

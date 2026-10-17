@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../GDTutor.Application/GDTutor.Application.csproj" />
+    <ProjectReference Include="../GDTutor.Domain/GDTutor.Domain.csproj" />
+  </ItemGroup>
+</Project>
